@@ -70,8 +70,7 @@
                         src="{{ asset('assets/admin/img/brand/logo-white.png') }}" class="main-logo dark-theme"
                         alt="logo"></a>
                 <a class="logo-icon mobile-logo icon-light active" href="#"><img
-                        src="{{ asset('assets/admin/img/brand/favicon.png') }}" class="logo-icon"
-                        alt="logo"></a>
+                        src="{{ asset('assets/admin/img/brand/favicon.png') }}" class="logo-icon" alt="logo"></a>
                 <a class="logo-icon mobile-logo icon-dark active" href="#"><img
                         src="{{ asset('assets/admin/img/brand/favicon-white.png') }}" class="logo-icon dark-theme"
                         alt="logo"></a>
@@ -85,8 +84,7 @@
                                 class="avatar-status profile-status bg-green"></span>
                         </div>
                         <div class="user-info">
-                            <h4 class="font-weight-semibold mt-3 mb-0">Petey Cruiser</h4>
-                            <span class="mb-0 text-muted">Premium Member</span>
+                            <h4 class="font-weight-semibold mt-3 mb-0">{{ Auth::user()->name }}</h4>
                         </div>
                     </div>
                 </div>
@@ -699,15 +697,15 @@
                             </div>
                             <div class="dropdown main-profile-menu nav nav-item nav-link">
                                 <a class="profile-user d-flex" href=""><img alt=""
-                                        src="{{ asset('assets/img/faces/6.jpg') }}"></a>
+                                        src="{{ asset('assets/admin/img/faces/6.jpg') }}"></a>
                                 <div class="dropdown-menu">
                                     <div class="main-header-profile bg-primary p-3">
                                         <div class="d-flex wd-100p">
                                             <div class="main-img-user"><img alt=""
-                                                    src="{{ asset('assets/img/faces/6.jpg') }}"
-                                                    class=""></div>
+                                                    src="{{ asset('assets/admin/img/faces/6.jpg') }}" class="">
+                                            </div>
                                             <div class="ml-3 my-auto">
-                                                <h6>Petey Cruiser</h6><span>Premium Member</span>
+                                                <h6>{{ Auth::user()->name }}</h6><span>Premium Member</span>
                                             </div>
                                         </div>
                                     </div>
@@ -720,7 +718,8 @@
                                             class="bx bx-envelope"></i>Messages</a>
                                     <a class="dropdown-item" href=""><i class="bx bx-slider-alt"></i> Account
                                         Settings</a>
-                                    <a class="dropdown-item" href="page-signin.html"><i class="bx bx-log-out"></i>
+                                    <a class="dropdown-item" href="{{ route('admin.logout') }}"><i
+                                            class="bx bx-log-out"></i>
                                         Sign Out</a>
                                 </div>
                             </div>

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +19,9 @@ Route::get('/', function () {
     return view('landing.index');
 });
 
-Route::get('/admin', function () {
-    return view('Admin.index');
-});
+Route::get('/admin', [DashboardController::class, 'index'])->middleware('admin');
 
-Route::get('/admin/login', function () {
-    return view('admin.auth.login');
-});
+Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
+Route::post('/admin/login', [AuthController::class, 'authenticate'])->name('admin.authenticate');
+
+Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
