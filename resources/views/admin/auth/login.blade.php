@@ -74,41 +74,41 @@
                                 <div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
                                     <div class="card-sigin">
                                         <div class="mb-5 d-flex"> <a href="index.html"><img
-                                                    src="{{ asset('assets/admin/img/brand/favicon.png') }}" class="sign-favicon ht-40"
-                                                    alt="logo"></a>
+                                                    src="{{ asset('assets/admin/img/brand/favicon.png') }}"
+                                                    class="sign-favicon ht-40" alt="logo"></a>
                                             <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Va<span>le</span>x</h1>
                                         </div>
                                         <div class="card-sigin">
                                             <div class="main-signup-header">
                                                 <h2>Welcome back!</h2>
                                                 <h5 class="font-weight-semibold mb-4">Please sign in to continue.</h5>
-                                                <form action="#">
+                                                <form method="POST" action="{{ route('admin.login') }}">
+                                                    @csrf
                                                     <div class="form-group">
-                                                        <label>Email</label> <input class="form-control"
-                                                            placeholder="Enter your email" type="text">
+                                                        <label>Email</label> <input class="form-control mb-1"
+                                                            placeholder="Enter your email" type="text"
+                                                            name="email">
+                                                        @error('email')
+                                                            <span class="text-danger ">{{ $message }}</span>
+                                                        @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Password</label> <input class="form-control"
-                                                            placeholder="Enter your password" type="password">
+                                                        <label>Password</label> <input class="form-control mb-1"
+                                                            placeholder="Enter your password" type="password"
+                                                            name="password">
+                                                        @error('password')
+                                                            <span class="text-danger ">{{ $message }}</span>
+                                                        @enderror
                                                     </div><button class="btn btn-main-primary btn-block">Sign
                                                         In</button>
-                                                    <div class="row row-xs">
-                                                        <div class="col-sm-6">
-                                                            <button class="btn btn-block"><i
-                                                                    class="fab fa-facebook-f"></i> Signup with
-                                                                Facebook</button>
-                                                        </div>
-                                                        <div class="col-sm-6 mg-t-10 mg-sm-t-0">
-                                                            <button class="btn btn-info btn-block"><i
-                                                                    class="fab fa-twitter"></i> Signup with
-                                                                Twitter</button>
+                                                    <div class="row mt-4 mb-2">
+                                                        <div class="col-12">
+                                                            @include('layouts._message')
                                                         </div>
                                                     </div>
                                                 </form>
-                                                <div class="main-signin-footer mt-5">
+                                                <div class="main-signin-footer mt-2">
                                                     <p><a href="">Forgot password?</a></p>
-                                                    <p>Don't have an account? <a href="page-signup.html">Create an
-                                                            Account</a></p>
                                                 </div>
                                             </div>
                                         </div>
