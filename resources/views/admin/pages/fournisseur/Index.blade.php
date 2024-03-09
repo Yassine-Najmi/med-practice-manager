@@ -74,15 +74,17 @@
                                         <td>{{ $item->adresse }}</td>
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}
                                         <td>
-                                            <a href="" class="modal-effect btn btn-sm btn-info"
-                                                data-effect='effect-scale' href="#editModal{{ $item->id }}"
-                                                data-target="#editModal{{ $item->id }}" data-toggle="modal">Edit</a>
-                                            <form action="" method="post">
-                                                @csrf
-                                                @method('delete')
-                                                <button type="submit" class="modal-effect btn btn-sm btn-danger"
-                                                    onclick="return confirm('Are you sure you want to delete this item?');">Delete</button>
-                                            </form>
+                                            <div class="btn-group">
+                                                <a href="" class="modal-effect btn btn-sm btn-info mr-2 rounded"
+                                                    data-effect='effect-scale' href="#editModal{{ $item->id }}"
+                                                    data-target="#editModal{{ $item->id }}" data-toggle="modal">Edit</a>
+                                                <form action="" method="post">
+                                                    @csrf
+                                                    @method('delete')
+                                                    <button type="submit" class="modal-effect btn btn-sm btn-danger"
+                                                        onclick="return confirm('Are you sure you want to delete this item?');">Delete</button>
+                                                </form>
+                                            </div>
                                         </td>
                                     </tr>
                                     @include('admin.pages.fournisseur.edit')
