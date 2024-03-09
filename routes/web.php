@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\FournisseurController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -19,12 +20,12 @@ Route::get('/', function () {
     return view('landing.index');
 });
 
-Route::middleware("admin")->prefix("admin")->name("admin.")->group(function(){
-    Route::get('/admin', [DashboardController::class, 'index']);
-    Route::get('/admin/logout', [AuthController::class, 'logout'])->name('logout');
+Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
+    Route::get('/', [DashboardController::class, 'index']);
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::resource('fournisseur', FournisseurController::class);
 });
 
 
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
 Route::post('/admin/login', [AuthController::class, 'authenticate'])->name('admin.authenticate');
-
