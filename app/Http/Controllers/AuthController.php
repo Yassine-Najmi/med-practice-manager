@@ -15,24 +15,20 @@ class AuthController extends Controller
 
     public function authenticate(Request $request)
     {
-
-
         $request->validate([
-
             'email' => 'required|email',
             'password' => 'required',
         ]);
-
-        if (Auth::attempt([
-            'email' => $request->email,
-            'password' => $request->password
-        ])) {
-
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             if (Auth::user()->is_admin == 1) {
                 return redirect('/admin');
             } else {
                 return back()->with('error', 'Please login with admin credentials');
             }
+        } else {
+            return redirect()->back()->with([
+                "error" => "these information do not match any one of our records"
+            ]);
         }
     }
 

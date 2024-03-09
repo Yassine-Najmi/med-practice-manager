@@ -19,9 +19,12 @@ Route::get('/', function () {
     return view('landing.index');
 });
 
-Route::get('/admin', [DashboardController::class, 'index'])->middleware('admin');
+Route::middleware("admin")->prefix("admin")->name("admin.")->group(function(){
+    Route::get('/admin', [DashboardController::class, 'index']);
+    Route::get('/admin/logout', [AuthController::class, 'logout'])->name('logout');
+});
+
 
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
 Route::post('/admin/login', [AuthController::class, 'authenticate'])->name('admin.authenticate');
 
-Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');

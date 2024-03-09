@@ -79,6 +79,11 @@
                                             <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Va<span>le</span>x</h1>
                                         </div>
                                         <div class="card-sigin">
+                                            <div class="row mt-4 mb-2">
+                                                <div class="col-12">
+                                                    @include('layouts._message')
+                                                </div>
+                                            </div>
                                             <div class="main-signup-header">
                                                 <h2>Welcome back!</h2>
                                                 <h5 class="font-weight-semibold mb-4">Please sign in to continue.</h5>
@@ -101,11 +106,6 @@
                                                         @enderror
                                                     </div><button class="btn btn-main-primary btn-block">Sign
                                                         In</button>
-                                                    <div class="row mt-4 mb-2">
-                                                        <div class="col-12">
-                                                            @include('layouts._message')
-                                                        </div>
-                                                    </div>
                                                 </form>
                                                 <div class="main-signin-footer mt-2">
                                                     <p><a href="">Forgot password?</a></p>
