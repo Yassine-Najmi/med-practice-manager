@@ -3,17 +3,17 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title">Edit Section</h6><button aria-label="Close" class="close" data-dismiss="modal"
+                    <h6 class="modal-title">Edit Patient</h6><button aria-label="Close" class="close" data-dismiss="modal"
                         type="button"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('admin.fournisseur.update', $item->id) }}">
+                    <form method="POST" action="{{ route('admin.patient.update', $item->id) }}">
                         @csrf
                         @method('put')
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Section Name</label>
-                            <input type="text" name="name" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" value="{{ $item->name }}" placeholder="Section Name">
+                            <label for="name">Section Name</label>
+                            <input type="text" name="name" class="form-control" id="name"
+                                value="{{ $item->name }}" placeholder="Section Name">
                         </div>
 
                         <div class="form-group">
@@ -29,8 +29,21 @@
                         <div class="form-group">
                             <label for="address">Adresse</label>
                             <input type="text" name="address" class="form-control" id="address"
-                                value="{{ $item->adresse }}" placeholder="Section Address">
+                                value="{{ $item->address }}" placeholder="Section Address">
                         </div>
+                        <div class="form-group">
+                            <label for="cnie">CNIE</label>
+                            <input type="text" name="cnie" class="form-control" id="cnie"
+                                value="{{ $item->cnie }}" placeholder="Section CNIE">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_of_birth">Date of Birth</label>
+                            <input type="date" name="date_of_birth" class="form-control" id="date_of_birth"
+                                value="{{ $item->date_of_birth }}" placeholder="Section CNIE">
+                        </div>
+
+
+
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>

@@ -12,7 +12,7 @@
         <div class="d-flex my-xl-auto right-content">
             <div class="pr-1 mb-3 mb-xl-0">
                 <a class="btn ripple btn-primary" data-target="#modaldemo1" data-toggle="modal" href="">Add New
-                    Fournisseur</a>
+                    Patient</a>
             </div>
             <div class="pr-1 mb-3 mb-xl-0">
                 <button type="button" class="btn btn-info btn-icon mr-2"><i class="mdi mdi-filter-variant"></i></button>
@@ -49,7 +49,7 @@
             <div class="card">
                 <div class="card-header pb-0">
                     <div class="d-flex justify-content-between">
-                        <h4 class="card-title mg-b-0">Fournisseur List</h4>
+                        <h4 class="card-title mg-b-0">Patient List</h4>
                         <i class="mdi mdi-dots-horizontal text-gray"></i>
                         <div>
                             @include('layouts._message')
@@ -62,9 +62,11 @@
                             <thead>
                                 <tr>
                                     <th class="wd-15p border-bottom-0">Name</th>
-                                    <th class="wd-25p border-bottom-0">Phone</th>
-                                    <th class="wd-25p border-bottom-0">Email</th>
-                                    <th class="wd-25p border-bottom-0">Adresse</th>
+                                    <th class="wd-15p border-bottom-0">Phone</th>
+                                    <th class="wd-15p border-bottom-0">Email</th>
+                                    <th class="wd-15p border-bottom-0">Adresse</th>
+                                    <th class="wd-15p border-bottom-0">CNIE</th>
+                                    <th class="wd-15p border-bottom-0">Date of Birth</th>
                                     <th class="wd-25p border-bottom-0">Action</th>
                                 </tr>
                             </thead>
@@ -74,14 +76,18 @@
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->phone }}</td>
                                         <td>{{ $item->email }}</td>
-                                        <td>{{ $item->adresse }}</td>
+                                        <td>{{ $item->address }}</td>
+                                        <td>{{ $item->cnie }}</td>
+                                        <td>{{ date('d/m/Y', strtotime($item->date_of_birth)) }}</td>
+
+
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}
                                         <td>
                                             <div class="btn-group">
                                                 <a href="#" class="modal-effect btn btn-md btn-info rounded mr-2"
                                                     data-effect="effect-scale" data-target="#editModal{{ $item->id }}"
                                                     data-toggle="modal">Edit</a>
-                                                <form action="{{ route('admin.fournisseur.destroy', $item->id) }}"
+                                                <form action="{{ route('admin.patient.destroy', $item->id) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('delete')
@@ -91,8 +97,9 @@
                                             </div>
                                         </td>
 
+
                                     </tr>
-                                    @include('admin.pages.fournisseur.edit')
+                                    @include('admin.pages.patient.edit')
                                 @empty
                                     no data found
                                 @endforelse
@@ -107,7 +114,7 @@
 
     </div>
     <!-- /row -->
-    @include('admin.pages.fournisseur.create')
+    @include('admin.pages.patient.create')
     {{-- @include('messages.messages') --}}
 @endsection
 

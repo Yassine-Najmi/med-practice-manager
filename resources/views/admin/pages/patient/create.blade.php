@@ -3,11 +3,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-content-demo">
                 <div class="modal-header">
-                    <h6 class="modal-title">Add Fournisseur</h6><button aria-label="Close" class="close"
-                        data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                    <h6 class="modal-title">Add Patient</h6><button aria-label="Close" class="close" data-dismiss="modal"
+                        type="button"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('admin.fournisseur.store') }}" autocomplete="off">
+                    <form method="POST" action="{{ route('admin.patient.store') }}" autocomplete="off">
                         @csrf
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -38,6 +38,22 @@
                             <input type="text" name="address" class="form-control" id="adresse"
                                 placeholder="Section Adress">
                             @error('address')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="cnie">CNIE</label>
+                            <input type="text" name="cnie" class="form-control" id="cnie"
+                                placeholder="Section CNIE">
+                            @error('cnie')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="date_of_birth">Date of Birth</label>
+                            <input type="date" name="date_of_birth" class="form-control" id="date_of_birth"
+                                placeholder="Section Date of Birth">
+                            @error('date_of_birth')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

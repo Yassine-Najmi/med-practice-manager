@@ -10,4 +10,9 @@ class Fournisseur extends Model
     use HasFactory;
 
     protected $table = 'fournisseurs';
+
+    public function stocks()
+    {
+        return $this->hasMany(Stock::class);
+    }
 }
