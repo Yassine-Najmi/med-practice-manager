@@ -3,18 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Fournisseur;
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
-class FournisseurController extends Controller
+class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $data = Fournisseur::latest()->paginate(5);
-        return view('admin.pages.fournisseur.Index', compact('data'));
+        $data = Patient::latest()->paginate(5);
+        return view('admin.pages.patient.index', compact('data'));
     }
 
     /**
@@ -22,7 +22,7 @@ class FournisseurController extends Controller
      */
     // public function create()
     // {
-
+    //     //
     // }
 
     /**
@@ -30,37 +30,41 @@ class FournisseurController extends Controller
      */
     public function store(Request $request)
     {
-
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
             'phone' => 'required',
             'address' => 'required',
+            'email' => 'required',
+            'cnie' => 'required',
+            'date_of_birth' => 'required',
         ]);
 
-        $data = new Fournisseur();
+        $data = new Patient();
         $data->name = $request->name;
-        $data->email = $request->email;
         $data->phone = $request->phone;
-        $data->adresse = $request->address;
+        $data->address = $request->address;
+        $data->email = $request->email;
+        $data->cnie = $request->cnie;
+        $data->date_of_birth = $request->date_of_birth;
         $data->save();
 
-        return redirect()->back()->with('success', 'Fournisseur added successfully');
+        return redirect()->back()->with('success', 'Patient added successfully');
     }
 
     /**
      * Display the specified resource.
      */
-    // public function show(string $id)
-    // {
-    //     //
-    // }
+    public function show(string $id)
+    {
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
      */
     // public function edit(string $id)
     // {
+    //     //
     // }
 
     /**
@@ -70,19 +74,23 @@ class FournisseurController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required',
             'phone' => 'required',
             'address' => 'required',
+            'email' => 'required',
+            'cnie' => 'required',
+            'date_of_birth' => 'required',
         ]);
 
-        $data = Fournisseur::find($id);
+        $data = Patient::find($id);
         $data->name = $request->name;
-        $data->email = $request->email;
         $data->phone = $request->phone;
-        $data->adresse = $request->address;
+        $data->address = $request->address;
+        $data->email = $request->email;
+        $data->cnie = $request->cnie;
+        $data->date_of_birth = $request->date_of_birth;
         $data->save();
 
-        return redirect()->back()->with('success', 'Fournisseur updated successfully');
+        return redirect()->back()->with('success', 'Patient updated successfully');
     }
 
     /**
@@ -90,8 +98,8 @@ class FournisseurController extends Controller
      */
     public function destroy(string $id)
     {
-        $data = Fournisseur::find($id);
+        $data = Patient::find($id);
         $data->delete();
-        return redirect()->back()->with('success', 'Fournisseur deleted successfully');
+        return redirect()->back()->with('success', 'Patient deleted successfully');
     }
 }

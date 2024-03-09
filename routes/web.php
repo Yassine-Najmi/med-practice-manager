@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Admin\FournisseurController;
+use App\Http\Controllers\Admin\PatientController;
+use App\Http\Controllers\Admin\StockController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +23,11 @@ Route::get('/', function () {
 });
 
 Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
-    Route::get('/', [DashboardController::class, 'index']);
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::resource('patient', PatientController::class);
     Route::resource('fournisseur', FournisseurController::class);
+    Route::resource('stock', StockController::class);
 });
 
 
