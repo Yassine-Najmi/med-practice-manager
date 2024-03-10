@@ -1,4 +1,4 @@
-@extends("landing.layouts.Master")
+@extends('landing.layouts.Master')
 
 @section('content')
     <!-- Main Slider -->
@@ -11,12 +11,49 @@
                     style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
                     <div class="auto-container">
                         <div class="content clearfix">
-                            <div class="title">{{ __('header.small_text_1') }}</div>
-                            <h2>{{ __('header.small_text_2') }}</h2>
-                            <div class="text">{{ __('header.big_text') }}</div>
+                            <div class="title">Welcome our Medical Care Center</div>
+                            <h2>Take Care of Your Health</h2>
+                            <div class="text">We're always available for our Patients with emergent problems. You can
+                                easily reach us 24/7 via the phone number below:</div>
                             <div class="btn-box clearfix">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('header.services') }}</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
+                                        Services</span></a>
+                                <a href="contact.html" class="theme-btn phone-btn"><span
+                                        class="icon flaticon-call"></span>555–123–2323</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide"
+                    style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="title">Welcome our Medical Care Center</div>
+                            <h2>Take Care of Your Health</h2>
+                            <div class="text">We're always available for our Patients with emergent problems. You can
+                                easily reach us 24/7 via the phone number below:</div>
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
+                                        Services</span></a>
+                                <a href="contact.html" class="theme-btn phone-btn"><span
+                                        class="icon flaticon-call"></span>555–123–2323</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide"
+                    style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="title">Welcome our Medical Care Center</div>
+                            <h2>Take Care of Your Health</h2>
+                            <div class="text">We're always available for our Patients with emergent problems. You can
+                                easily reach us 24/7 via the phone number below:</div>
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
+                                        Services</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
                                         class="icon flaticon-call"></span>555–123–2323</a>
                             </div>
@@ -34,316 +71,402 @@
     </section>
     <!-- End Main Slider -->
 
-    <!-- Department Section -->
-    <section class="department-section">
+    <!-- Services Section Three -->
+    <section class="services-section-three">
         <div class="auto-container">
-
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2>Health Department</h2>
-                <div class="separator"></div>
-            </div>
-
-            <div class="services-carousel owl-carousel owl-theme">
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Urology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-brain"></div>
-                            <h3><a href="#">Neurology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Gastrology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Urology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-brain"></div>
-                            <h3><a href="#">Neurology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Gastrology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Urology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-brain"></div>
-                            <h3><a href="#">Neurology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Department Block -->
-                <div class="department-block">
-                    <div class="inner-box">
-                        <div class="upper-box">
-                            <div class="icon flaticon-kidneys"></div>
-                            <h3><a href="#">Gastrology</a></h3>
-                        </div>
-                        <div class="text">Morbi a metus. Phasellus enim erat, vestibulum vel, aliquam a, posuere
-                            eu, velit. Nullam sapien sem, ornare ac, nonummy non, lobortis a, enim. </div>
-                        <div class="read-outer">
-                            <a href="#" class="read-more">Read More <span
-                                    class="icon fas fa-angle-double-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <!-- End Department Section -->
-
-    <!-- Fluid Section One -->
-    <section class="fluid-section-one">
-        <div class="outer-section clearfix">
-
-            <!--Image Column-->
-            <div class="image-column" style="background-image: url(images/resource/image-1.jpg)">
-                <div class="image">
-                    <img src="images/resource/image-1.jpg" alt="">
-                </div>
-            </div>
-            <!--End Image Column-->
-
-            <!--Content Column-->
-            <div class="content-column">
-                <div class="content-box">
-                    <div class="sec-title">
-                        <h2>Pioneering in Health.</h2>
-                        <div class="separator style-two"></div>
-                    </div>
-                    <div class="text">
-                        <p>Our main long-term goal is always achieving complex results for your dental health. But
-                            in the process, we also keep the focus on giving you the best customer service. We're
-                            always making our dental office as safe place as possible!</p>
-                        <p>Nulla auctor neque non tortor tincidunt fringilla. Nam in condimentum orci. Integer ac
-                            pellentesque sem. Nulla fringilla dui id metus viverra interdum.</p>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="column col-lg-6 col-md-6 col-sm-12">
-                            <ul class="list-style-one">
-                                <li><span class="icon flaticon-medical-stethoscope-variant"></span>Medical
-                                    Treatment</li>
-                                <li><span class="icon flaticon-doctor"></span>Qualified Doctors</li>
-                            </ul>
-                        </div>
-                        <div class="column col-lg-6 col-md-6 col-sm-12">
-                            <ul class="list-style-one">
-                                <li><span class="icon flaticon-ambulance-side-view"></span>Emergency Help</li>
-                                <li><span class="icon flaticon-medical-kit"></span>Medical Professionals</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="auto-container">
-
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2>Best Health Services</h2>
-                <div class="separator"></div>
-            </div>
-
             <div class="row clearfix">
 
-                <!-- Left Column -->
-                <div class="left-column pull-left col-lg-4 col-md-12 col-sm-12">
-                    <div class="inner-column">
+                <!-- Services Block Four -->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-timetable"></span>
+                        </div>
+                        <h4>Hospital Schedule</h4>
+                        <ul class="list">
+                            <li>Mon - Friday<span>8:00 - 10:30</span></li>
+                            <li>Saturday<span>9:00 - 11:00</span></li>
+                            <li>Sunday<span>10:30 - 8:30</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-                        <!-- Service Block -->
-                        <div class="service-block">
-                            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-doctor-stethoscope"></span>
-                                </div>
-                                <h3><a href="doctors-detail.html">Outdoor Checkup</a></h3>
-                                <div class="text">We provide best service for our cline. <br> Now place take it.
+                <!-- Services Block Four -->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-timetable"></span>
+                        </div>
+                        <h4>Get Appointment</h4>
+                        <div class="text">Lorem Ipsum when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book.</div>
+                        <a class="appointment-btn" href="doctors-detail.html">Appointment <span
+                                class="icon flaticon-right-arrow-1"></span></a>
+                    </div>
+                </div>
+
+                <!-- Services Block Four -->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="icon-box">
+                            <span class="icon flaticon-timetable"></span>
+                        </div>
+                        <h4>Discover Benefits</h4>
+                        <ul class="list-two">
+                            <li>Experienced Doctors</li>
+                            <li>Dedicated Professional Staffs</li>
+                            <li>24 Hours Emergency Service</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Services Section Three -->
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Content Column -->
+                <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>About Our Hospital</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
+                        </div>
+                        <div class="text">Our main long-term goal is always achieving complex results for your dental
+                            health. But in the process, we also keep the focus on giving you the best customer service.
+                            We're always making our dental office as safe place as possible!</div>
+                        <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
+                    </div>
+                </div>
+
+                <!-- Blocks Column -->
+                <div class="blocks-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <div class="row clearfix">
+
+                            <!-- Service Block Five -->
+                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-award"></span>
+                                    </div>
+                                    <h4>Medical Quality</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Service Block -->
-                        <div class="service-block">
-                            <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-operating-room"></span>
+                            <!-- Service Block Five -->
+                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="250ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-operating-room"></span>
+                                    </div>
+                                    <h4>Modern Labs</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
                                 </div>
-                                <h3><a href="doctors-detail.html">Operation Theater</a></h3>
+                            </div>
+
+                            <!-- Service Block Five -->
+                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="0ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-avatar-1"></span>
+                                    </div>
+                                    <h4>24/7 Dedicated Doctors</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Service Block Five -->
+                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="250ms"
+                                    data-wow-duration="1500ms">
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-surgery-room"></span>
+                                    </div>
+                                    <h4>Cutting Edge Technology</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Appointment Section Three -->
+    <section class="appointment-section-three">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Form Column -->
+                <div class="form-column col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <!-- Upper Box -->
+                        <div class="upper-box">
+                            <div class="upper-inner">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-timetable"></span>
+                                </div>
+                                <h3>Get an Appointment</h3>
                                 <div class="text">We provide best service for our cline. Now place take it.</div>
                             </div>
                         </div>
 
-                        <!-- Service Block -->
-                        <div class="service-block">
-                            <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-van"></span>
+                        <!-- Lower Box -->
+                        <div class="lower-box">
+                            <div class="upper-inner">
+
+                                <!-- Appointment Form -->
+                                <div class="appointment-form">
+                                    <form method="post" action="appointment.html">
+
+                                        <div class="form-group">
+                                            <input type="text" name="username" placeholder="Enter Your Name"
+                                                required="">
+                                            <span class="icon fa fa-user"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
+                                                required="">
+                                            <span class="icon fas fa-phone"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="appointment" placeholder="Appointment Date"
+                                                required="">
+                                            <span class="icon fas fa-calendar"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Choose Department</option>
+                                                <option>Department One</option>
+                                                <option>Department Two</option>
+                                                <option>Department Three</option>
+                                                <option>Department Four</option>
+                                                <option>Department Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Select Doctor</option>
+                                                <option>Doctor One</option>
+                                                <option>Doctor Two</option>
+                                                <option>Doctor Three</option>
+                                                <option>Doctor Four</option>
+                                                <option>Doctor Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button class="theme-btn submit-btn" type="submit"
+                                                name="submit-form">Request Appointment</button>
+                                        </div>
+
+                                    </form>
                                 </div>
-                                <h3><a href="doctors-detail.html">Emergency Care</a></h3>
-                                <div class="text">We provide best service for our cline. <br> Now place take it.
-                                </div>
+
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-                <!-- Circles Column -->
-                <div class="circles-column col-lg-4 col-md-12 col-sm-12">
+                <!-- Content Column -->
+                <div class="content-column col-lg-8 col-md-12 col-sm-12">
                     <div class="inner-column">
-
-                        <div class="circles">
-                            <div class="circle-one"></div>
-                            <div class="circle-two"></div>
-                            <div class="circle-three"></div>
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>Why Choose Our Medical</h2>
+                            <div class="separator"></div>
                         </div>
+                        <div class="bold-text">Better health care with efficient cost is the main <br> focuse of our
+                            hospital.</div>
+                        <div class="row clearfix">
 
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Professional Staffs</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Online Appointment</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Emergency Cares</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Advanced Tochnology</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Experienced Doctors</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                            <!-- Appointment List -->
+                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+                                    <div class="icon far fa-hand-point-right"></div>
+                                    <h4>Emergency Service 24/7</h4>
+                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
-                <!-- Right Column -->
-                <div class="right-column pull-right col-lg-4 col-md-12 col-sm-12">
+            </div>
+        </div>
+    </section>
+    <!-- End Appointment Section Three -->
+
+    <!-- About Section Two -->
+    <section class="about-section-two">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Content Column -->
+                <div class="content-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>About Us</h2>
+                            <div class="separator"></div>
+                        </div>
+                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
+                        </div>
+                        <div class="text">Our main long-term goal is always achieving complex results for your dental
+                            health. But in the process, we also keep the focus on giving you the best customer service.
+                            We're always making our dental office as safe place as possible!</div>
+                        <div class="row clearfix">
 
-                        <!-- Service Block -->
-                        <div class="service-block-two">
-                            <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-water"></span>
-                                </div>
-                                <h3><a href="doctors-detail.html">Blood Test</a></h3>
-                                <div class="text">We provide best service for our cline. <br> Now place take it.
+                            <!-- About List Info -->
+                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner">
+                                    Emergency Service 24/7
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Service Block -->
-                        <div class="service-block-two">
-                            <div class="inner-box wow fadeInRight" data-wow-delay="250ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-pharmacy"></span>
+                            <!-- About List Info -->
+                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner">
+                                    Professional Staffs
                                 </div>
-                                <h3><a href="doctors-detail.html">Pharmacy Support</a></h3>
-                                <div class="text">We provide best service for our cline. Now place take it.</div>
                             </div>
-                        </div>
 
-                        <!-- Service Block -->
-                        <div class="service-block-two">
-                            <div class="inner-box wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-nurse"></span>
+                            <!-- About List Info -->
+                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner">
+                                    Advanced Tochnology
                                 </div>
-                                <h3><a href="doctors-detail.html">24/7 Service</a></h3>
-                                <div class="text">We provide best service for our cline. <br> Now place take it.
+                            </div>
+
+                            <!-- About List Info -->
+                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
+                                <div class="list-inner">
+                                    Experienced Doctors
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Column -->
+                <div class="info-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+
+                        <!-- Doctor Info Tabs-->
+                        <div class="doctor-info-tabs">
+                            <!-- Doctor Tabs-->
+                            <div class="doctor-tabs tabs-box">
+
+                                <!--Tab Btns-->
+                                <ul class="tab-btns tab-buttons clearfix">
+                                    <li data-tab="#consultation" class="tab-btn active-btn"><span
+                                            class="icon far fa-clock"></span> Consultation</li>
+                                    <li data-tab="#emergncy" class="tab-btn"><span class="icon far fa-clock"></span>
+                                        Emergncy</li>
+                                </ul>
+
+                                <!--Tabs Container-->
+                                <div class="tabs-content">
+
+                                    <!--Tab / Active Tab-->
+                                    <div class="tab active-tab" id="consultation">
+                                        <div class="content">
+                                            <ul class="content-list">
+                                                <li>Sunday<span>8:00 am - 10:30 pm</span></li>
+                                                <li>Monday<span>9:00 am - 11:30 pm</span></li>
+                                                <li>Tuesday<span>8:30 am - 7:30 pm</span></li>
+                                                <li>Wednesday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Thursday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Friday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Saturday<span>9:00 am - 10:30 pm</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!--Tab-->
+                                    <div class="tab" id="emergncy">
+                                        <div class="content">
+                                            <ul class="content-list">
+                                                <li>Sunday<span>8:00 am - 10:30 pm</span></li>
+                                                <li>Monday<span>9:00 am - 11:30 pm</span></li>
+                                                <li>Tuesday<span>8:30 am - 7:30 pm</span></li>
+                                                <li>Wednesday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Thursday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Friday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>Saturday<span>9:00 am - 10:30 pm</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -352,26 +475,29 @@
                 </div>
 
             </div>
-
         </div>
     </section>
+    <!-- End About Section Two -->
 
     <!-- Counter Section -->
-    <section class="counter-section" style="background-image: url(images/background/pattern-3.png)">
+    <section class="counter-section-two">
         <div class="auto-container">
 
             <!-- Fact Counter -->
-            <div class="fact-counter">
+            <div class="fact-counter-two">
                 <div class="row clearfix">
 
                     <!--Column-->
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="2350">0</span>
+                                <div class="icon-box">
+                                    <span class="icon flaticon-heart-1"></span>
                                 </div>
-                                <h4 class="counter-title">Satisfied Patients</h4>
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="98">0</span>%
+                                </div>
+                                <h4 class="counter-title">Success Surgeries</h4>
                             </div>
                         </div>
                     </div>
@@ -380,10 +506,13 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="count-outer count-box alternate">
-                                    +<span class="count-text" data-speed="3000" data-stop="350">0</span>
+                                <div class="icon-box">
+                                    <span class="icon flaticon-medical-stethoscope-variant"></span>
                                 </div>
-                                <h4 class="counter-title">Doctor’s Team</h4>
+                                <div class="count-outer count-box alternate">
+                                    <span class="count-text" data-speed="3000" data-stop="350">0</span>+
+                                </div>
+                                <h4 class="counter-title">Regular Doctors</h4>
                             </div>
                         </div>
                     </div>
@@ -392,10 +521,13 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="2150">0</span>
+                                <div class="icon-box">
+                                    <span class="icon flaticon-heart-1"></span>
                                 </div>
-                                <h4 class="counter-title">Success Mission</h4>
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="600">0</span>K
+                                </div>
+                                <h4 class="counter-title">Satisfied Patients</h4>
                             </div>
                         </div>
                     </div>
@@ -404,10 +536,13 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="count-outer count-box">
-                                    +<span class="count-text" data-speed="2500" data-stop="225">0</span>
+                                <div class="icon-box">
+                                    <span class="icon flaticon-pharmacy"></span>
                                 </div>
-                                <h4 class="counter-title">Successfull Surgeries</h4>
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="50">0</span>+
+                                </div>
+                                <h4 class="counter-title">Department</h4>
                             </div>
                         </div>
                     </div>
@@ -419,153 +554,566 @@
     </section>
     <!-- End Counter Section -->
 
-    <!-- Team Section -->
-    <section class="team-section">
+    <!-- Hospital Section -->
+    <section class="hospital-section"
+        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/8.jpg ') }}')">
         <div class="auto-container">
-
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2>The Medical Specialists</h2>
-                <div class="separator"></div>
-            </div>
-
             <div class="row clearfix">
 
-                <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <!-- Image Column -->
+                <div class="image-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image">
-                            <img src="images/resource/team-1.jpg" alt="" />
-                            <div class="overlay-box">
-                                <ul class="social-icons">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-google"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                </ul>
-                                <a href="#" class="appointment">Make Appointment</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Dr. Andria Jonea</a></h3>
-                            <div class="designation">Cancer Specialist</div>
+                            <img src="images/resource/doctor-5.png" alt="" />
                         </div>
                     </div>
                 </div>
 
-                <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <img src="images/resource/team-2.jpg" alt="" />
-                            <div class="overlay-box">
-                                <ul class="social-icons">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-google"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                </ul>
-                                <a href="#" class="appointment">Make Appointment</a>
-                            </div>
+                <!-- Content Column -->
+                <div class="content-column col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>Why Choose Our Hospital</h2>
+                            <div class="separator"></div>
                         </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Dr. Robet Samith</a></h3>
-                            <div class="designation">Heart Surgen</div>
+                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
                         </div>
-                    </div>
-                </div>
 
-                <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <img src="images/resource/team-3.jpg" alt="" />
-                            <div class="overlay-box">
-                                <ul class="social-icons">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-google"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                </ul>
-                                <a href="#" class="appointment">Make Appointment</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Dr. Sharon Laura</a></h3>
-                            <div class="designation">Family Physician</div>
-                        </div>
-                    </div>
-                </div>
+                        <!-- Hospital Tabs-->
+                        <div class="hospital-info-tabs">
+                            <!-- Hospital Tabs-->
+                            <div class="hospital-tabs tabs-box">
 
-                <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="750ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <img src="images/resource/team-4.jpg" alt="" />
-                            <div class="overlay-box">
-                                <ul class="social-icons">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-google"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                <!--Tab Btns-->
+                                <ul class="tab-btns tab-buttons clearfix">
+                                    <li data-tab="#mission" class="tab-btn active-btn">Mission</li>
+                                    <li data-tab="#vision" class="tab-btn">Vision</li>
+                                    <li data-tab="#success" class="tab-btn">Success</li>
+                                    <li data-tab="#history" class="tab-btn">History</li>
                                 </ul>
-                                <a href="#" class="appointment">Make Appointment</a>
+
+                                <!--Tabs Container-->
+                                <div class="tabs-content">
+
+                                    <!--Tab / Active Tab-->
+                                    <div class="tab active-tab" id="mission">
+                                        <div class="content">
+                                            <div class="row clearfix">
+
+                                                <div class="column col-lg-9 col-md-9 col-sm-12">
+                                                    <div class="text">
+                                                        <p class="text-dark">Our main long-term goal is always achieving
+                                                            complex results for
+                                                            your dental health. But in the process, we also keep the focus
+                                                            on giving you the best customer service. </p>
+                                                        <p class="text-dark">We're always making our dental office as safe
+                                                            place as possible!
+                                                            We provide best service for our cline. Now place take it.</p>
+                                                    </div>
+                                                    <a class="theme-btn more-btn" href="#"><span
+                                                            class="txt">Learn More</span></a>
+                                                </div>
+                                                <div class="column col-lg-3 col-md-3 col-sm-12">
+                                                    <div class="image">
+                                                        <img src="images/resource/author-9.jpg" alt="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Tab-->
+                                    <div class="tab" id="vision">
+                                        <div class="content">
+                                            <div class="row clearfix">
+
+                                                <div class="column col-lg-9 col-md-9 col-sm-12">
+                                                    <div class="text">
+                                                        <p>Our main long-term goal is always achieving complex results for
+                                                            your dental health. But in the process, we also keep the focus
+                                                            on giving you the best customer service. </p>
+                                                        <p>We're always making our dental office as safe place as possible!
+                                                            We provide best service for our cline. Now place take it.</p>
+                                                    </div>
+                                                    <a class="theme-btn more-btn" href="#"><span
+                                                            class="txt">Learn More</span></a>
+                                                </div>
+                                                <div class="column col-lg-3 col-md-3 col-sm-12">
+                                                    <div class="image">
+                                                        <img src="images/resource/author-9.jpg" alt="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Tab-->
+                                    <div class="tab" id="success">
+                                        <div class="content">
+                                            <div class="row clearfix">
+
+                                                <div class="column col-lg-9 col-md-9 col-sm-12">
+                                                    <div class="text">
+                                                        <p>Our main long-term goal is always achieving complex results for
+                                                            your dental health. But in the process, we also keep the focus
+                                                            on giving you the best customer service. </p>
+                                                        <p>We're always making our dental office as safe place as possible!
+                                                            We provide best service for our cline. Now place take it.</p>
+                                                    </div>
+                                                    <a class="theme-btn more-btn" href="#"><span
+                                                            class="txt">Learn More</span></a>
+                                                </div>
+                                                <div class="column col-lg-3 col-md-3 col-sm-12">
+                                                    <div class="image">
+                                                        <img src="images/resource/author-9.jpg" alt="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Tab-->
+                                    <div class="tab" id="history">
+                                        <div class="content">
+                                            <div class="row clearfix">
+
+                                                <div class="column col-lg-9 col-md-9 col-sm-12">
+                                                    <div class="text">
+                                                        <p>Our main long-term goal is always achieving complex results for
+                                                            your dental health. But in the process, we also keep the focus
+                                                            on giving you the best customer service. </p>
+                                                        <p>We're always making our dental office as safe place as possible!
+                                                            We provide best service for our cline. Now place take it.</p>
+                                                    </div>
+                                                    <a class="theme-btn more-btn" href="#"><span
+                                                            class="txt">Learn More</span></a>
+                                                </div>
+                                                <div class="column col-lg-3 col-md-3 col-sm-12">
+                                                    <div class="image">
+                                                        <img src="images/resource/author-9.jpg" alt="" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="lower-content">
-                            <h3><a href="#">Dr. Alex Furgosen</a></h3>
-                            <div class="designation">Ortho Specialist</div>
-                        </div>
+
                     </div>
                 </div>
 
             </div>
-
         </div>
     </section>
-    <!-- End Team Section -->
+    <!-- End Hospital Section -->
 
-    <!-- FullWidth Section -->
-    <section class="fullwidth-section">
-        <div class="outer-container">
-            <div class="clearfix">
+    <!-- Get Appointment Section -->
+    <section class="get-appointment-section">
+        <div class="auto-container">
+            <div class="inner-container">
+                <h3>Get An Appointment</h3>
 
-                <!-- Left Column -->
-                <div class="left-column" style="background-image: url(images/background/1.jpg)">
-                    <div class="inner-column clearfix">
-                        <div class="content">
-                            <div class="icon-box">
-                                <span class="icon flaticon-contract-1"></span>
+                <!-- Appointment Form -->
+                <div class="appointment-form-two">
+                    <form method="post" action="appointment.html">
+                        <div class="row clearfix">
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="username" placeholder="Full Name" required="">
+                                <span class="icon fa fa-user"></span>
                             </div>
-                            <div class="title">Need a Doctor for Check-up?</div>
-                            <h2>JUST MAKE AN APPOINTMENT</h2>
-                            <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Get an
-                                    Appointment</span></a>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Age</label>
+                                <input type="text" name="age" placeholder="Enter Your Age" required="">
+                                <span class="icon fa fa-calendar"></span>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Gender</label>
+                                <select class="custom-select-box">
+                                    <option>Select Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" name="phone" placeholder="Phone No" required="">
+                                <span class="icon fas fa-phone"></span>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Appointment Date</label>
+                                <input type="text" name="day" placeholder="Set A Date">
+                                <span class="icon fa fa-calendar"></span>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Consultant Hour</label>
+                                <input type="text" name="time" placeholder="Select Time">
+                                <span class="icon fa fa-calendar"></span>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Department</label>
+                                <select class="custom-select-box">
+                                    <option>Choose Department</option>
+                                    <option>Dentist</option>
+                                    <option>Heart</option>
+                                    <option>Surgery</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>Doctor</label>
+                                <select class="custom-select-box">
+                                    <option>Choose Department</option>
+                                    <option>Dentist</option>
+                                    <option>Heart</option>
+                                    <option>Surgery</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
+                                        class="txt">submit request</span></button>
+                            </div>
+
                         </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section"
+        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/5.jpg ') }}')">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Schedule Column -->
+                <div class="schedule-column col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>Department’s Regular Schedule</h2>
+                            <div class="separator"></div>
+                        </div>
+
+                        <div class="content">
+
+                            <!-- Title Box -->
+                            <ul class="title-box clearfix">
+                                <li>Departments</li>
+                                <li>Monday - Friday</li>
+                                <li>Saturday - Sunday</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Cardiology</li>
+                                <li>8:00 am - 10:30 pm</li>
+                                <li>8:00 am - 10:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Orthopedic</li>
+                                <li>9:00 am - 7:00 pm</li>
+                                <li>11:00 am - 6:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Neurology</li>
+                                <li>8:30 am - 7:30 pm</li>
+                                <li>8:30 am - 7:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Dental Care</li>
+                                <li>9:00 am - 10:30 pm</li>
+                                <li>9:00 am - 10:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Hepatology</li>
+                                <li>9:00 am - 10:30 pm</li>
+                                <li>9:00 am - 10:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Eyes Care</li>
+                                <li>9:00 am - 10:30 pm</li>
+                                <li>9:00 am - 10:30 pm</li>
+                            </ul>
+
+                            <!-- Content Box -->
+                            <ul class="content-box clearfix">
+                                <li>Orthopedic</li>
+                                <li>9:00 am - 10:30 pm</li>
+                                <li>9:00 am - 10:30 pm</li>
+                            </ul>
+
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- Right Column -->
-                <div class="right-column">
+                <!-- Appointment Column -->
+                <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <!-- Upper Box -->
+                        <div class="upper-box">
+                            <div class="upper-inner">
+                                <h3>Get an Appointment</h3>
+                            </div>
+                        </div>
+
+                        <!-- Lower Box -->
+                        <div class="lower-box">
+                            <div class="upper-inner">
+
+                                <!-- Appointment Form -->
+                                <div class="appointment-form">
+                                    <form method="post" action="appointment.html">
+
+                                        <div class="form-group">
+                                            <input type="text" name="username" placeholder="Enter Your Name"
+                                                required="">
+                                            <span class="icon fa fa-user"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
+                                                required="">
+                                            <span class="icon fas fa-phone"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="appointment" placeholder="Appointment Date"
+                                                required="">
+                                            <span class="icon fas fa-calendar"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Choose Department</option>
+                                                <option>Department One</option>
+                                                <option>Department Two</option>
+                                                <option>Department Three</option>
+                                                <option>Department Four</option>
+                                                <option>Department Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Select Doctor</option>
+                                                <option>Doctor One</option>
+                                                <option>Doctor Two</option>
+                                                <option>Doctor Three</option>
+                                                <option>Doctor Four</option>
+                                                <option>Doctor Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button class="theme-btn submit-btn" type="submit"
+                                                name="submit-form">Request Appointment</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Schedule Section -->
+
+    <!-- Provider Section -->
+    <section class="provider-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Blocks Column -->
+                <div class="blocks-column col-lg-8 col-md-12 col-sm-12">
                     <div class="inner-column">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>What Service We Provide</h2>
+                            <div class="separator"></div>
+                        </div>
+
+                        <div class="row clearfix">
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-heart-1"></span>
+                                    </div>
+                                    <h3><a href="#">Cardiology</a></h3>
+                                </div>
+                            </div>
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-brain"></span>
+                                    </div>
+                                    <h3><a href="#">Neurology</a></h3>
+                                </div>
+                            </div>
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-kidneys"></span>
+                                    </div>
+                                    <h3><a href="#">Urology</a></h3>
+                                </div>
+                            </div>
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-doctor-stethoscope"></span>
+                                    </div>
+                                    <h3><a href="#">Gynecological</a></h3>
+                                </div>
+                            </div>
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-nurse"></span>
+                                    </div>
+                                    <h3><a href="#">Pediatric</a></h3>
+                                </div>
+                            </div>
+
+                            <!-- Services Block Six -->
+                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
+                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                    <div class="border-one"></div>
+                                    <div class="border-two"></div>
+                                    <div class="icon-box">
+                                        <span class="icon flaticon-surgery-room-1"></span>
+                                    </div>
+                                    <h3><a href="#">Laboratory</a></h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Appointment Column -->
+                <div class="appointment-column col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 
                         <!-- Upper Box -->
                         <div class="upper-box">
-                            <div class="icon flaticon-alarm-clock"></div>
-                            <h3>Opening Hours</h3>
+                            <div class="upper-inner">
+                                <h3>Get an Appointment</h3>
+                            </div>
                         </div>
-                        <ul class="time-list">
-                            <li class="clearfix"><span class="left-span pull-left">Monday - Friday</span><span
-                                    class="right-span pull-right">08:00am - 10:00pm</span></li>
-                            <li class="clearfix"><span class="left-span pull-left">Saturday - Sunday</span><span
-                                    class="right-span pull-right">09:00am - 06:00pm</span></li>
-                            <li class="clearfix"><span class="left-span pull-left">Emergency Services</span><span
-                                    class="right-span pull-right">24 hours Open</span></li>
-                        </ul>
+
+                        <!-- Lower Box -->
+                        <div class="lower-box">
+                            <div class="upper-inner">
+
+                                <!-- Appointment Form -->
+                                <div class="appointment-form">
+                                    <form method="post" action="appointment.html">
+
+                                        <div class="form-group">
+                                            <input type="text" name="username" placeholder="Enter Your Name"
+                                                required="">
+                                            <span class="icon fa fa-user"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
+                                                required="">
+                                            <span class="icon fas fa-phone"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="appointment" placeholder="Appointment Date"
+                                                required="">
+                                            <span class="icon fas fa-calendar"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Choose Department</option>
+                                                <option>Department One</option>
+                                                <option>Department Two</option>
+                                                <option>Department Three</option>
+                                                <option>Department Four</option>
+                                                <option>Department Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select class="custom-select-box">
+                                                <option>Select Doctor</option>
+                                                <option>Doctor One</option>
+                                                <option>Doctor Two</option>
+                                                <option>Doctor Three</option>
+                                                <option>Doctor Four</option>
+                                                <option>Doctor Five</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button class="theme-btn submit-btn" type="submit"
+                                                name="submit-form">Request Appointment</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -573,222 +1121,387 @@
             </div>
         </div>
     </section>
-    <!-- End FullWidth Section -->
+    <!-- End Provider Section -->
 
-    <!-- Testimonial Section -->
-    <section class="testimonial-section">
+    <!-- Departments Section -->
+    <section class="departments-section"
+        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/10.jpg ') }}')">
         <div class="auto-container">
+
             <!-- Sec Title -->
             <div class="sec-title centered">
-                <h2>What Patients Saying</h2>
+                <h2>Our Departments</h2>
                 <div class="separator"></div>
             </div>
-            <div class="testimonial-outer" style="background-image: url(images/background/pattern-4.png)">
 
-                <!--Client Testimonial Carousel-->
-                <div class="client-testimonial-carousel owl-carousel owl-theme">
+            <!-- Departments Tabs-->
+            <div class="departments-info-tabs">
+                <!-- Departments Tabs-->
+                <div class="departments-tabs tabs-box">
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
+                    <!--Tab Btns-->
+                    <ul class="tab-btns tab-buttons clearfix">
+                        <li data-tab="#cardiology" class="tab-btn active-btn"><span class="icon flaticon-heart-1"></span>
+                            Cardiology</li>
+                        <li data-tab="#neurology" class="tab-btn"><span class="icon flaticon-brain"></span> Neurology
+                        </li>
+                        <li data-tab="#urology" class="tab-btn"><span class="icon flaticon-kidneys"></span> Urology</li>
+                        <li data-tab="#gynecological" class="tab-btn"><span class="icon flaticon-doctor"></span>
+                            Gynecological</li>
+                        <li data-tab="#pediatric" class="tab-btn"><span class="icon flaticon-nurse"></span> Pediatric
+                        </li>
+                        <li data-tab="#laboratory" class="tab-btn"><span class="icon flaticon-operating-room"></span>
+                            Laboratory</li>
+                    </ul>
+
+                    <!--Tabs Container-->
+                    <div class="tabs-content">
+
+                        <!--Tab / Active Tab-->
+                        <div class="tab active-tab" id="cardiology">
+                            <div class="content">
+                                <div class="row clearfix">
+
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Cardiology Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <p class="text text-dark">From puberty through menopause, a woman's
+                                                reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</p>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
+                        <!--Tab-->
+                        <div class="tab" id="neurology">
+                            <div class="content">
+                                <div class="row clearfix">
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
-                        </div>
-                    </div>
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Neurology Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <div class="text">From puberty through menopause, a woman's reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</div>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--Testimonial Block -->
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <div class="quote-icon flaticon-quote"></div>
-                            <div class="text">Medical Centre is a great place to get all of your medical needs. I
-                                came in for a check up and did not wait more than 5 minutes before I was seen. I can
-                                only imagine the type of service you get for more serious issues. Thanks!</div>
+                        <!--Tab-->
+                        <div class="tab" id="urology">
+                            <div class="content">
+                                <div class="row clearfix">
+
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Urology Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <div class="text">From puberty through menopause, a woman's reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</div>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
+                        <!--Tab-->
+                        <div class="tab" id="gynecological">
+                            <div class="content">
+                                <div class="row clearfix">
+
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Gynecological Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <div class="text">From puberty through menopause, a woman's reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</div>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tab-->
+                        <div class="tab" id="pediatric">
+                            <div class="content">
+                                <div class="row clearfix">
+
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Pediatric Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <div class="text">From puberty through menopause, a woman's reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</div>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tab-->
+                        <div class="tab" id="laboratory">
+                            <div class="content">
+                                <div class="row clearfix">
+
+                                    <!-- Gallery Column -->
+                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <div class="row clearfix">
+                                                <!-- Column -->
+                                                <div class="column col-lg-5 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-4.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-4.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                    <div class="image">
+                                                        <a href="images/resource/department-5.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-5.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                                <!-- Column -->
+                                                <div class="column col-lg-7 col-md-6 col-sm-12">
+                                                    <div class="image">
+                                                        <a href="images/resource/department-6.jpg"
+                                                            class="lightbox-image"><img
+                                                                src="images/resource/department-6.jpg"
+                                                                alt="" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Content Column -->
+                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
+                                        <div class="inner-column">
+                                            <h2>Laboratory Department</h2>
+                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
+                                            <div class="text">From puberty through menopause, a woman's reproductive
+                                                organs are constantly changing through the normal processes of sexual
+                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
+                                                Medical Center is recognized as one of the top hospitals in the nation for
+                                                gynecological ...</div>
+                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
+                                                    More</span></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
-
-                <!--Product Thumbs Carousel-->
-                <div class="client-thumb-outer">
-                    <div class="client-thumbs-carousel owl-carousel owl-theme">
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-1.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-2.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-3.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-1.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-2.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                        <div class="thumb-item">
-                            <figure class="thumb-box"><img src="images/resource/author-3.jpg" alt="">
-                            </figure>
-                            <div class="author-info">
-                                <div class="author-name">Max Winchester</div>
-                                <div class="designation">Kidny Patient</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
+
         </div>
     </section>
-    <!-- End Testimonial Section Two -->
-
-    <!-- News Section -->
-    <section class="news-section">
-        <div class="auto-container">
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2>Latest News & Articals</h2>
-                <div class="separator style-three"></div>
-            </div>
-            <div class="row clearfix">
-
-                <!-- News Block -->
-                <div class="news-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <div class="category">Artical</div>
-                            <a href="blog-detail.html"><img src="images/resource/news-1.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="post-meta">
-                                <li><a href="#">03 Comments</a></li>
-                                <li><a href="#">June 21, 2018 at 8:12pm</a></li>
-                                <li><a href="#">12 Liks</a></li>
-                            </ul>
-                            <h3><a href="blog-detail.html">Diagnostic Services for Efficient Results Picking Right
-                                </a></h3>
-                            <div class="text">There are a lot of women that are unaware of the numerous risks
-                                associated with their health and eventually ignore the ...</div>
-                            <a href="blog-detail.html" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
-                <div class="news-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <div class="category">Artical</div>
-                            <a href="blog-detail.html"><img src="images/resource/news-2.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="post-meta">
-                                <li><a href="#">03 Comments</a></li>
-                                <li><a href="#">June 21, 2018 at 8:12pm</a></li>
-                                <li><a href="#">12 Liks</a></li>
-                            </ul>
-                            <h3><a href="blog-detail.html">Reasons to Visit for Heart Specialist Us</a></h3>
-                            <div class="text">There are a lot of women that are unaware of the numerous risks
-                                associated with their health and eventually ignore the ...</div>
-                            <a href="blog-detail.html" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- News Block -->
-                <div class="news-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <div class="category">Artical</div>
-                            <a href="blog-detail.html"><img src="images/resource/news-3.jpg" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="post-meta">
-                                <li><a href="#">03 Comments</a></li>
-                                <li><a href="#">June 21, 2018 at 8:12pm</a></li>
-                                <li><a href="#">12 Liks</a></li>
-                            </ul>
-                            <h3><a href="blog-detail.html">Preparing for an ECG Tips From Our Diagnosticians</a>
-                            </h3>
-                            <div class="text">There are a lot of women that are unaware of the numerous risks
-                                associated with their health and eventually ignore the ...</div>
-                            <a href="blog-detail.html" class="read-more">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End News Section -->
+    <!-- End Departments Section -->
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
@@ -798,8 +1511,8 @@
                 <div class="title-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <h2>Subscribe Our Newsletter</h2>
-                        <div class="text">To receive email releases, simply provide us with your email address
-                            below.</div>
+                        <div class="text">To receive email releases, simply provide us with your email address below.
+                        </div>
                     </div>
                 </div>
                 <!-- Form Column -->
