@@ -2,7 +2,11 @@
 
 namespace App\Providers;
 
+use App\Models\Fournisseur;
+use App\Models\Patient;
+use App\Models\Stock;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -21,5 +25,11 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Paginator::useBootstrapFive();
+
+        View::composer(["admin.layouts.menu"], function ($view) {
+            $view->with("Fournisseur_count", Fournisseur::count());
+            $view->with("Patient_count", Patient::count());
+            $view->with("Stock_count", Stock::count());
+        });
     }
 }
