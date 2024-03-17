@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\FournisseurController;
 use App\Http\Controllers\Admin\PatientController;
 use App\Http\Controllers\Admin\StockController;
@@ -26,6 +27,7 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('index');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::resource('patient', PatientController::class);
+    Route::resource('employee', EmployeeController::class);
     Route::resource('fournisseur', FournisseurController::class);
     Route::resource('stock', StockController::class);
 });
