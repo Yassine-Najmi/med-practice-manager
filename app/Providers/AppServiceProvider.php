@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Appointment;
 use App\Models\Fournisseur;
 use App\Models\Patient;
 use App\Models\Stock;
@@ -30,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with("Fournisseur_count", Fournisseur::count());
             $view->with("Patient_count", Patient::count());
             $view->with("Stock_count", Stock::count());
+            $view->with("Appointment_count", Appointment::count());
         });
     }
 }

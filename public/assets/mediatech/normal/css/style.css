@@ -13019,6 +13019,8 @@ img{
 .appointment-form-two .form-group input[type="email"],
 .appointment-form-two .form-group input[type="tel"],
 .appointment-form-two .form-group input[type="url"],
+.appointment-form-two .form-group input[type="date"],
+.appointment-form-two .form-group input[type="time"],
 .appointment-form-two .form-group textarea,
 .appointment-form-two .form-group select{
 	position: relative;
