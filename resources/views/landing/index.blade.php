@@ -722,29 +722,27 @@
 
                 <!-- Appointment Form -->
                 <div class="appointment-form-two">
-                    <form method="post" action="appointment.html">
+                    <form method="post" action="{{ route('Appointment.store') }}">
+                        @csrf
                         <div class="row clearfix">
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <label>Full Name</label>
-                                <input type="text" name="username" placeholder="Full Name" required="">
+                                <input type="text" name="name" placeholder="Full Name" required="">
                                 <span class="icon fa fa-user"></span>
                             </div>
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Age</label>
-                                <input type="text" name="age" placeholder="Enter Your Age" required="">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Enter Your Age" required="">
                                 <span class="icon fa fa-calendar"></span>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                            {{-- <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <label>Gender</label>
                                 <select class="custom-select-box">
                                     <option>Select Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
                                 </select>
-                            </div>
+                            </div> --}}
 
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <label>Phone Number</label>
@@ -754,41 +752,20 @@
 
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <label>Appointment Date</label>
-                                <input type="text" name="day" placeholder="Set A Date">
+                                <input type="date" name="date" placeholder="Set A Date">
                                 <span class="icon fa fa-calendar"></span>
                             </div>
 
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <label>Consultant Hour</label>
-                                <input type="text" name="time" placeholder="Select Time">
+                                <input type="time" name="time" placeholder="Select Time">
                                 <span class="icon fa fa-calendar"></span>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Department</label>
-                                <select class="custom-select-box">
-                                    <option>Choose Department</option>
-                                    <option>Dentist</option>
-                                    <option>Heart</option>
-                                    <option>Surgery</option>
-                                </select>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Doctor</label>
-                                <select class="custom-select-box">
-                                    <option>Choose Department</option>
-                                    <option>Dentist</option>
-                                    <option>Heart</option>
-                                    <option>Surgery</option>
-                                </select>
                             </div>
 
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
                                         class="txt">submit request</span></button>
                             </div>
-
                         </div>
                     </form>
                 </div>

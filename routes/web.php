@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AppointmentController;
 use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\FournisseurController;
 use App\Http\Controllers\Admin\PatientController;
@@ -30,7 +31,9 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::resource('employee', EmployeeController::class);
     Route::resource('fournisseur', FournisseurController::class);
     Route::resource('stock', StockController::class);
+    Route::resource('appointments', AppointmentController::class)->except("store");
 });
+Route::post('appointments.stote', [AppointmentController::class, 'store'])->name("Appointment.store");
 
 
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
