@@ -1,0 +1,163 @@
+<?php
+
+return [
+    //   Services Block Four
+    'hospital-schedule' => 'جدول المستشفى',
+    'mon_friday' => 'الإثنين - الجمعة',
+    'saturday' => "السبت",
+    'sunday' => "الأحد",
+
+    'get-appointment' => 'الحصول على موعد',
+    'lorem-ipsum' => 'لوريم إيبسوم عندما استخدم طابعة غير معروفة مجموعة من النصوص وأخذتها وخلطتها لتكوين كتاب نصوص.',
+    'appointment' => 'موعد',
+
+    'discover-benefits' => 'اكتشاف الفوائد',
+    'experienced-doctors' => 'أطباء ذوو خبرة',
+    'professional-staffs' => 'موظفون محترفون مخصصون',
+    'emergency-service' => 'خدمة الطوارئ على مدار 24 ساعة',
+
+    'about-hospital' => 'حول مستشفانا',
+    'main-focus' => 'إن الرعاية الصحية الأفضل بتكلفة مناسبة هي المحور الرئيسي لمستشفىنا.',
+    'long-term-goal' => 'هدفنا الرئيسي على المدى الطويل هو دائمًا تحقيق نتائج مميزة لصحة أسنانك. ولكن في هذه العملية، نواصل أيضًا التركيز على تقديم أفضل خدمة عملاء لك. نحن دائمًا نجعل عيادة طب الأسنان لدينا مكانًا آمنًا قدر الإمكان!',
+    'learn-more' => 'معرفة المزيد',
+
+
+    'medical-quality' => 'الجودة الطبية',
+    'medical-quality-description' => 'نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليها.',
+    'modern-labs' => 'المختبرات الحديثة',
+    'modern-labs-description' => 'نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليها.',
+    'dedicated-doctors' => 'أطباء مخصصون على مدار الساعة',
+    'dedicated-doctors-description' => 'نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليها.',
+    'cutting-edge-technology' => 'تكنولوجيا حديثة',
+    'cutting-edge-technology-description' => 'نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليها.',
+
+    'get-appointment' => 'الحصول على موعد',
+    'appointment-description' => 'نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليها.',
+    'enter-name' => 'أدخل اسمك',
+    'enter-phone' => 'أدخل رقم هاتفك',
+    'appointment-date' => 'تاريخ الموعد',
+    'choose-department' => 'اختر القسم',
+    'department-one' => 'القسم الأول',
+    'department-two' => 'القسم الثاني',
+    'department-three' => 'القسم الثالث',
+    'department-four' => 'القسم الرابع',
+    'department-five' => 'القسم الخامس',
+    'select-doctor' => 'اختر الطبيب',
+    'doctor-one' => 'الطبيب الأول',
+    'doctor-two' => 'الطبيب الثاني',
+    'doctor-three' => 'الطبيب الثالث',
+    'doctor-four' => 'الطبيب الرابع',
+    'doctor-five' => 'الطبيب الخامس',
+    'request-appointment' => 'طلب موعد',
+
+
+
+    'why-choose-our-medical' => 'لماذا تختار خدماتنا الطبية؟',
+    'health-care-cost' => 'الرعاية الصحية ذات التكلفة الفعّالة هي الأولوية الرئيسية لمستشفانا.',
+    'professional-staffs' => 'فريق محترف',
+    'professional-staffs-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+    'online-appointment' => 'موعد عبر الإنترنت',
+    'online-appointment-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+    'emergency-cares' => 'الرعاية الطبية الطارئة',
+    'emergency-cares-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+    'advanced-technology' => 'تكنولوجيا متقدمة',
+    'advanced-technology-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+    'experienced-doctors' => 'أطباء مخضرمون',
+    'experienced-doctors-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+    'emergency-service' => 'خدمة الطوارئ على مدار الساعة',
+    'emergency-service-text' => 'نحن نقدم أفضل خدمة لعملائنا. استفد منها الآن.',
+
+
+    'about-us' => 'معلومات عنا',
+    'health-care-cost' => 'الرعاية الصحية ذات التكلفة الفعّالة هي الأولوية الرئيسية لمستشفانا.',
+    'our-goal' => 'هدفنا الرئيسي على المدى الطويل دائمًا هو تحقيق نتائج ممتازة لصحتك السنية. ولكن في العملية ، نحافظ أيضًا على التركيز على تقديم أفضل خدمة عملاء لك. نحن دائمًا نجعل عيادتنا الطبية مكانًا آمنًا بقدر الإمكان!',
+    'emergency-service' => 'خدمة الطوارئ على مدار الساعة',
+    'professional-staffs' => 'طاقم محترف',
+    'advanced-technology' => 'تقنية متقدمة',
+    'experienced-doctors' => 'أطباء ذوو خبرة',
+
+
+    'sunday' => 'الأحد',
+    'monday' => 'الاثنين',
+    'tuesday' => 'الثلاثاء',
+    'wednesday' => 'الأربعاء',
+    'thursday' => 'الخميس',
+    'friday' => 'الجمعة',
+    'saturday' => 'السبت',
+    'consultation' => 'الاستشارة',
+    'emergency' => 'الطوارئ',
+
+    'success_surgeries' => 'عمليات جراحية ناجحة',
+    'regular_doctors' => 'الأطباء المعتادون',
+    'satisfied_patients' => 'مرضى راضون',
+    'department' => 'قسم',
+
+
+
+    'why-choose' => 'لماذا تختار مستشفانا',
+    'why-choose-description' => 'تقديم رعاية صحية أفضل بتكلفة فعالة هو التركيز الرئيسي لمستشفانا.',
+    'mission' => 'الرسالة',
+    'vision' => 'الرؤية',
+    'success' => 'النجاح',
+    'history' => 'التاريخ',
+    'long-term-goal' => 'هدفنا الرئيسي على المدى الطويل هو دائمًا تحقيق نتائج معقدة لصحتك السنية. ولكن في العملية ، نحن نركز أيضًا على تقديم أفضل خدمة للعملاء.',
+    'dental-office-safe' => 'نحن دائمًا نجعل مكتبنا الطبي السني أمنًا بقدر الإمكان! نحن نقدم أفضل خدمة لعملائنا. الآن احصل عليه.',
+    'learn-more' => 'معرفة المزيد',
+
+
+    'get-appointment' => 'احصل على موعد',
+    'full-name' => 'الاسم الكامل',
+    'email' => 'البريد الإلكتروني',
+    'email-placeholder' => 'أدخل بريدك الإلكتروني',
+    'gender' => 'الجنس',
+    'select-gender' => 'اختر الجنس',
+    'male' => 'ذكر',
+    'female' => 'أنثى',
+    'phone-number' => 'رقم الهاتف',
+    'phone-placeholder' => 'رقم الهاتف',
+    'appointment-date' => 'تاريخ الموعد',
+    'date-placeholder' => 'اختر تاريخ',
+    'consultant-hour' => 'ساعة الاستشارة',
+    'time-placeholder' => 'اختر الوقت',
+    'submit-request' => 'إرسال الطلب',
+
+
+    'regular-schedule-title' => "جدول العمل العادي للأقسام",
+    'departments' => "الأقسام",
+    'monday-friday' => "الإثنين - الجمعة",
+    'saturday-sunday' => "السبت - الأحد",
+    'cardiology' => "أمراض القلب",
+    'orthopedic' => "العظام",
+    'neurology' => "أمراض الأعصاب",
+    'dental-care' => "العناية بالأسنان",
+    'hepatology' => "أمراض الكبد",
+    'eyes-care' => "العناية بالعيون",
+
+
+    'enter-your-name' => "أدخل اسمك",
+    'enter-your-phone-number' => "أدخل رقم هاتفك",
+    'appointment-date' => "تاريخ الموعد",
+    'choose-department' => "اختر القسم",
+    'department-one' => "القسم الأول",
+    'department-two' => "القسم الثاني",
+    'department-three' => "القسم الثالث",
+    'department-four' => "القسم الرابع",
+    'department-five' => "القسم الخامس",
+    'select-doctor' => "اختر الطبيب",
+    'doctor-one' => "الطبيب الأول",
+    'doctor-two' => "الطبيب الثاني",
+    'doctor-three' => "الطبيب الثالث",
+    'doctor-four' => "الطبيب الرابع",
+    'doctor-five' => "الطبيب الخامس",
+    'request-appointment' => "طلب موعد",
+
+
+    'what-service-we-provide' => "الخدمات التي نقدمها",
+    'cardiology' => "طب القلب",
+    'neurology' => "طب الأعصاب",
+    'urology' => "طب المسالك البولية",
+    'gynecological' => "طب النساء والتوليد",
+    'pediatric' => "طب الأطفال",
+    'laboratory' => "المختبر",
+
+];

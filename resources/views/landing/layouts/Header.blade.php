@@ -32,7 +32,9 @@
             <div class="auto-container clearfix">
                 <!--Info-->
                 <div class="logo-outer">
-                    <div class="logo"><a href=""><img src="https://themewagon.github.io/medicalcenter/assets/img/logo/logo.png" alt="" title=""></a>
+                    <div class="logo"><a href=""><img
+                                src="https://themewagon.github.io/medicalcenter/assets/img/logo/logo.png" alt=""
+                                title=""></a>
                     </div>
                 </div>
 
@@ -107,25 +109,6 @@
                                         </div>
                                     </div>
                                 </li> --}}
-                                <li class="dropdown"><a href="#">{{ __('navbar.doctors') }}</a>
-                                    <ul>
-                                        <li><a href="">{{ __('navbar.doctors') }}</a></li>
-                                        <li><a href="">Doctors Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">{{ __('navbar.department') }}</a>
-                                    <ul>
-                                        <li><a href="">Department</a></li>
-                                        <li><a href="">Department Detail</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">{{ __('navbar.blog') }}</a>
-                                    <ul>
-                                        <li><a href="">Our Blog</a></li>
-                                        <li><a href="">Blog Classic</a></li>
-                                        <li><a href="">Blog Detail</a></li>
-                                    </ul>
-                                </li>
                                 <li class="dropdown"><a href="#">{{ __('lang.lang') }}</a>
                                     <ul>
                                         @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -193,8 +176,8 @@
 
         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
         <nav class="menu-box">
-            <div class="nav-logo"><a href=""><img src="images/nav-logo.png" alt=""
-                        title=""></a></div>
+            <div class="nav-logo"><a href=""><img src="images/nav-logo.png" alt="" title=""></a>
+            </div>
 
             <ul class="navigation clearfix"><!--Keep This Empty / Menu will come through Javascript--></ul>
         </nav>

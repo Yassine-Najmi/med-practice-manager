@@ -11,13 +11,12 @@
                     style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
                     <div class="auto-container">
                         <div class="content clearfix">
-                            <div class="title">Welcome our Medical Care Center</div>
-                            <h2>Take Care of Your Health</h2>
-                            <div class="text">We're always available for our Patients with emergent problems. You can
-                                easily reach us 24/7 via the phone number below:</div>
+                            <div class="title">{{ __('header.small_text_1') }}</div>
+                            <h2>{{ __('header.big_text') }}</h2>
+                            <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box clearfix">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
-                                        Services</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('header.our_services') }}</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
                                         class="icon flaticon-call"></span>555–123–2323</a>
                             </div>
@@ -29,13 +28,12 @@
                     style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
                     <div class="auto-container">
                         <div class="content">
-                            <div class="title">Welcome our Medical Care Center</div>
-                            <h2>Take Care of Your Health</h2>
-                            <div class="text">We're always available for our Patients with emergent problems. You can
-                                easily reach us 24/7 via the phone number below:</div>
+                            <div class="title">{{ __('header.small_text_1') }}</div>
+                            <h2>{{ __('header.big_text') }}</h2>
+                            <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
-                                        Services</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('header.our_services') }}</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
                                         class="icon flaticon-call"></span>555–123–2323</a>
                             </div>
@@ -47,13 +45,12 @@
                     style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
                     <div class="auto-container">
                         <div class="content">
-                            <div class="title">Welcome our Medical Care Center</div>
-                            <h2>Take Care of Your Health</h2>
-                            <div class="text">We're always available for our Patients with emergent problems. You can
-                                easily reach us 24/7 via the phone number below:</div>
+                            <div class="title">{{ __('header.small_text_1') }}</div>
+                            <h2>{{ __('header.big_text') }}</h2>
+                            <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Our
-                                        Services</span></a>
+                                <a href="contact.html" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('header.our_services') }}</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
                                         class="icon flaticon-call"></span>555–123–2323</a>
                             </div>
@@ -82,11 +79,11 @@
                         <div class="icon-box">
                             <span class="icon flaticon-timetable"></span>
                         </div>
-                        <h4>Hospital Schedule</h4>
+                        <h4>{{ __('index.hospital-schedule') }}</h4>
                         <ul class="list">
-                            <li>Mon - Friday<span>8:00 - 10:30</span></li>
-                            <li>Saturday<span>9:00 - 11:00</span></li>
-                            <li>Sunday<span>10:30 - 8:30</span></li>
+                            <li>{{ __('index.mon_friday') }}<span>8:00 - 10:30</span></li>
+                            <li>{{ __('index.saturday') }}<span>9:00 - 11:00</span></li>
+                            <li>{{ __('index.sunday') }}<span>10:30 - 8:30</span></li>
                         </ul>
                     </div>
                 </div>
@@ -97,13 +94,13 @@
                         <div class="icon-box">
                             <span class="icon flaticon-timetable"></span>
                         </div>
-                        <h4>Get Appointment</h4>
-                        <div class="text">Lorem Ipsum when an unknown printer took a galley of type and scrambled it to
-                            make a type specimen book.</div>
-                        <a class="appointment-btn" href="doctors-detail.html">Appointment <span
+                        <h4>{{ __('index.get-appointment') }}</h4>
+                        <div class="text">{{ __('index.lorem-ipsum') }}</div>
+                        <a class="appointment-btn" href="doctors-detail.html">{{ __('index.appointment') }} <span
                                 class="icon flaticon-right-arrow-1"></span></a>
                     </div>
                 </div>
+
 
                 <!-- Services Block Four -->
                 <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
@@ -111,14 +108,15 @@
                         <div class="icon-box">
                             <span class="icon flaticon-timetable"></span>
                         </div>
-                        <h4>Discover Benefits</h4>
+                        <h4>{{ __('index.discover-benefits') }}</h4>
                         <ul class="list-two">
-                            <li>Experienced Doctors</li>
-                            <li>Dedicated Professional Staffs</li>
-                            <li>24 Hours Emergency Service</li>
+                            <li>{{ __('index.experienced-doctors') }}</li>
+                            <li>{{ __('index.professional-staffs') }}</li>
+                            <li>{{ __('index.emergency-service') }}</li>
                         </ul>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -135,15 +133,13 @@
                     <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>About Our Hospital</h2>
+                            <h2>{{ __('index.about-hospital') }}</h2>
                             <div class="separator"></div>
                         </div>
-                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
-                        </div>
-                        <div class="text">Our main long-term goal is always achieving complex results for your dental
-                            health. But in the process, we also keep the focus on giving you the best customer service.
-                            We're always making our dental office as safe place as possible!</div>
-                        <a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Learn More</span></a>
+                        <div class="bold-text">{{ __('index.main-focus') }}</div>
+                        <div class="text">{{ __('index.long-term-goal') }}</div>
+                        <a href="contact.html" class="theme-btn btn-style-two"><span
+                                class="txt">{{ __('index.learn-more') }}</span></a>
                     </div>
                 </div>
 
@@ -159,8 +155,8 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-award"></span>
                                     </div>
-                                    <h4>Medical Quality</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.medical-quality') }}</h4>
+                                    <div class="text">{{ __('index.medical-quality-description') }}</div>
                                 </div>
                             </div>
 
@@ -171,8 +167,8 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-operating-room"></span>
                                     </div>
-                                    <h4>Modern Labs</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.modern-labs') }}</h4>
+                                    <div class="text">{{ __('index.modern-labs-description') }}</div>
                                 </div>
                             </div>
 
@@ -183,8 +179,8 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-avatar-1"></span>
                                     </div>
-                                    <h4>24/7 Dedicated Doctors</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.dedicated-doctors') }}</h4>
+                                    <div class="text">{{ __('index.dedicated-doctors-description') }}</div>
                                 </div>
                             </div>
 
@@ -195,14 +191,15 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-surgery-room"></span>
                                     </div>
-                                    <h4>Cutting Edge Technology</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.cutting-edge-technology') }}</h4>
+                                    <div class="text">{{ __('index.cutting-edge-technology-description') }}</div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -223,62 +220,61 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-timetable"></span>
                                 </div>
-                                <h3>Get an Appointment</h3>
-                                <div class="text">We provide best service for our cline. Now place take it.</div>
+                                <h3>{{ __('index.get-appointment') }}</h3>
+                                <div class="text">{{ __('index.appointment-description') }}</div>
                             </div>
                         </div>
 
                         <!-- Lower Box -->
                         <div class="lower-box">
                             <div class="upper-inner">
-
                                 <!-- Appointment Form -->
                                 <div class="appointment-form">
                                     <form method="post" action="appointment.html">
 
                                         <div class="form-group">
-                                            <input type="text" name="username" placeholder="Enter Your Name"
-                                                required="">
+                                            <input type="text" name="username"
+                                                placeholder="{{ __('index.enter-name') }}" required="">
                                             <span class="icon fa fa-user"></span>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
-                                                required="">
+                                            <input type="tel" name="phone"
+                                                placeholder="{{ __('index.enter-phone') }}" required="">
                                             <span class="icon fas fa-phone"></span>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" name="appointment" placeholder="Appointment Date"
-                                                required="">
+                                            <input type="text" name="appointment"
+                                                placeholder="{{ __('index.appointment-date') }}" required="">
                                             <span class="icon fas fa-calendar"></span>
                                         </div>
 
                                         <div class="form-group">
                                             <select class="custom-select-box">
-                                                <option>Choose Department</option>
-                                                <option>Department One</option>
-                                                <option>Department Two</option>
-                                                <option>Department Three</option>
-                                                <option>Department Four</option>
-                                                <option>Department Five</option>
+                                                <option>{{ __('index.choose-department') }}</option>
+                                                <option>{{ __('index.department-one') }}</option>
+                                                <option>{{ __('index.department-two') }}</option>
+                                                <option>{{ __('index.department-three') }}</option>
+                                                <option>{{ __('index.department-four') }}</option>
+                                                <option>{{ __('index.department-five') }}</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <select class="custom-select-box">
-                                                <option>Select Doctor</option>
-                                                <option>Doctor One</option>
-                                                <option>Doctor Two</option>
-                                                <option>Doctor Three</option>
-                                                <option>Doctor Four</option>
-                                                <option>Doctor Five</option>
+                                                <option>{{ __('index.select-doctor') }}</option>
+                                                <option>{{ __('index.doctor-one') }}</option>
+                                                <option>{{ __('index.doctor-two') }}</option>
+                                                <option>{{ __('index.doctor-three') }}</option>
+                                                <option>{{ __('index.doctor-four') }}</option>
+                                                <option>{{ __('index.doctor-five') }}</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <button class="theme-btn submit-btn" type="submit"
-                                                name="submit-form">Request Appointment</button>
+                                                name="submit-form">{{ __('index.request-appointment') }}</button>
                                         </div>
 
                                     </form>
@@ -290,24 +286,24 @@
                     </div>
                 </div>
 
+
                 <!-- Content Column -->
                 <div class="content-column col-lg-8 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>Why Choose Our Medical</h2>
+                            <h2>{{ __('index.why-choose-our-medical') }}</h2>
                             <div class="separator"></div>
                         </div>
-                        <div class="bold-text">Better health care with efficient cost is the main <br> focuse of our
-                            hospital.</div>
+                        <div class="bold-text">{{ __('index.health-care-cost') }}</div>
                         <div class="row clearfix">
 
                             <!-- Appointment List -->
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Professional Staffs</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.professional-staffs') }}</h4>
+                                    <div class="text">{{ __('index.professional-staffs-text') }}</div>
                                 </div>
                             </div>
 
@@ -315,8 +311,8 @@
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Online Appointment</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.online-appointment') }}</h4>
+                                    <div class="text">{{ __('index.online-appointment-text') }}</div>
                                 </div>
                             </div>
 
@@ -324,8 +320,8 @@
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Emergency Cares</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.emergency-cares') }}</h4>
+                                    <div class="text">{{ __('index.emergency-cares-text') }}</div>
                                 </div>
                             </div>
 
@@ -333,8 +329,8 @@
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Advanced Tochnology</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.advanced-technology') }}</h4>
+                                    <div class="text">{{ __('index.advanced-technology-text') }}</div>
                                 </div>
                             </div>
 
@@ -342,8 +338,8 @@
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Experienced Doctors</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.experienced-doctors') }}</h4>
+                                    <div class="text">{{ __('index.experienced-doctors-text') }}</div>
                                 </div>
                             </div>
 
@@ -351,12 +347,13 @@
                             <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
                                 <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
                                     <div class="icon far fa-hand-point-right"></div>
-                                    <h4>Emergency Service 24/7</h4>
-                                    <div class="text">We provide best service for our cline. Now place take it.</div>
+                                    <h4>{{ __('index.emergency-service') }}</h4>
+                                    <div class="text">{{ __('index.emergency-service-text') }}</div>
                                 </div>
                             </div>
 
                         </div>
+
                     </div>
                 </div>
 
@@ -375,47 +372,38 @@
                     <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>About Us</h2>
+                            <h2>{{ __('index.about-us') }}</h2>
                             <div class="separator"></div>
                         </div>
-                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
-                        </div>
-                        <div class="text">Our main long-term goal is always achieving complex results for your dental
-                            health. But in the process, we also keep the focus on giving you the best customer service.
-                            We're always making our dental office as safe place as possible!</div>
+                        <div class="bold-text">{{ __('index.health-care-cost') }}</div>
+                        <div class="text">{{ __('index.our-goal') }}</div>
                         <div class="row clearfix">
 
                             <!-- About List Info -->
                             <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">
-                                    Emergency Service 24/7
-                                </div>
+                                <div class="list-inner">{{ __('index.emergency-service') }}</div>
                             </div>
 
                             <!-- About List Info -->
                             <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">
-                                    Professional Staffs
-                                </div>
+                                <div class="list-inner">{{ __('index.professional-staffs') }}</div>
                             </div>
 
                             <!-- About List Info -->
                             <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">
-                                    Advanced Tochnology
-                                </div>
+                                <div class="list-inner">{{ __('index.advanced-technology') }}</div>
                             </div>
 
                             <!-- About List Info -->
                             <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">
-                                    Experienced Doctors
-                                </div>
+                                <div class="list-inner">{{ __('index.experienced-doctors') }}</div>
                             </div>
 
                         </div>
                     </div>
                 </div>
+
+
 
                 <!-- Info Column -->
                 <div class="info-column col-lg-5 col-md-12 col-sm-12">
@@ -429,9 +417,9 @@
                                 <!--Tab Btns-->
                                 <ul class="tab-btns tab-buttons clearfix">
                                     <li data-tab="#consultation" class="tab-btn active-btn"><span
-                                            class="icon far fa-clock"></span> Consultation</li>
+                                            class="icon far fa-clock"></span> {{ __('index.consultation') }}</li>
                                     <li data-tab="#emergncy" class="tab-btn"><span class="icon far fa-clock"></span>
-                                        Emergncy</li>
+                                        {{ __('index.emergency') }}</li>
                                 </ul>
 
                                 <!--Tabs Container-->
@@ -441,13 +429,13 @@
                                     <div class="tab active-tab" id="consultation">
                                         <div class="content">
                                             <ul class="content-list">
-                                                <li>Sunday<span>8:00 am - 10:30 pm</span></li>
-                                                <li>Monday<span>9:00 am - 11:30 pm</span></li>
-                                                <li>Tuesday<span>8:30 am - 7:30 pm</span></li>
-                                                <li>Wednesday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Thursday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Friday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Saturday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.sunday') }}<span>8:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.monday') }}<span>9:00 am - 11:30 pm</span></li>
+                                                <li>{{ __('index.tuesday') }}<span>8:30 am - 7:30 pm</span></li>
+                                                <li>{{ __('index.wednesday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.thursday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.friday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.saturday') }}<span>9:00 am - 10:30 pm</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -456,13 +444,13 @@
                                     <div class="tab" id="emergncy">
                                         <div class="content">
                                             <ul class="content-list">
-                                                <li>Sunday<span>8:00 am - 10:30 pm</span></li>
-                                                <li>Monday<span>9:00 am - 11:30 pm</span></li>
-                                                <li>Tuesday<span>8:30 am - 7:30 pm</span></li>
-                                                <li>Wednesday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Thursday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Friday<span>9:00 am - 10:30 pm</span></li>
-                                                <li>Saturday<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.sunday') }}<span>8:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.monday') }}<span>9:00 am - 11:30 pm</span></li>
+                                                <li>{{ __('index.tuesday') }}<span>8:30 am - 7:30 pm</span></li>
+                                                <li>{{ __('index.wednesday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.thursday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.friday') }}<span>9:00 am - 10:30 pm</span></li>
+                                                <li>{{ __('index.saturday') }}<span>9:00 am - 10:30 pm</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -473,6 +461,7 @@
 
                     </div>
                 </div>
+
 
             </div>
         </div>
@@ -497,7 +486,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="2500" data-stop="98">0</span>%
                                 </div>
-                                <h4 class="counter-title">Success Surgeries</h4>
+                                <h4 class="counter-title">{{ __('index.success_surgeries') }}</h4>
                             </div>
                         </div>
                     </div>
@@ -512,7 +501,7 @@
                                 <div class="count-outer count-box alternate">
                                     <span class="count-text" data-speed="3000" data-stop="350">0</span>+
                                 </div>
-                                <h4 class="counter-title">Regular Doctors</h4>
+                                <h4 class="counter-title">{{ __('index.regular_doctors') }}</h4>
                             </div>
                         </div>
                     </div>
@@ -527,7 +516,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="3000" data-stop="600">0</span>K
                                 </div>
-                                <h4 class="counter-title">Satisfied Patients</h4>
+                                <h4 class="counter-title">{{ __('index.satisfied_patients') }}</h4>
                             </div>
                         </div>
                     </div>
@@ -542,7 +531,7 @@
                                 <div class="count-outer count-box">
                                     <span class="count-text" data-speed="2500" data-stop="50">0</span>+
                                 </div>
-                                <h4 class="counter-title">Department</h4>
+                                <h4 class="counter-title">{{ __('index.department') }}</h4>
                             </div>
                         </div>
                     </div>
@@ -574,11 +563,10 @@
                     <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>Why Choose Our Hospital</h2>
+                            <h2>{{ __('index.why-choose') }}</h2>
                             <div class="separator"></div>
                         </div>
-                        <div class="bold-text">Better health care with efficient cost is the main focuse of our hospital.
-                        </div>
+                        <div class="bold-text">{{ __('index.why-choose-description') }}</div>
 
                         <!-- Hospital Tabs-->
                         <div class="hospital-info-tabs">
@@ -587,11 +575,12 @@
 
                                 <!--Tab Btns-->
                                 <ul class="tab-btns tab-buttons clearfix">
-                                    <li data-tab="#mission" class="tab-btn active-btn">Mission</li>
-                                    <li data-tab="#vision" class="tab-btn">Vision</li>
-                                    <li data-tab="#success" class="tab-btn">Success</li>
-                                    <li data-tab="#history" class="tab-btn">History</li>
+                                    <li data-tab="#mission" class="tab-btn active-btn">{{ __('index.mission') }}</li>
+                                    <li data-tab="#vision" class="tab-btn">{{ __('index.vision') }}</li>
+                                    <li data-tab="#success" class="tab-btn">{{ __('index.success') }}</li>
+                                    <li data-tab="#history" class="tab-btn">{{ __('index.history') }}</li>
                                 </ul>
+
 
                                 <!--Tabs Container-->
                                 <div class="tabs-content">
@@ -603,17 +592,13 @@
 
                                                 <div class="column col-lg-9 col-md-9 col-sm-12">
                                                     <div class="text">
-                                                        <p class="text-dark">Our main long-term goal is always achieving
-                                                            complex results for
-                                                            your dental health. But in the process, we also keep the focus
-                                                            on giving you the best customer service. </p>
-                                                        <p class="text-dark">We're always making our dental office as safe
-                                                            place as possible!
-                                                            We provide best service for our cline. Now place take it.</p>
+                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
+                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
                                                     </div>
                                                     <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">Learn More</span></a>
+                                                            class="txt">{{ __('index.learn-more') }}</span></a>
                                                 </div>
+
                                                 <div class="column col-lg-3 col-md-3 col-sm-12">
                                                     <div class="image">
                                                         <img src="images/resource/author-9.jpg" alt="" />
@@ -631,14 +616,11 @@
 
                                                 <div class="column col-lg-9 col-md-9 col-sm-12">
                                                     <div class="text">
-                                                        <p>Our main long-term goal is always achieving complex results for
-                                                            your dental health. But in the process, we also keep the focus
-                                                            on giving you the best customer service. </p>
-                                                        <p>We're always making our dental office as safe place as possible!
-                                                            We provide best service for our cline. Now place take it.</p>
+                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
+                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
                                                     </div>
                                                     <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">Learn More</span></a>
+                                                            class="txt">{{ __('index.learn-more') }}</span></a>
                                                 </div>
                                                 <div class="column col-lg-3 col-md-3 col-sm-12">
                                                     <div class="image">
@@ -657,14 +639,11 @@
 
                                                 <div class="column col-lg-9 col-md-9 col-sm-12">
                                                     <div class="text">
-                                                        <p>Our main long-term goal is always achieving complex results for
-                                                            your dental health. But in the process, we also keep the focus
-                                                            on giving you the best customer service. </p>
-                                                        <p>We're always making our dental office as safe place as possible!
-                                                            We provide best service for our cline. Now place take it.</p>
+                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
+                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
                                                     </div>
                                                     <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">Learn More</span></a>
+                                                            class="txt">{{ __('index.learn-more') }}</span></a>
                                                 </div>
                                                 <div class="column col-lg-3 col-md-3 col-sm-12">
                                                     <div class="image">
@@ -683,14 +662,11 @@
 
                                                 <div class="column col-lg-9 col-md-9 col-sm-12">
                                                     <div class="text">
-                                                        <p>Our main long-term goal is always achieving complex results for
-                                                            your dental health. But in the process, we also keep the focus
-                                                            on giving you the best customer service. </p>
-                                                        <p>We're always making our dental office as safe place as possible!
-                                                            We provide best service for our cline. Now place take it.</p>
+                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
+                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
                                                     </div>
                                                     <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">Learn More</span></a>
+                                                            class="txt">{{ __('index.learn-more') }}</span></a>
                                                 </div>
                                                 <div class="column col-lg-3 col-md-3 col-sm-12">
                                                     <div class="image">
@@ -718,7 +694,7 @@
     <section class="get-appointment-section">
         <div class="auto-container">
             <div class="inner-container">
-                <h3>Get An Appointment</h3>
+                <h3>{{ __('index.get-appointment') }}</h3>
 
                 <!-- Appointment Form -->
                 <div class="appointment-form-two">
@@ -726,45 +702,44 @@
                         @csrf
                         <div class="row clearfix">
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Full Name</label>
-                                <input type="text" name="name" placeholder="Full Name" required="">
+                                <label>{{ __('index.full-name') }}</label>
+                                <input type="text" name="name" placeholder="{{ __('index.full-name') }}"
+                                    required="">
                                 <span class="icon fa fa-user"></span>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Email</label>
-                                <input type="email" name="email" placeholder="Enter Your Age" required="">
+                                <label>{{ __('index.email') }}</label>
+                                <input type="email" name="email" placeholder="{{ __('index.email-placeholder') }}"
+                                    required="">
                                 <span class="icon fa fa-calendar"></span>
                             </div>
-                            {{-- <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Gender</label>
-                                <select class="custom-select-box">
-                                    <option>Select Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
-                            </div> --}}
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Phone Number</label>
-                                <input type="tel" name="phone" placeholder="Phone No" required="">
+                                <label>{{ __('index.gender') }}</label>
+                                <select class="custom-select-box">
+                                    <option>{{ __('index.select-gender') }}</option>
+                                    <option>{{ __('index.male') }}</option>
+                                    <option>{{ __('index.female') }}</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.phone-number') }}</label>
+                                <input type="tel" name="phone" placeholder="{{ __('index.phone-placeholder') }}"
+                                    required="">
                                 <span class="icon fas fa-phone"></span>
                             </div>
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Appointment Date</label>
-                                <input type="date" name="date" placeholder="Set A Date">
+                                <label>{{ __('index.appointment-date') }}</label>
+                                <input type="date" name="date" placeholder="{{ __('index.date-placeholder') }}">
                                 <span class="icon fa fa-calendar"></span>
                             </div>
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>Consultant Hour</label>
-                                <input type="time" name="time" placeholder="Select Time">
+                                <label>{{ __('index.consultant-hour') }}</label>
+                                <input type="time" name="time" placeholder="{{ __('index.time-placeholder') }}">
                                 <span class="icon fa fa-calendar"></span>
                             </div>
-
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
-                                        class="txt">submit request</span></button>
+                                        class="txt">{{ __('index.submit-request') }}</span></button>
                             </div>
                         </div>
                     </form>
@@ -785,7 +760,7 @@
                     <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>Department’s Regular Schedule</h2>
+                            <h2>{{ __('index.regular-schedule-title') }}</h2>
                             <div class="separator"></div>
                         </div>
 
@@ -793,61 +768,62 @@
 
                             <!-- Title Box -->
                             <ul class="title-box clearfix">
-                                <li>Departments</li>
-                                <li>Monday - Friday</li>
-                                <li>Saturday - Sunday</li>
+                                <li>{{ __('index.departments') }}</li>
+                                <li>{{ __('index.monday-friday') }}</li>
+                                <li>{{ __('index.saturday-sunday') }}</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Cardiology</li>
+                                <li>{{ __('index.cardiology') }}</li>
                                 <li>8:00 am - 10:30 pm</li>
                                 <li>8:00 am - 10:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Orthopedic</li>
+                                <li>{{ __('index.orthopedic') }}</li>
                                 <li>9:00 am - 7:00 pm</li>
                                 <li>11:00 am - 6:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Neurology</li>
+                                <li>{{ __('index.neurology') }}</li>
                                 <li>8:30 am - 7:30 pm</li>
                                 <li>8:30 am - 7:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Dental Care</li>
+                                <li>{{ __('index.dental-care') }}</li>
                                 <li>9:00 am - 10:30 pm</li>
                                 <li>9:00 am - 10:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Hepatology</li>
+                                <li>{{ __('index.hepatology') }}</li>
                                 <li>9:00 am - 10:30 pm</li>
                                 <li>9:00 am - 10:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Eyes Care</li>
+                                <li>{{ __('index.eyes-care') }}</li>
                                 <li>9:00 am - 10:30 pm</li>
                                 <li>9:00 am - 10:30 pm</li>
                             </ul>
 
                             <!-- Content Box -->
                             <ul class="content-box clearfix">
-                                <li>Orthopedic</li>
+                                <li>{{ __('index.orthopedic') }}</li>
                                 <li>9:00 am - 10:30 pm</li>
                                 <li>9:00 am - 10:30 pm</li>
                             </ul>
 
                         </div>
+
 
                     </div>
                 </div>
@@ -858,7 +834,7 @@
                         <!-- Upper Box -->
                         <div class="upper-box">
                             <div class="upper-inner">
-                                <h3>Get an Appointment</h3>
+                                <h3>{{ __('index.get-appointment') }}</h3>
                             </div>
                         </div>
 
@@ -871,49 +847,50 @@
                                     <form method="post" action="appointment.html">
 
                                         <div class="form-group">
-                                            <input type="text" name="username" placeholder="Enter Your Name"
-                                                required="">
+                                            <input type="text" name="username"
+                                                placeholder="{{ __('index.enter-your-name') }}" required="">
                                             <span class="icon fa fa-user"></span>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
-                                                required="">
+                                            <input type="tel" name="phone"
+                                                placeholder="{{ __('index.enter-your-phone-number') }}" required="">
                                             <span class="icon fas fa-phone"></span>
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" name="appointment" placeholder="Appointment Date"
-                                                required="">
+                                            <input type="text" name="appointment"
+                                                placeholder="{{ __('index.appointment-date') }}" required="">
                                             <span class="icon fas fa-calendar"></span>
                                         </div>
 
                                         <div class="form-group">
                                             <select class="custom-select-box">
-                                                <option>Choose Department</option>
-                                                <option>Department One</option>
-                                                <option>Department Two</option>
-                                                <option>Department Three</option>
-                                                <option>Department Four</option>
-                                                <option>Department Five</option>
+                                                <option>{{ __('index.choose-department') }}</option>
+                                                <option>{{ __('index.department-one') }}</option>
+                                                <option>{{ __('index.department-two') }}</option>
+                                                <option>{{ __('index.department-three') }}</option>
+                                                <option>{{ __('index.department-four') }}</option>
+                                                <option>{{ __('index.department-five') }}</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <select class="custom-select-box">
-                                                <option>Select Doctor</option>
-                                                <option>Doctor One</option>
-                                                <option>Doctor Two</option>
-                                                <option>Doctor Three</option>
-                                                <option>Doctor Four</option>
-                                                <option>Doctor Five</option>
+                                                <option>{{ __('index.select-doctor') }}</option>
+                                                <option>{{ __('index.doctor-one') }}</option>
+                                                <option>{{ __('index.doctor-two') }}</option>
+                                                <option>{{ __('index.doctor-three') }}</option>
+                                                <option>{{ __('index.doctor-four') }}</option>
+                                                <option>{{ __('index.doctor-five') }}</option>
                                             </select>
                                         </div>
 
                                         <div class="form-group">
                                             <button class="theme-btn submit-btn" type="submit"
-                                                name="submit-form">Request Appointment</button>
+                                                name="submit-form">{{ __('index.request-appointment') }}</button>
                                         </div>
+
 
                                     </form>
                                 </div>
@@ -939,7 +916,7 @@
                     <div class="inner-column">
                         <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>What Service We Provide</h2>
+                            <h2>{{ __('index.what-service-we-provide') }}</h2>
                             <div class="separator"></div>
                         </div>
 
@@ -953,7 +930,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-heart-1"></span>
                                     </div>
-                                    <h3><a href="#">Cardiology</a></h3>
+                                    <h3><a href="#">{{ __('index.cardiology') }}</a></h3>
                                 </div>
                             </div>
 
@@ -965,7 +942,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-brain"></span>
                                     </div>
-                                    <h3><a href="#">Neurology</a></h3>
+                                    <h3><a href="#">{{ __('index.neurology') }}</a></h3>
                                 </div>
                             </div>
 
@@ -977,7 +954,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-kidneys"></span>
                                     </div>
-                                    <h3><a href="#">Urology</a></h3>
+                                    <h3><a href="#">{{ __('index.urology') }}</a></h3>
                                 </div>
                             </div>
 
@@ -989,7 +966,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-doctor-stethoscope"></span>
                                     </div>
-                                    <h3><a href="#">Gynecological</a></h3>
+                                    <h3><a href="#">{{ __('index.gynecological') }}</a></h3>
                                 </div>
                             </div>
 
@@ -1001,7 +978,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-nurse"></span>
                                     </div>
-                                    <h3><a href="#">Pediatric</a></h3>
+                                    <h3><a href="#">{{ __('index.pediatric') }}</a></h3>
                                 </div>
                             </div>
 
@@ -1013,7 +990,7 @@
                                     <div class="icon-box">
                                         <span class="icon flaticon-surgery-room-1"></span>
                                     </div>
-                                    <h3><a href="#">Laboratory</a></h3>
+                                    <h3><a href="#">{{ __('index.laboratory') }}</a></h3>
                                 </div>
                             </div>
 
