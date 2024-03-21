@@ -7,19 +7,21 @@
         <div class="auto-container clearfix">
             <div class="top-left clearfix">
                 <ul class="list">
-                    <li><span class="icon fas fa-envelope"></span> 2130 Fulton Street San Diego CA 94117-1080
-                        USA</li>
-                    <li><span class="icon fas fa-phone"></span> <a href="tel:+555–123–2323"> 555–123–2323</a>
+                    <li><i class="icon fas fa-map-marker-alt" style='font-size:14px'></i>332, bd Brahim Roudani,
+                        Casablanca</li>
+                    <li><i class="icon fas fa-solid fa-phone"></i><a href="tel:0522250907">052-225-0907</a>
                     </li>
                 </ul>
             </div>
             <div class="top-right clearfix">
                 <ul class="social-icons">
-                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                    {{-- <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
                     <li><a href="#"><span class="fab fa-google"></span></a></li>
                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-skype"></span></a></li>
-                    <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+                    <li><a href="#"><span class="fab fa-skype"></span></a></li> --}}
+                    <li><a
+                            href="{{ url('https://www.linkedin.com/in/dr-ali-berrada-99658045/?originalSubdomain=ma') }}"><span
+                                class="fab fa-linkedin" style='font-size:24px'></span></a></li>
                 </ul>
             </div>
         </div>
@@ -109,6 +111,7 @@
                                         </div>
                                     </div>
                                 </li> --}}
+                                <li><a href="">{{ __('navbar.contact') }}</a></li>
                                 <li class="dropdown"><a href="#">{{ __('lang.lang') }}</a>
                                     <ul>
                                         @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -121,8 +124,6 @@
                                         @endforeach
                                     </ul>
                                 </li>
-
-                                <li><a href="">{{ __('navbar.contact') }}</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -131,7 +132,7 @@
                     <!-- Main Menu End-->
                     <div class="outer-box clearfix">
                         <!-- Search Btn -->
-                        <div class="search-box-btn"><span class="icon flaticon-search"></span></div>
+                        {{-- <div class="search-box-btn"><span class="icon flaticon-search"></span></div> --}}
                         <!-- Button Box -->
                         <div class="btn-box">
                             <a href="" class="theme-btn btn-style-one"><span

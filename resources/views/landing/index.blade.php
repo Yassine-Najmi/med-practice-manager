@@ -16,9 +16,9 @@
                             <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box clearfix">
                                 <a href="contact.html" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('header.our_services') }}</span></a>
-                                <a href="contact.html" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>555–123–2323</a>
+                                        class="txt">{{ __('navbar.appointment') }}</span></a>
+                                <a href="#" class="theme-btn phone-btn"><span
+                                        class="icon flaticon-call"></span>052-225-0907</a>
                             </div>
                         </div>
                     </div>
@@ -32,10 +32,10 @@
                             <h2>{{ __('header.big_text') }}</h2>
                             <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('header.our_services') }}</span></a>
+                                <a href="#" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('navbar.appointment') }}</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>555–123–2323</a>
+                                        class="icon flaticon-call"></span>052-225-0907</a>
                             </div>
                         </div>
                     </div>
@@ -47,12 +47,13 @@
                         <div class="content">
                             <div class="title">{{ __('header.small_text_1') }}</div>
                             <h2>{{ __('header.big_text') }}</h2>
-                            <div class="text">{{ __('header.small_text_2') }}</div>
+                            <div class="text">
+                                {{ __('header.small_text_2') }}</div>
                             <div class="btn-box">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('header.our_services') }}</span></a>
+                                <a href="#" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('navbar.appointment') }}</span></a>
                                 <a href="contact.html" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>555–123–2323</a>
+                                        class="icon flaticon-call"></span>052-225-0907</a>
                             </div>
                         </div>
                     </div>
@@ -68,425 +69,193 @@
     </section>
     <!-- End Main Slider -->
 
-    <!-- Services Section Three -->
-    <section class="services-section-three">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Services Block Four -->
-                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <span class="icon flaticon-timetable"></span>
-                        </div>
-                        <h4>{{ __('index.hospital-schedule') }}</h4>
-                        <ul class="list">
-                            <li>{{ __('index.mon_friday') }}<span>8:00 - 10:30</span></li>
-                            <li>{{ __('index.saturday') }}<span>9:00 - 11:00</span></li>
-                            <li>{{ __('index.sunday') }}<span>10:30 - 8:30</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Services Block Four -->
-                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <span class="icon flaticon-timetable"></span>
-                        </div>
-                        <h4>{{ __('index.get-appointment') }}</h4>
-                        <div class="text">{{ __('index.lorem-ipsum') }}</div>
-                        <a class="appointment-btn" href="doctors-detail.html">{{ __('index.appointment') }} <span
-                                class="icon flaticon-right-arrow-1"></span></a>
-                    </div>
-                </div>
-
-
-                <!-- Services Block Four -->
-                <div class="service-block-four col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="icon-box">
-                            <span class="icon flaticon-timetable"></span>
-                        </div>
-                        <h4>{{ __('index.discover-benefits') }}</h4>
-                        <ul class="list-two">
-                            <li>{{ __('index.experienced-doctors') }}</li>
-                            <li>{{ __('index.professional-staffs') }}</li>
-                            <li>{{ __('index.emergency-service') }}</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- End Services Section Three -->
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.about-hospital') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-                        <div class="bold-text">{{ __('index.main-focus') }}</div>
-                        <div class="text">{{ __('index.long-term-goal') }}</div>
-                        <a href="contact.html" class="theme-btn btn-style-two"><span
-                                class="txt">{{ __('index.learn-more') }}</span></a>
-                    </div>
-                </div>
-
-                <!-- Blocks Column -->
-                <div class="blocks-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="row clearfix">
-
-                            <!-- Service Block Five -->
-                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="0ms"
-                                    data-wow-duration="1500ms">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-award"></span>
-                                    </div>
-                                    <h4>{{ __('index.medical-quality') }}</h4>
-                                    <div class="text">{{ __('index.medical-quality-description') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Service Block Five -->
-                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="250ms"
-                                    data-wow-duration="1500ms">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-operating-room"></span>
-                                    </div>
-                                    <h4>{{ __('index.modern-labs') }}</h4>
-                                    <div class="text">{{ __('index.modern-labs-description') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Service Block Five -->
-                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="0ms"
-                                    data-wow-duration="1500ms">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-avatar-1"></span>
-                                    </div>
-                                    <h4>{{ __('index.dedicated-doctors') }}</h4>
-                                    <div class="text">{{ __('index.dedicated-doctors-description') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Service Block Five -->
-                            <div class="service-block-five col-lg-6 col-md-6 col-sm-12">
-                                <div class="inner-box clearfix wow fadeInLeft" data-wow-delay="250ms"
-                                    data-wow-duration="1500ms">
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-surgery-room"></span>
-                                    </div>
-                                    <h4>{{ __('index.cutting-edge-technology') }}</h4>
-                                    <div class="text">{{ __('index.cutting-edge-technology-description') }}</div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Appointment Section Three -->
-    <section class="appointment-section-three">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Form Column -->
-                <div class="form-column col-lg-4 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!-- Upper Box -->
-                        <div class="upper-box">
-                            <div class="upper-inner">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-timetable"></span>
-                                </div>
-                                <h3>{{ __('index.get-appointment') }}</h3>
-                                <div class="text">{{ __('index.appointment-description') }}</div>
-                            </div>
-                        </div>
-
-                        <!-- Lower Box -->
-                        <div class="lower-box">
-                            <div class="upper-inner">
-                                <!-- Appointment Form -->
-                                <div class="appointment-form">
-                                    <form method="post" action="appointment.html">
-
-                                        <div class="form-group">
-                                            <input type="text" name="username"
-                                                placeholder="{{ __('index.enter-name') }}" required="">
-                                            <span class="icon fa fa-user"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="tel" name="phone"
-                                                placeholder="{{ __('index.enter-phone') }}" required="">
-                                            <span class="icon fas fa-phone"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" name="appointment"
-                                                placeholder="{{ __('index.appointment-date') }}" required="">
-                                            <span class="icon fas fa-calendar"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>{{ __('index.choose-department') }}</option>
-                                                <option>{{ __('index.department-one') }}</option>
-                                                <option>{{ __('index.department-two') }}</option>
-                                                <option>{{ __('index.department-three') }}</option>
-                                                <option>{{ __('index.department-four') }}</option>
-                                                <option>{{ __('index.department-five') }}</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>{{ __('index.select-doctor') }}</option>
-                                                <option>{{ __('index.doctor-one') }}</option>
-                                                <option>{{ __('index.doctor-two') }}</option>
-                                                <option>{{ __('index.doctor-three') }}</option>
-                                                <option>{{ __('index.doctor-four') }}</option>
-                                                <option>{{ __('index.doctor-five') }}</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button class="theme-btn submit-btn" type="submit"
-                                                name="submit-form">{{ __('index.request-appointment') }}</button>
-                                        </div>
-
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <!-- Content Column -->
-                <div class="content-column col-lg-8 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.why-choose-our-medical') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-                        <div class="bold-text">{{ __('index.health-care-cost') }}</div>
-                        <div class="row clearfix">
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.professional-staffs') }}</h4>
-                                    <div class="text">{{ __('index.professional-staffs-text') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.online-appointment') }}</h4>
-                                    <div class="text">{{ __('index.online-appointment-text') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.emergency-cares') }}</h4>
-                                    <div class="text">{{ __('index.emergency-cares-text') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.advanced-technology') }}</h4>
-                                    <div class="text">{{ __('index.advanced-technology-text') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.experienced-doctors') }}</h4>
-                                    <div class="text">{{ __('index.experienced-doctors-text') }}</div>
-                                </div>
-                            </div>
-
-                            <!-- Appointment List -->
-                            <div class="appointment-list col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                                    <div class="icon far fa-hand-point-right"></div>
-                                    <h4>{{ __('index.emergency-service') }}</h4>
-                                    <div class="text">{{ __('index.emergency-service-text') }}</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Appointment Section Three -->
-
-    <!-- About Section Two -->
-    <section class="about-section-two">
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="image-layer"
+            style="background-image:url({{ asset('assets/mediatech/rtl/images/background/pattern-2.png') }})"></div>
         <div class="auto-container">
             <div class="row clearfix">
 
                 <!-- Content Column -->
                 <div class="content-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column">
-                        <!-- Sec Title -->
                         <div class="sec-title">
-                            <h2>{{ __('index.about-us') }}</h2>
+                            <h2>BERRADA Ali, Médecin généraliste</h2>
                             <div class="separator"></div>
                         </div>
-                        <div class="bold-text">{{ __('index.health-care-cost') }}</div>
-                        <div class="text">{{ __('index.our-goal') }}</div>
-                        <div class="row clearfix">
-
-                            <!-- About List Info -->
-                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">{{ __('index.emergency-service') }}</div>
-                            </div>
-
-                            <!-- About List Info -->
-                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">{{ __('index.professional-staffs') }}</div>
-                            </div>
-
-                            <!-- About List Info -->
-                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">{{ __('index.advanced-technology') }}</div>
-                            </div>
-
-                            <!-- About List Info -->
-                            <div class="about-list-info col-lg-6 col-md-6 col-sm-12">
-                                <div class="list-inner">{{ __('index.experienced-doctors') }}</div>
-                            </div>
-
+                        <div class="text">
+                            <p>Avec une expérience de 37 ans, le Dr. Berrada Ali est un médecin spécialiste en médecine de
+                                travail, président de l’AMCC (Association des Médecins généralistes de Casablanca Centre) et
+                                fondateur de l’Association Marocaine de Médecine de Catastrophe. Il a assuré des formations
+                                de secourisme pour le compte de plus de 50 entreprises à travers tout le Maroc.</p>
+                            <p>Diplômes et formations :</p>
+                            <ul style="padding-left: 20px;">
+                                <li>&#8226; <span class="ml-2">Doctorat en médecine de la faculté de médecine à
+                                        Rabat</span></li>
+                                <li>&#8226; <span class="ml-2">Certificat Universitaire de santé au Travail et de
+                                        Prévention des Risques
+                                        Professionnels
+                                        de l'Université Hassan II à Casablanca</span></li>
+                                <li>&#8226; <span class="ml-2">Médecin Expert Assermenté près des Tribunaux au
+                                        Maroc</span></li>
+                                <li>&#8226; <span class="ml-2">Diplôme Universitaire de Diabétologie de l'Université de
+                                        Montpellier I</span></li>
+                                <li>&#8226; <span class="ml-2">Diplôme de Médecine de Catastrophe</span></li>
+                            </ul>
                         </div>
+                        <a href="#" class="lightbox-image play-btn"><span class="icon flaticon-stethoscope"
+                                style="font-size: 30px"></span>Plus d'informations</a>
+
                     </div>
                 </div>
 
-
-
-                <!-- Info Column -->
-                <div class="info-column col-lg-5 col-md-12 col-sm-12">
+                <!-- Image Column -->
+                <div class="image-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                        <!-- Doctor Info Tabs-->
-                        <div class="doctor-info-tabs">
-                            <!-- Doctor Tabs-->
-                            <div class="doctor-tabs tabs-box">
-
-                                <!--Tab Btns-->
-                                <ul class="tab-btns tab-buttons clearfix">
-                                    <li data-tab="#consultation" class="tab-btn active-btn"><span
-                                            class="icon far fa-clock"></span> {{ __('index.consultation') }}</li>
-                                    <li data-tab="#emergncy" class="tab-btn"><span class="icon far fa-clock"></span>
-                                        {{ __('index.emergency') }}</li>
-                                </ul>
-
-                                <!--Tabs Container-->
-                                <div class="tabs-content">
-
-                                    <!--Tab / Active Tab-->
-                                    <div class="tab active-tab" id="consultation">
-                                        <div class="content">
-                                            <ul class="content-list">
-                                                <li>{{ __('index.sunday') }}<span>8:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.monday') }}<span>9:00 am - 11:30 pm</span></li>
-                                                <li>{{ __('index.tuesday') }}<span>8:30 am - 7:30 pm</span></li>
-                                                <li>{{ __('index.wednesday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.thursday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.friday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.saturday') }}<span>9:00 am - 10:30 pm</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <!--Tab-->
-                                    <div class="tab" id="emergncy">
-                                        <div class="content">
-                                            <ul class="content-list">
-                                                <li>{{ __('index.sunday') }}<span>8:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.monday') }}<span>9:00 am - 11:30 pm</span></li>
-                                                <li>{{ __('index.tuesday') }}<span>8:30 am - 7:30 pm</span></li>
-                                                <li>{{ __('index.wednesday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.thursday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.friday') }}<span>9:00 am - 10:30 pm</span></li>
-                                                <li>{{ __('index.saturday') }}<span>9:00 am - 10:30 pm</span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                </div>
+                        <div class="image">
+                            <img src="{{ asset('assets/mediatech/rtl/images/background/9171.png ') }}" alt="" />
+                            <div class="icon-outer">
+                                <span class="icon-inner"><span class="icon flaticon-doctor"></span></span>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
 
             </div>
         </div>
     </section>
-    <!-- End About Section Two -->
+    <!-- End Welcome Section -->
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="auto-container">
+
+            <!-- Sec Title -->
+            <div class="sec-title centered">
+                <h2>Services de santé</h2>
+                <div class="separator"></div>
+            </div>
+
+            <div class="row clearfix">
+
+                <!-- Left Column -->
+                <div class="left-column pull-left col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column">
+
+                        <!-- Service Block -->
+                        <div class="service-block">
+                            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-doctor-stethoscope"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Consultations en médecine générale</a></h3>
+                                <div class="text">Consultations générales pour tous les besoins médicaux.</div>
+                            </div>
+                        </div>
+
+                        <!-- Service Block -->
+                        <div class="service-block">
+                            <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-operating-room"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Médecine du travail</a></h3>
+                                <div class="text">Consultations spécialisées en médecine du travail pour assurer la santé
+                                    et la sécurité au travail.</div>
+                            </div>
+                        </div>
+
+                        <!-- Service Block -->
+                        <div class="service-block">
+                            <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-van"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Certificats médicaux</a></h3>
+                                <div class="text">Émission de certificats médicaux pour diverses fins.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Circles Column -->
+                <div class="circles-column col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column">
+
+                        <div class="circles">
+                            <div class="circle-one"></div>
+                            <div class="circle-two"></div>
+                            <div class="circle-three"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column pull-right col-lg-4 col-md-12 col-sm-12">
+                    <div class="inner-column">
+
+                        <!-- Service Block -->
+                        <div class="service-block-two">
+                            <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-water"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Vaccinations</a></h3>
+                                <div class="text">Administration de vaccinations pour la prévention des maladies.</div>
+                            </div>
+                        </div>
+
+                        <!-- Service Block -->
+                        <div class="service-block-two">
+                            <div class="inner-box wow fadeInRight" data-wow-delay="250ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-pharmacy"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Examens de santé préventifs</a></h3>
+                                <div class="text">Détection précoce des problèmes de santé pour prévenir les
+                                    complications.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service Block -->
+                        <div class="service-block-two">
+                            <div class="inner-box wow fadeInRight" data-wow-delay="500ms" data-wow-duration="1500ms">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-nurse"></span>
+                                </div>
+                                <h3><a href="doctors-detail.html">Gestion des maladies chroniques</a></h3>
+                                <div class="text">Consultations et suivi pour les maladies telles que le diabète,
+                                    l'hypertension, les maladies cardiaques, etc.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- Counter Section -->
-    <section class="counter-section-two">
+    <section class="counter-section" style="background-image: url(images/background/pattern-3.png)">
         <div class="auto-container">
 
             <!-- Fact Counter -->
-            <div class="fact-counter-two">
+            <div class="fact-counter">
                 <div class="row clearfix">
 
                     <!--Column-->
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-heart-1"></span>
-                                </div>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="98">0</span>%
+                                    <span class="count-text" data-speed="2500" data-stop="37">0</span>
                                 </div>
-                                <h4 class="counter-title">{{ __('index.success_surgeries') }}</h4>
+                                <h4 class="counter-title">Années d'expérience</h4>
                             </div>
                         </div>
                     </div>
@@ -495,13 +264,10 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-medical-stethoscope-variant"></span>
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="2500" data-stop="50">0</span>
                                 </div>
-                                <div class="count-outer count-box alternate">
-                                    <span class="count-text" data-speed="3000" data-stop="350">0</span>+
-                                </div>
-                                <h4 class="counter-title">{{ __('index.regular_doctors') }}</h4>
+                                <h4 class="counter-title">Formations de secourisme</h4>
                             </div>
                         </div>
                     </div>
@@ -510,13 +276,10 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-heart-1"></span>
-                                </div>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="600">0</span>K
+                                    <span class="count-text" data-speed="2500" data-stop="5">0</span>
                                 </div>
-                                <h4 class="counter-title">{{ __('index.satisfied_patients') }}</h4>
+                                <h4 class="counter-title">Diplômes et certifications</h4>
                             </div>
                         </div>
                     </div>
@@ -525,13 +288,10 @@
                     <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="inner wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1500ms">
                             <div class="content">
-                                <div class="icon-box">
-                                    <span class="icon flaticon-pharmacy"></span>
-                                </div>
                                 <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="2500" data-stop="50">0</span>+
+                                    <span class="count-text" data-speed="2500" data-stop="6">0</span>
                                 </div>
-                                <h4 class="counter-title">{{ __('index.department') }}</h4>
+                                <h4 class="counter-title">Services proposés</h4>
                             </div>
                         </div>
                     </div>
@@ -542,212 +302,6 @@
         </div>
     </section>
     <!-- End Counter Section -->
-
-    <!-- Hospital Section -->
-    <section class="hospital-section"
-        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/8.jpg ') }}')">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Image Column -->
-                <div class="image-column col-lg-5 col-md-12 col-sm-12">
-                    <div class="inner-column wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image">
-                            <img src="images/resource/doctor-5.png" alt="" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Content Column -->
-                <div class="content-column col-lg-7 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.why-choose') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-                        <div class="bold-text">{{ __('index.why-choose-description') }}</div>
-
-                        <!-- Hospital Tabs-->
-                        <div class="hospital-info-tabs">
-                            <!-- Hospital Tabs-->
-                            <div class="hospital-tabs tabs-box">
-
-                                <!--Tab Btns-->
-                                <ul class="tab-btns tab-buttons clearfix">
-                                    <li data-tab="#mission" class="tab-btn active-btn">{{ __('index.mission') }}</li>
-                                    <li data-tab="#vision" class="tab-btn">{{ __('index.vision') }}</li>
-                                    <li data-tab="#success" class="tab-btn">{{ __('index.success') }}</li>
-                                    <li data-tab="#history" class="tab-btn">{{ __('index.history') }}</li>
-                                </ul>
-
-
-                                <!--Tabs Container-->
-                                <div class="tabs-content">
-
-                                    <!--Tab / Active Tab-->
-                                    <div class="tab active-tab" id="mission">
-                                        <div class="content">
-                                            <div class="row clearfix">
-
-                                                <div class="column col-lg-9 col-md-9 col-sm-12">
-                                                    <div class="text">
-                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
-                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
-                                                    </div>
-                                                    <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">{{ __('index.learn-more') }}</span></a>
-                                                </div>
-
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="image">
-                                                        <img src="images/resource/author-9.jpg" alt="" />
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Tab-->
-                                    <div class="tab" id="vision">
-                                        <div class="content">
-                                            <div class="row clearfix">
-
-                                                <div class="column col-lg-9 col-md-9 col-sm-12">
-                                                    <div class="text">
-                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
-                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
-                                                    </div>
-                                                    <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">{{ __('index.learn-more') }}</span></a>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="image">
-                                                        <img src="images/resource/author-9.jpg" alt="" />
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Tab-->
-                                    <div class="tab" id="success">
-                                        <div class="content">
-                                            <div class="row clearfix">
-
-                                                <div class="column col-lg-9 col-md-9 col-sm-12">
-                                                    <div class="text">
-                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
-                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
-                                                    </div>
-                                                    <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">{{ __('index.learn-more') }}</span></a>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="image">
-                                                        <img src="images/resource/author-9.jpg" alt="" />
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Tab-->
-                                    <div class="tab" id="history">
-                                        <div class="content">
-                                            <div class="row clearfix">
-
-                                                <div class="column col-lg-9 col-md-9 col-sm-12">
-                                                    <div class="text">
-                                                        <p class="text-dark">{{ __('index.long-term-goal') }}</p>
-                                                        <p class="text-dark">{{ __('index.dental-office-safe') }}</p>
-                                                    </div>
-                                                    <a class="theme-btn more-btn" href="#"><span
-                                                            class="txt">{{ __('index.learn-more') }}</span></a>
-                                                </div>
-                                                <div class="column col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="image">
-                                                        <img src="images/resource/author-9.jpg" alt="" />
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- End Hospital Section -->
-
-    <!-- Get Appointment Section -->
-    <section class="get-appointment-section">
-        <div class="auto-container">
-            <div class="inner-container">
-                <h3>{{ __('index.get-appointment') }}</h3>
-
-                <!-- Appointment Form -->
-                <div class="appointment-form-two">
-                    <form method="post" action="{{ route('Appointment.store') }}">
-                        @csrf
-                        <div class="row clearfix">
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.full-name') }}</label>
-                                <input type="text" name="name" placeholder="{{ __('index.full-name') }}"
-                                    required="">
-                                <span class="icon fa fa-user"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.email') }}</label>
-                                <input type="email" name="email" placeholder="{{ __('index.email-placeholder') }}"
-                                    required="">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.gender') }}</label>
-                                <select class="custom-select-box">
-                                    <option>{{ __('index.select-gender') }}</option>
-                                    <option>{{ __('index.male') }}</option>
-                                    <option>{{ __('index.female') }}</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.phone-number') }}</label>
-                                <input type="tel" name="phone" placeholder="{{ __('index.phone-placeholder') }}"
-                                    required="">
-                                <span class="icon fas fa-phone"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.appointment-date') }}</label>
-                                <input type="date" name="date" placeholder="{{ __('index.date-placeholder') }}">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.consultant-hour') }}</label>
-                                <input type="time" name="time" placeholder="{{ __('index.time-placeholder') }}">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
-                                        class="txt">{{ __('index.submit-request') }}</span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Schedule Section -->
     <section class="schedule-section"
@@ -906,556 +460,77 @@
     </section>
     <!-- End Schedule Section -->
 
-    <!-- Provider Section -->
-    <section class="provider-section">
+
+    <!-- Get Appointment Section -->
+    <section class="get-appointment-section">
         <div class="auto-container">
-            <div class="row clearfix">
+            <div class="inner-container">
+                <h3>{{ __('index.get-appointment') }}</h3>
 
-                <!-- Blocks Column -->
-                <div class="blocks-column col-lg-8 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.what-service-we-provide') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-
+                <!-- Appointment Form -->
+                <div class="appointment-form-two">
+                    <form method="post" action="{{ route('Appointment.store') }}">
+                        @csrf
                         <div class="row clearfix">
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-heart-1"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.cardiology') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.full-name') }}</label>
+                                <input type="text" name="name" placeholder="{{ __('index.full-name') }}"
+                                    required="">
+                                <span class="icon fa fa-user"></span>
                             </div>
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-brain"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.neurology') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.email') }}</label>
+                                <input type="email" name="email" placeholder="{{ __('index.email-placeholder') }}"
+                                    required="">
+                                <span class="icon fa fa-calendar"></span>
                             </div>
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-kidneys"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.urology') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.gender') }}</label>
+                                <select class="custom-select-box">
+                                    <option>{{ __('index.select-gender') }}</option>
+                                    <option>{{ __('index.male') }}</option>
+                                    <option>{{ __('index.female') }}</option>
+                                </select>
                             </div>
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-doctor-stethoscope"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.gynecological') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.phone-number') }}</label>
+                                <input type="tel" name="phone" placeholder="{{ __('index.phone-placeholder') }}"
+                                    required="">
+                                <span class="icon fas fa-phone"></span>
                             </div>
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-nurse"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.pediatric') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.appointment-date') }}</label>
+                                <input type="date" name="date" placeholder="{{ __('index.date-placeholder') }}">
+                                <span class="icon fa fa-calendar"></span>
                             </div>
-
-                            <!-- Services Block Six -->
-                            <div class="service-block-six col-lg-4 col-md-6 col-sm-12">
-                                <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                    <div class="border-one"></div>
-                                    <div class="border-two"></div>
-                                    <div class="icon-box">
-                                        <span class="icon flaticon-surgery-room-1"></span>
-                                    </div>
-                                    <h3><a href="#">{{ __('index.laboratory') }}</a></h3>
-                                </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <label>{{ __('index.consultant-hour') }}</label>
+                                <input type="time" name="time" placeholder="{{ __('index.time-placeholder') }}">
+                                <span class="icon fa fa-calendar"></span>
                             </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Appointment Column -->
-                <div class="appointment-column col-lg-4 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                        <!-- Upper Box -->
-                        <div class="upper-box">
-                            <div class="upper-inner">
-                                <h3>Get an Appointment</h3>
+                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
+                                        class="txt">{{ __('index.submit-request') }}</span></button>
                             </div>
                         </div>
-
-                        <!-- Lower Box -->
-                        <div class="lower-box">
-                            <div class="upper-inner">
-
-                                <!-- Appointment Form -->
-                                <div class="appointment-form">
-                                    <form method="post" action="appointment.html">
-
-                                        <div class="form-group">
-                                            <input type="text" name="username" placeholder="Enter Your Name"
-                                                required="">
-                                            <span class="icon fa fa-user"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="tel" name="phone" placeholder="Enter Your Phone Number"
-                                                required="">
-                                            <span class="icon fas fa-phone"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" name="appointment" placeholder="Appointment Date"
-                                                required="">
-                                            <span class="icon fas fa-calendar"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>Choose Department</option>
-                                                <option>Department One</option>
-                                                <option>Department Two</option>
-                                                <option>Department Three</option>
-                                                <option>Department Four</option>
-                                                <option>Department Five</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>Select Doctor</option>
-                                                <option>Doctor One</option>
-                                                <option>Doctor Two</option>
-                                                <option>Doctor Three</option>
-                                                <option>Doctor Four</option>
-                                                <option>Doctor Five</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button class="theme-btn submit-btn" type="submit"
-                                                name="submit-form">Request Appointment</button>
-                                        </div>
-
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
+                    </form>
                 </div>
 
             </div>
         </div>
     </section>
-    <!-- End Provider Section -->
 
-    <!-- Departments Section -->
-    <section class="departments-section"
-        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/10.jpg ') }}')">
-        <div class="auto-container">
 
-            <!-- Sec Title -->
-            <div class="sec-title centered">
-                <h2>Our Departments</h2>
-                <div class="separator"></div>
-            </div>
-
-            <!-- Departments Tabs-->
-            <div class="departments-info-tabs">
-                <!-- Departments Tabs-->
-                <div class="departments-tabs tabs-box">
-
-                    <!--Tab Btns-->
-                    <ul class="tab-btns tab-buttons clearfix">
-                        <li data-tab="#cardiology" class="tab-btn active-btn"><span class="icon flaticon-heart-1"></span>
-                            Cardiology</li>
-                        <li data-tab="#neurology" class="tab-btn"><span class="icon flaticon-brain"></span> Neurology
-                        </li>
-                        <li data-tab="#urology" class="tab-btn"><span class="icon flaticon-kidneys"></span> Urology</li>
-                        <li data-tab="#gynecological" class="tab-btn"><span class="icon flaticon-doctor"></span>
-                            Gynecological</li>
-                        <li data-tab="#pediatric" class="tab-btn"><span class="icon flaticon-nurse"></span> Pediatric
-                        </li>
-                        <li data-tab="#laboratory" class="tab-btn"><span class="icon flaticon-operating-room"></span>
-                            Laboratory</li>
-                    </ul>
-
-                    <!--Tabs Container-->
-                    <div class="tabs-content">
-
-                        <!--Tab / Active Tab-->
-                        <div class="tab active-tab" id="cardiology">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Cardiology Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <p class="text text-dark">From puberty through menopause, a woman's
-                                                reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</p>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Tab-->
-                        <div class="tab" id="neurology">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Neurology Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <div class="text">From puberty through menopause, a woman's reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</div>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Tab-->
-                        <div class="tab" id="urology">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Urology Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <div class="text">From puberty through menopause, a woman's reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</div>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Tab-->
-                        <div class="tab" id="gynecological">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Gynecological Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <div class="text">From puberty through menopause, a woman's reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</div>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Tab-->
-                        <div class="tab" id="pediatric">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Pediatric Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <div class="text">From puberty through menopause, a woman's reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</div>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Tab-->
-                        <div class="tab" id="laboratory">
-                            <div class="content">
-                                <div class="row clearfix">
-
-                                    <!-- Gallery Column -->
-                                    <div class="gallery-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <div class="row clearfix">
-                                                <!-- Column -->
-                                                <div class="column col-lg-5 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-4.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-4.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                    <div class="image">
-                                                        <a href="images/resource/department-5.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-5.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                                <!-- Column -->
-                                                <div class="column col-lg-7 col-md-6 col-sm-12">
-                                                    <div class="image">
-                                                        <a href="images/resource/department-6.jpg"
-                                                            class="lightbox-image"><img
-                                                                src="images/resource/department-6.jpg"
-                                                                alt="" /></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content Column -->
-                                    <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="inner-column">
-                                            <h2>Laboratory Department</h2>
-                                            <div class="bold-text">Seeing a Gynecologist is part of Teenage Health</div>
-                                            <div class="text">From puberty through menopause, a woman's reproductive
-                                                organs are constantly changing through the normal processes of sexual
-                                                activity, pregnancy and aging, and sometimes disease and injury. UCSF
-                                                Medical Center is recognized as one of the top hospitals in the nation for
-                                                gynecological ...</div>
-                                            <a href="#" class="theme-btn btn-style-two"><span class="txt">Learn
-                                                    More</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
+    <!-- Map Section -->
+    <section id="map-section">
+        {{-- <div id="map" style="height: 400px; width: 100%;"></div> --}}
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8964873809323!2d-7.6359786235232345!3d33.582036773337585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29563ec0635%3A0x714d89d00b6ec847!2s332%20Bd%20Brahim%20Roudani%2C%20Casablanca%2020250!5e0!3m2!1sen!2sma!4v1711043419530!5m2!1sen!2sma"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <!-- End Departments Section -->
+    <!-- End map Section -->
 
     <!-- Newsletter Section -->
     <section class="newsletter-section">
