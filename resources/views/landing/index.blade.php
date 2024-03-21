@@ -525,43 +525,10 @@
     <section id="map-section">
         {{-- <div id="map" style="height: 400px; width: 100%;"></div> --}}
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
+            <iframe class="embed-responsive-item mb-5"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8964873809323!2d-7.6359786235232345!3d33.582036773337585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29563ec0635%3A0x714d89d00b6ec847!2s332%20Bd%20Brahim%20Roudani%2C%20Casablanca%2020250!5e0!3m2!1sen!2sma!4v1711043419530!5m2!1sen!2sma"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <!-- End map Section -->
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!-- Title Column -->
-                <div class="title-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <h2>Subscribe Our Newsletter</h2>
-                        <div class="text">To receive email releases, simply provide us with your email address below.
-                        </div>
-                    </div>
-                </div>
-                <!-- Form Column -->
-                <div class="form-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <!-- Subscribe Form -->
-                        <div class="subscribe-form">
-                            <form method="post" action="contact.html">
-                                <div class="form-group">
-                                    <input type="email" name="email" value="" placeholder="Your Email Address"
-                                        required>
-                                    <button type="submit" class="theme-btn btn-style-two"><span
-                                            class="txt">subscribe</span></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Newsletter Section -->
 @endsection
