@@ -103,7 +103,8 @@
                                 <li>&#8226; <span class="ml-2">Diplôme de Médecine de Catastrophe</span></li>
                             </ul>
                         </div>
-                        <a href="#" class="lightbox-image play-btn"><span class="icon flaticon-stethoscope"
+                        <a href="https://www.youtube.com/watch?v=dMcoJMcM0UI&ab_channel=IntegratedCareNorthamptonshire"
+                            class="lightbox-image play-btn"><span class="icon flaticon-stethoscope"
                                 style="font-size: 30px"></span>Plus d'informations</a>
 
                     </div>
@@ -304,12 +305,148 @@
     <!-- End Counter Section -->
 
     <!-- Schedule Section -->
-    <livewire:landing.appointment />
+    <section class="schedule-section"
+        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/5.jpg ') }}')">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <!-- Schedule Column -->
+                <div class="schedule-column col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <!-- Sec Title -->
+                        <div class="sec-title">
+                            <h2>Horaires réguliers</h2> <!-- Updated: Regular Schedule -->
+                            <div class="separator"></div>
+                        </div>
+
+                        <div class="content">
+
+                            <!-- Title Box -->
+                            <ul class="title-box clearfix">
+                                <li>Jours</li>
+                                <li colspan="2" style="text-align: center;">Heures d'ouverture</li>
+                                <li style="text-align: center;">Heure de fermeture</li>
+                            </ul>
+
+                            <!-- Content Box - Monday -->
+                            <ul class="content-box clearfix">
+                                <li>Lundi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">18:00</li>
+                            </ul>
+
+                            <!-- Content Box - Tuesday -->
+                            <ul class="content-box clearfix">
+                                <li>Mardi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">18:00</li>
+                            </ul>
+
+                            <!-- Content Box - Wednesday -->
+                            <ul class="content-box clearfix">
+                                <li>Mercredi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">18:00</li>
+                            </ul>
+
+                            <!-- Content Box - Thursday -->
+                            <ul class="content-box clearfix">
+                                <li>Jeudi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">18:00</li>
+                            </ul>
+
+                            <!-- Content Box - Friday -->
+                            <ul class="content-box clearfix">
+                                <li>Vendredi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">18:00</li>
+                            </ul>
+
+                            <!-- Content Box - Saturday -->
+                            <ul class="content-box clearfix">
+                                <li>Samedi</li>
+                                <li style="text-align: center;">09:00</li>
+                                <li style="text-align: center;">14:00</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Column -->
+                <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
+                    <livewire:landing.appointment />
+                </div>
+                {{-- <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <!-- Upper Box -->
+                        <div class="upper-box">
+                            <div class="upper-inner">
+                                <h3>{{ __('index.get-appointment') }}</h3>
+                            </div>
+                        </div>
+
+                        <!-- Lower Box -->
+                        <div class="lower-box">
+                            <div class="upper-inner">
+
+                                <!-- Appointment Form -->
+                                <div class="appointment-form">
+                                    <form>
+
+                                        <div class="form-group">
+                                            <input type="text" name="username"
+                                                placeholder="{{ __('index.enter-your-name') }}">
+                                            <span class="icon fa fa-user"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="tel" name="phone"
+                                                placeholder="{{ __('index.enter-your-phone-number') }}">
+                                            <span class="icon fas fa-phone"></span>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="date" wire:model="selectedDate"
+                                                    min="{{ now()->format('Y-m-d') }}"
+                                                    class="form-control px-4 text-dark" name="appointment"
+                                                    placeholder="{{ __('index.appointment-date') }}" required="">
+                                            </div>
+                                        </div>
+                                        <h5 x-text="$wire.selectedDate"></h5>
+
+                                        <div class="form-group">
+                                            <select wire:model.defer="selectedTime" class="custom-select-box">
+                                                <option value="">{{ __('index.select-time') }}</option>
+                                                @forelse ($availableTimes as $time)
+                                                    <option value="{{ $time }}">{{ $time }}</option>
+                                                @endforeach
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button class="theme-btn submit-btn" type="submit"
+                                                name="submit-form">{{ __('index.request-appointment') }}</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div> --}}
+
+            </div>
+        </div>
+    </section>
     <!-- End Schedule Section -->
 
 
     <!-- Get Appointment Section -->
-    <section class="get-appointment-section">
+    {{-- <section class="get-appointment-section">
         <div class="auto-container">
             <div class="inner-container">
                 <h3>{{ __('index.get-appointment') }}</h3>kkk
@@ -365,7 +502,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <!-- Map Section -->
