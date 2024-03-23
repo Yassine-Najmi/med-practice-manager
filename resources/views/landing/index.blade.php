@@ -312,7 +312,7 @@
     <section class="get-appointment-section">
         <div class="auto-container">
             <div class="inner-container">
-                <h3>{{ __('index.get-appointment') }}</h3>
+                <h3>{{ __('index.get-appointment') }}</h3>kkk
 
                 <!-- Appointment Form -->
                 <div class="appointment-form-two">
@@ -386,4 +386,3 @@
 @section('scripts')
     @livewireScripts
 @endsection
-
