@@ -8,6 +8,8 @@
 <head>
     <meta charset="utf-8">
     <title>Medi-tech</title>
+    {{-- @yield("styles") --}}
+    @livewireStyles
     <!-- Stylesheets -->
     <link href="{{ asset('assets/mediatech/' . $mode . '/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/mediatech/' . $mode . '/css/style.css') }}" rel="stylesheet">
@@ -222,7 +224,8 @@
         </div>
 
     </div> --}}
-
+    {{-- @yield('scripts') --}}
+    @livewireScripts
     <!--Scroll to top-->
     <script src="{{ asset('assets/mediatech/' . $mode . '/js/jquery.js') }}"></script>
     <script src="{{ asset('assets/mediatech/' . $mode . '/js/popper.min.js') }}"></script>

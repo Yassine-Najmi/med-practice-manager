@@ -304,160 +304,7 @@
     <!-- End Counter Section -->
 
     <!-- Schedule Section -->
-    <section class="schedule-section"
-        style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/5.jpg ') }}')">
-        <div class="auto-container">
-            <div class="row clearfix">
-
-                <!-- Schedule Column -->
-                <div class="schedule-column col-lg-7 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.regular-schedule-title') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-
-                        <div class="content">
-
-                            <!-- Title Box -->
-                            <ul class="title-box clearfix">
-                                <li>{{ __('index.departments') }}</li>
-                                <li>{{ __('index.monday-friday') }}</li>
-                                <li>{{ __('index.saturday-sunday') }}</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.cardiology') }}</li>
-                                <li>8:00 am - 10:30 pm</li>
-                                <li>8:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.orthopedic') }}</li>
-                                <li>9:00 am - 7:00 pm</li>
-                                <li>11:00 am - 6:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.neurology') }}</li>
-                                <li>8:30 am - 7:30 pm</li>
-                                <li>8:30 am - 7:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.dental-care') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.hepatology') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.eyes-care') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.orthopedic') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <!-- Appointment Column -->
-                <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!-- Upper Box -->
-                        <div class="upper-box">
-                            <div class="upper-inner">
-                                <h3>{{ __('index.get-appointment') }}</h3>
-                            </div>
-                        </div>
-
-                        <!-- Lower Box -->
-                        <div class="lower-box">
-                            <div class="upper-inner">
-
-                                <!-- Appointment Form -->
-                                <div class="appointment-form">
-                                    <form method="post" action="appointment.html">
-
-                                        <div class="form-group">
-                                            <input type="text" name="username"
-                                                placeholder="{{ __('index.enter-your-name') }}" required="">
-                                            <span class="icon fa fa-user"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="tel" name="phone"
-                                                placeholder="{{ __('index.enter-your-phone-number') }}" required="">
-                                            <span class="icon fas fa-phone"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" name="appointment"
-                                                placeholder="{{ __('index.appointment-date') }}" required="">
-                                            <span class="icon fas fa-calendar"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>{{ __('index.choose-department') }}</option>
-                                                <option>{{ __('index.department-one') }}</option>
-                                                <option>{{ __('index.department-two') }}</option>
-                                                <option>{{ __('index.department-three') }}</option>
-                                                <option>{{ __('index.department-four') }}</option>
-                                                <option>{{ __('index.department-five') }}</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>{{ __('index.select-doctor') }}</option>
-                                                <option>{{ __('index.doctor-one') }}</option>
-                                                <option>{{ __('index.doctor-two') }}</option>
-                                                <option>{{ __('index.doctor-three') }}</option>
-                                                <option>{{ __('index.doctor-four') }}</option>
-                                                <option>{{ __('index.doctor-five') }}</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button class="theme-btn submit-btn" type="submit"
-                                                name="submit-form">{{ __('index.request-appointment') }}</button>
-                                        </div>
-
-
-                                    </form>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <livewire:landing.appointment />
     <!-- End Schedule Section -->
 
 
@@ -532,3 +379,11 @@
     </section>
     <!-- End map Section -->
 @endsection
+
+@section('styles')
+    @livewireStyles
+@endsection
+@section('scripts')
+    @livewireScripts
+@endsection
+
