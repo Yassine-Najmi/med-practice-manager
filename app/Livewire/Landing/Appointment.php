@@ -11,6 +11,7 @@ use Livewire\Component;
 class Appointment extends Component
 {
     public $selectedDate;
+    public $selectedTime;
     public function render()
     {
         return view('livewire.landing.appointment', [
@@ -41,7 +42,6 @@ class Appointment extends Component
                 }
             }
         }
-        echo $selectedDayOfWeek;
         return $availableTimes;
     }
 }

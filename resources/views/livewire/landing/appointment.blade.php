@@ -53,12 +53,11 @@
                                             min="{{ now()->format('Y-m-d') }}">
                                         <span class="icon fas fa-calendar"></span>
                                     </div>
-                                    <h5 x-text="$wire.selectedDate"></h5>
 
                                     <div class="form-group">
-                                        <select wire:model.defer="selectedTime" class="custom-select-box">
+                                        <select wire:model="selectedTime" class="custom-select-box">
                                             <option value="">{{ __('index.select-time') }}</option>
-                                            @forelse ($availableTimes as $time)
+                                            @foreach ($availableTimes as $time)
                                                 <option value="{{ $time }}">{{ $time }}</option>
                                             @endforeach
                                         </select>
