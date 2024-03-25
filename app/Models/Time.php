@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Patient extends Model
+class Time extends Model
 {
     use HasFactory;
-    protected $table = 'patients';
 
-    protected $fillable = [
-        "phone",
-        "name",
-        "email",
-    ];
+    protected $fillable = ['week_id', 'time'];
+
+    public function week()
+    {
+        return $this->belongsTo(Week::class);
+    }
 
     public function appointments()
     {

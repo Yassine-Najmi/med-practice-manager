@@ -374,81 +374,76 @@
                     </div>
                 </div>
 
-
-                {{-- <div class="schedule-column col-lg-7 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <!-- Sec Title -->
-                        <div class="sec-title">
-                            <h2>{{ __('index.regular-schedule-title') }}</h2>
-                            <div class="separator"></div>
-                        </div>
-
-                        <div class="content">
-
-                            <!-- Title Box -->
-                            <ul class="title-box clearfix">
-                                <li>{{ __('index.departments') }}</li>
-                                <li>{{ __('index.monday-friday') }}</li>
-                                <li>{{ __('index.saturday-sunday') }}</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.cardiology') }}</li>
-                                <li>8:00 am - 10:30 pm</li>
-                                <li>8:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.orthopedic') }}</li>
-                                <li>9:00 am - 7:00 pm</li>
-                                <li>11:00 am - 6:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.neurology') }}</li>
-                                <li>8:30 am - 7:30 pm</li>
-                                <li>8:30 am - 7:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.dental-care') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.hepatology') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.eyes-care') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                            <!-- Content Box -->
-                            <ul class="content-box clearfix">
-                                <li>{{ __('index.orthopedic') }}</li>
-                                <li>9:00 am - 10:30 pm</li>
-                                <li>9:00 am - 10:30 pm</li>
-                            </ul>
-
-                        </div>
-
-
-                    </div>
-                </div> --}}
-
                 <!-- Appointment Column -->
                 <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
+                    {{-- <livewire:landing.appointment /> --}}
+                    <div class="">
+                        <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <!-- Upper Box -->
+                            <div class="upper-box">
+                                <div class="upper-inner">
+                                    <h3>{{ __('index.get-appointment') }}</h3>
+                                </div>
+                            </div>
+
+                            <!-- Lower Box -->
+                            <div class="lower-box">
+                                <div class="upper-inner">
+
+                                    <!-- Appointment Form -->
+                                    <div class="appointment-form">
+                                        <form action="{{ route('AddAppointement') }}" method="POST">
+                                            @csrf
+                                            <div class="form-group">
+                                                <input type="text" name="name"
+                                                    placeholder="{{ __('index.enter-your-name') }}" required>
+                                                <span class="icon fa fa-user"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="email" name="email"
+                                                    placeholder="{{ __('index.enter-your-phone-number') }}" required>
+                                                <span class="icon fas fa-envolope"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="date" name="date" class="form-control px-4 text-dark"
+                                                    value="{{ now()->format('Y-m-d') }}" required
+                                                    min="{{ now()->format('Y-m-d') }}">
+                                                <span class="icon fas fa-calendar"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <select name="time" class="custom-select-box">
+                                                    @php
+                                                        $start = Carbon\Carbon::createFromTime(9, 0);
+                                                        $end = Carbon\Carbon::createFromTime(18, 0);
+                                                    @endphp
+                                                    @while ($start < $end)
+                                                        <option value="{{ $start->format('H:i') }}">
+                                                            {{ $start->format('g:i A') }}</option>
+                                                        @php
+                                                            $start->addMinutes(30);
+                                                        @endphp
+                                                    @endwhile
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button class="theme-btn submit-btn" type="submit"
+                                                    name="submit-form">{{ __('index.request-appointment') }}</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                {{-- <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <!-- Upper Box -->
                         <div class="upper-box">
@@ -463,37 +458,36 @@
 
                                 <!-- Appointment Form -->
                                 <div class="appointment-form">
-                                    <form method="post" action="appointment.html">
+                                    <form>
 
                                         <div class="form-group">
                                             <input type="text" name="username"
-                                                placeholder="{{ __('index.enter-your-name') }}" required="">
+                                                placeholder="{{ __('index.enter-your-name') }}">
                                             <span class="icon fa fa-user"></span>
                                         </div>
 
                                         <div class="form-group">
                                             <input type="tel" name="phone"
-                                                placeholder="{{ __('index.enter-your-phone-number') }}" required="">
+                                                placeholder="{{ __('index.enter-your-phone-number') }}">
                                             <span class="icon fas fa-phone"></span>
                                         </div>
 
                                         <div class="form-group">
                                             <div class="input-group">
-                                                <input type="date" class="form-control px-4 text-dark"
-                                                    name="appointment" placeholder="{{ __('index.appointment-date') }}"
-                                                    required="">
-                                                <!-- Only the existing icon -->
-                                                {{-- <span class="input-group-text"><i class="fas fa-calendar"></i></span> --}}
+                                                <input type="date" wire:model="selectedDate"
+                                                    min="{{ now()->format('Y-m-d') }}"
+                                                    class="form-control px-4 text-dark" name="appointment"
+                                                    placeholder="{{ __('index.appointment-date') }}" required="">
                                             </div>
                                         </div>
+                                        <h5 x-text="$wire.selectedDate"></h5>
 
                                         <div class="form-group">
-                                            <select class="custom-select-box">
-                                                <option>l'heure du rendez vous</option>
-                                                <option>9:00 am</option>
-                                                <option>10:00 am</option>
-                                                <option>11:00 am</option>
-                                                <option>12:00 am</option>
+                                            <select wire:model.defer="selectedTime" class="custom-select-box">
+                                                <option value="">{{ __('index.select-time') }}</option>
+                                                @forelse ($availableTimes as $time)
+                                                    <option value="{{ $time }}">{{ $time }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
 
@@ -501,8 +495,6 @@
                                             <button class="theme-btn submit-btn" type="submit"
                                                 name="submit-form">{{ __('index.request-appointment') }}</button>
                                         </div>
-
-
                                     </form>
                                 </div>
 
@@ -510,7 +502,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>
@@ -522,7 +514,7 @@
     {{-- <section class="get-appointment-section">
         <div class="auto-container">
             <div class="inner-container">
-                <h3>{{ __('index.get-appointment') }}</h3>
+                <h3>{{ __('index.get-appointment') }}</h3>kkk
 
                 <!-- Appointment Form -->
                 <div class="appointment-form-two">
@@ -588,4 +580,11 @@
         </div>
     </section>
     <!-- End map Section -->
+@endsection
+
+@section('styles')
+    @livewireStyles
+@endsection
+@section('scripts')
+    @livewireScripts
 @endsection

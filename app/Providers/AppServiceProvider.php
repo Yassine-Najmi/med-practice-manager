@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Employee;
 use App\Models\Fournisseur;
 use App\Models\Appointment;
+use App\Models\Consultation;
 use App\Models\Patient;
 use App\Models\Stock;
 use Illuminate\Pagination\Paginator;
@@ -34,6 +35,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with("Fournisseur_count", Fournisseur::count());
             $view->with("Stock_count", Stock::count());
             $view->with("Appointment_count", Appointment::count());
+            $view->with("ConsultationCount", Consultation::count());
         });
     }
 }
