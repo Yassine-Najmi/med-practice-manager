@@ -13,14 +13,15 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // \App\Models\User::factory(10)->create();
-        // $this->call(AdminSeeder::class);
-        // \App\Models\Fournisseur::factory(10)->create();
-        // \App\Models\Patient::factory(10)->create();
-        // \App\Models\Employee::factory(10)->create();
-        // \App\Models\Stock::factory(10)->create();
+        $this->call(AdminSeeder::class);
+        \App\Models\Fournisseur::factory(10)->create();
+        \App\Models\Patient::factory(10)->create();
+        \App\Models\Employee::factory(10)->create();
+        \App\Models\Stock::factory(10)->create();
+        $this->call(WeekSeeder::class);
         \App\Models\Time::factory(10)->create();
         \App\Models\Appointment::factory(10)->create();
-        // $this->call(WeekSeeder::class);
+        \App\Models\Consultation::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

@@ -376,7 +376,72 @@
 
                 <!-- Appointment Column -->
                 <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
-                    <livewire:landing.appointment />
+                    {{-- <livewire:landing.appointment /> --}}
+                    <div class="">
+                        <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <!-- Upper Box -->
+                            <div class="upper-box">
+                                <div class="upper-inner">
+                                    <h3>{{ __('index.get-appointment') }}</h3>
+                                </div>
+                            </div>
+
+                            <!-- Lower Box -->
+                            <div class="lower-box">
+                                <div class="upper-inner">
+
+                                    <!-- Appointment Form -->
+                                    <div class="appointment-form">
+                                        <form action="{{ route('AddAppointement') }}" method="POST">
+                                            @csrf
+                                            <div class="form-group">
+                                                <input type="text" name="name"
+                                                    placeholder="{{ __('index.enter-your-name') }}" required>
+                                                <span class="icon fa fa-user"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="email" name="email"
+                                                    placeholder="{{ __('index.enter-your-phone-number') }}" required>
+                                                <span class="icon fas fa-envolope"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="date" name="date" class="form-control px-4 text-dark"
+                                                    value="{{ now()->format('Y-m-d') }}" required
+                                                    min="{{ now()->format('Y-m-d') }}">
+                                                <span class="icon fas fa-calendar"></span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <select name="time" class="custom-select-box">
+                                                    @php
+                                                        $start = Carbon\Carbon::createFromTime(9, 0);
+                                                        $end = Carbon\Carbon::createFromTime(18, 0);
+                                                    @endphp
+                                                    @while ($start < $end)
+                                                        <option value="{{ $start->format('H:i') }}">
+                                                            {{ $start->format('g:i A') }}</option>
+                                                        @php
+                                                            $start->addMinutes(30);
+                                                        @endphp
+                                                    @endwhile
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button class="theme-btn submit-btn" type="submit"
+                                                    name="submit-form">{{ __('index.request-appointment') }}</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
                 {{-- <div class="appointment-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">

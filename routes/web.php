@@ -1,12 +1,15 @@
 <?php
 
 use App\Http\Controllers\Admin\AppointmentController;
+use App\Http\Controllers\Admin\ConsultationController;
 use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\FournisseurController;
 use App\Http\Controllers\Admin\PatientController;
+use App\Http\Controllers\Admin\PdfController;
 use App\Http\Controllers\Admin\StockController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,8 +35,16 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::resource('fournisseur', FournisseurController::class);
     Route::resource('stock', StockController::class);
     Route::resource('appointments', AppointmentController::class)->except("store");
+    Route::resource('consultation', ConsultationController::class);
+    Route::controller(PdfController::class)->name("pdf.")->group(function(){
+        Route::get('/pdf', 'test')->name('test');
+    });
 });
-Route::post('appointments.stote', [AppointmentController::class, 'store'])->name("Appointment.store");
+// Route::post('appointments.stote', [AppointmentController::class, 'store'])->name("Appointment.store");
+
+Route::controller(HomeController::class)->group(function () {
+    Route::post('AddAppointement', 'AddAppointement')->name("AddAppointement");
+});
 
 
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
