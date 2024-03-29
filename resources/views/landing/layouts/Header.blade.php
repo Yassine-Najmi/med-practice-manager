@@ -33,12 +33,16 @@
         <div class="inner-container">
             <div class="auto-container clearfix">
                 <!--Info-->
-                <div class="logo-outer">
-                    <div class="logo"><a href=""><img
-                                src="https://themewagon.github.io/medicalcenter/assets/img/logo/logo.png" alt=""
-                                title=""></a>
+                <div class="logo-outer py-0">
+                    <div class="logo">
+                        <a href="">
+                            <img src="{{ asset('assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }}" alt=""
+                                title="" class="img-fluid" style="max-width: 150px; max-height: 150px;">
+                            <!-- Adjust the max-width and max-height values as needed -->
+                        </a>
                     </div>
                 </div>
+
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">

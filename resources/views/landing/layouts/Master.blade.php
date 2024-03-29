@@ -131,7 +131,8 @@
                                             </li>
 
                                             <li><span class="icon flaticon-message"></span>Souhaitez-vous poser une
-                                                question ?<a href="mailto:info@gmail.com">berrada.ali@gmail.com</a></li>
+                                                question ?<a
+                                                    href="mailto:berrada.ali@gmail.com">berrada.ali@gmail.com</a></li>
                                         </ul>
 
                                     </div>
