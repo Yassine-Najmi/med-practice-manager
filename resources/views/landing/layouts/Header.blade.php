@@ -15,10 +15,6 @@
             </div>
             <div class="top-right clearfix">
                 <ul class="social-icons">
-                    {{-- <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                    <li><a href="#"><span class="fab fa-google"></span></a></li>
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-skype"></span></a></li> --}}
                     <li><a
                             href="{{ url('https://www.linkedin.com/in/dr-ali-berrada-99658045/?originalSubdomain=ma') }}"><span
                                 class="fab fa-linkedin" style='font-size:24px'></span></a></li>
@@ -60,62 +56,15 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">{{ __('navbar.home') }}</a>
+                                <li class="@if (empty(Request::segment(2))) current @endif"><a
+                                        href="{{ route('home') }}">{{ __('navbar.home') }}</a>
                                 </li>
-                                <li class="dropdown"><a href="#">{{ __('navbar.about_us') }}</a>
-                                    <ul>
-                                        <li><a href="">About Us</a></li>
-                                        <li><a href="">Our Team</a></li>
-                                        <li><a href="">Faq</a></li>
-                                        <li><a href="">Services</a></li>
-                                        <li><a href="">Gallery</a></li>
-                                        <li><a href="">Comming Soon</a></li>
-                                    </ul>
+                                <li class="@if (Request::segment(2) == 'about') current @endif"><a
+                                        href="{{ route('about') }}">{{ __('navbar.about_us') }}</a>
+
                                 </li>
-                                {{-- <li class="dropdown has-mega-menu"><a href="#">Pages</a>
-                                    <div class="mega-menu">
-                                        <div class="mega-menu-bar row clearfix">
-                                            <div class="column col-md-3 col-xs-12">
-                                                <h3>About Us</h3>
-                                                <ul>
-                                                    <li><a href="">About Us</a></li>
-                                                    <li><a href="">Our Team</a></li>
-                                                    <li><a href="">Faq</a></li>
-                                                    <li><a href="">Services</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column col-md-3 col-xs-12">
-                                                <h3>Doctors</h3>
-                                                <ul>
-                                                    <li><a href="">Doctors</a></li>
-                                                    <li><a href="">Doctors Detail</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column col-md-3 col-xs-12">
-                                                <h3>Blog</h3>
-                                                <ul>
-                                                    <li><a href="">Our Blog</a></li>
-                                                    <li><a href="">Blog Classic</a></li>
-                                                    <li><a href="">Blog Detail</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="column col-md-3 col-xs-12">
-                                                <h3>Shops</h3>
-                                                <ul>
-                                                    @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                                                        <li>
-                                                            <a rel="alternate" hreflang="{{ $localeCode }}"
-                                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                                                {{ $properties['native'] }}
-                                                            </a>
-                                                        </li>
-                                                    @endforeach
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li> --}}
-                                <li><a href="">{{ __('navbar.contact') }}</a></li>
+                                <li class="@if (Request::segment(2) == 'contact') current @endif"><a
+                                        href="{{ route('contact') }}">{{ __('navbar.contact') }}</a></li>
                                 <li class="dropdown"><a href="#">{{ __('lang.lang') }}</a>
                                     <ul>
                                         @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -136,7 +85,7 @@
                     <!-- Main Menu End-->
                     <div class="outer-box clearfix">
                         <!-- Search Btn -->
-                        {{-- <div class="search-box-btn"><span class="icon flaticon-search"></span></div> --}}
+
                         <!-- Button Box -->
                         <div class="btn-box">
                             <a href="" class="theme-btn btn-style-one"><span
@@ -150,12 +99,13 @@
     <!--End Header Upper-->
 
     <!--Sticky Header-->
-    <div class="sticky-header">
+    <div class="sticky-header py-0">
         <div class="auto-container clearfix">
             <!--Logo-->
-            <div class="logo pull-left">
-                <a href="" class="img-responsive"><img src="images/logo-small.png" alt=""
-                        title=""></a>
+            <div class="logo pull-left py-0">
+                <a href="" class="img-responsive"> <img
+                        src="{{ asset('assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }}" alt=""
+                        title="" class="img-fluid" style="max-width: 80px; max-height: 8y0px;"></a>
             </div>
 
             <!--Right Col-->

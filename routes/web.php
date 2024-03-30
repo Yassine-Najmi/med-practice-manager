@@ -25,7 +25,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landing.index');
-});
+})->name("home");
+
+Route::get('/about', function () {
+    return view('landing.about');
+})->name("about");
+
+Route::get('/contact', function () {
+    return view('landing.contact');
+})->name("contact");
 
 Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('index');
@@ -36,7 +44,7 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::resource('stock', StockController::class);
     Route::resource('appointments', AppointmentController::class)->except("store");
     Route::resource('consultation', ConsultationController::class);
-    Route::controller(PdfController::class)->name("pdf.")->group(function(){
+    Route::controller(PdfController::class)->name("pdf.")->group(function () {
         Route::get('/pdf', 'test')->name('test');
     });
 });

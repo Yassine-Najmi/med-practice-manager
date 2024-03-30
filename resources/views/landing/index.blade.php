@@ -15,8 +15,8 @@
                             <h2>{{ __('header.big_text') }}</h2>
                             <div class="text">{{ __('header.small_text_2') }}</div>
                             <div class="btn-box clearfix">
-                                <a href="contact.html" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('navbar.appointment') }}</span></a>
+                                <button onclick="scrollToSection('schedule-section')" class="theme-btn btn-style-two"><span
+                                        class="txt">{{ __('navbar.appointment') }}</span></button>
                                 <a href="#" class="theme-btn phone-btn"><span
                                         class="icon flaticon-call"></span>052-225-0907</a>
                             </div>
@@ -305,7 +305,7 @@
     <!-- End Counter Section -->
 
     <!-- Schedule Section -->
-    <section class="schedule-section"
+    <section class="schedule-section" id="schedule-section"
         style="background-image:url('{{ asset('assets/mediatech/rtl/images/background/5.jpg ') }}')">
         <div class="auto-container">
             <div class="row clearfix">
@@ -510,66 +510,6 @@
     <!-- End Schedule Section -->
 
 
-    <!-- Get Appointment Section -->
-    {{-- <section class="get-appointment-section">
-        <div class="auto-container">
-            <div class="inner-container">
-                <h3>{{ __('index.get-appointment') }}</h3>kkk
-
-                <!-- Appointment Form -->
-                <div class="appointment-form-two">
-                    <form method="post" action="{{ route('Appointment.store') }}">
-                        @csrf
-                        <div class="row clearfix">
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.full-name') }}</label>
-                                <input type="text" name="name" placeholder="{{ __('index.full-name') }}"
-                                    required="">
-                                <span class="icon fa fa-user"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.email') }}</label>
-                                <input type="email" name="email" placeholder="{{ __('index.email-placeholder') }}"
-                                    required="">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.gender') }}</label>
-                                <select class="custom-select-box">
-                                    <option>{{ __('index.select-gender') }}</option>
-                                    <option>{{ __('index.male') }}</option>
-                                    <option>{{ __('index.female') }}</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.phone-number') }}</label>
-                                <input type="tel" name="phone" placeholder="{{ __('index.phone-placeholder') }}"
-                                    required="">
-                                <span class="icon fas fa-phone"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.appointment-date') }}</label>
-                                <input type="date" name="date" placeholder="{{ __('index.date-placeholder') }}">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <label>{{ __('index.consultant-hour') }}</label>
-                                <input type="time" name="time" placeholder="{{ __('index.time-placeholder') }}">
-                                <span class="icon fa fa-calendar"></span>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
-                                <button class="theme-btn btn-style-two" type="submit" name="submit-form"><span
-                                        class="txt">{{ __('index.submit-request') }}</span></button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </section> --}}
-
-
     <!-- Map Section -->
     <section id="map-section">
         {{-- <div id="map" style="height: 400px; width: 100%;"></div> --}}
@@ -586,5 +526,15 @@
     @livewireStyles
 @endsection
 @section('scripts')
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>
     @livewireScripts
 @endsection
