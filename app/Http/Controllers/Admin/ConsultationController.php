@@ -14,7 +14,7 @@ class ConsultationController extends Controller
     public function index()
     {
         $data = Consultation::latest()->with('patient')->paginate(15);
-        return view('admin.pages.Consultation.Index', compact('data'));
+        return view('admin.pages.consultation.Index', compact('data'));
     }
 
     /**

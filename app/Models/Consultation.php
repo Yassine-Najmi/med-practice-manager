@@ -21,8 +21,20 @@ class Consultation extends Model
         'traitment'
     ];
 
+    protected $hidden = [
+        'patient'
+    ];
+    protected $appends = [
+        'patient_name'
+    ];
+
     public function patient()
     {
         return $this->belongsTo(Patient::class);
+    }
+
+    public function getPatientNameAttribute(): string
+    {
+        return $this->patient->name;
     }
 }

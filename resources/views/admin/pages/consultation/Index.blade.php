@@ -75,9 +75,16 @@
                                         <td>{{ $item->motif }}</td>
                                         <td>
                                             <div class="btn-group">
-                                                <a href="{{ route('admin.pdf.test') }}">520</a>
-                                                <a href="#"
-                                                    class="modal-effect btn btn-md btn-info rounded mr-2"
+                                                <a class="modal-effect btn btn-md btn-success rounded mr-2"
+                                                    href="{{ route('admin.pdf.generatePdf', ['id' => $item->id]) }}"
+                                                    target="_blank">
+                                                    <i class="fas fa-file-pdf mr-1"></i> PDF
+                                                </a>
+
+
+
+
+                                                <a href="#" class="modal-effect btn btn-md btn-info rounded mr-2"
                                                     data-effect="effect-scale" data-target="#editModal{{ $item->id }}"
                                                     data-toggle="modal">Edit</a>
                                                 <form action="" method="post">
@@ -90,7 +97,7 @@
                                         </td>
 
                                     </tr>
-                                    @include('admin.pages.fournisseur.edit')
+                                    @include('admin.pages.consultation.edit')
                                 @empty
                                     no data found
                                 @endforelse
@@ -105,7 +112,7 @@
 
     </div>
     <!-- /row -->
-    @include('admin.pages.fournisseur.create')
+    @include('admin.pages.consultation.create')
     {{-- @include('messages.messages') --}}
 @endsection
 

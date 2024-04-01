@@ -5,17 +5,22 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use PDF;
+use App\Models\Consultation;
 
 class PdfController extends Controller
 {
-    public function test()
+    public function generatePdf($id)
     {
-        $data = [
-            'foo' => 'gjw9'
-        ];
+        // Fetch specific information about the consultation using $id
+        $consultation = Consultation::findOrFail($id);
 
-        $pdf = PDF::loadView('admin.pdf.test', $data);
+        // Pass the consultation data to the PDF view
+        $data = ['consultation' => $consultation];
 
-        return $pdf->stream('document.pdf');
+        // Load the PDF view with the data
+        $pdf = PDF::loadView('admin.pdf.consultation', $data);
+
+        // Return the PDF as a stream
+        return $pdf->stream('consultation.pdf');
     }
 }

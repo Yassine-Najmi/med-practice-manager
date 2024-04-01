@@ -45,7 +45,8 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::resource('appointments', AppointmentController::class)->except("store");
     Route::resource('consultation', ConsultationController::class);
     Route::controller(PdfController::class)->name("pdf.")->group(function () {
-        Route::get('/pdf', 'test')->name('test');
+        Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');
+        // Route::get('/pdf', 'test')->name('test');
     });
 });
 // Route::post('appointments.stote', [AppointmentController::class, 'store'])->name("Appointment.store");
