@@ -14,8 +14,8 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $data = Appointment::latest()->with('patient')->paginate(15);
-        return view('admin.pages.appointments.Index', compact('data'));
+        $data = Appointment::latest()->with('patient')->paginate(10);
+        return view('admin.pages.appointment.Index', compact('data'));
     }
 
     /**
@@ -69,9 +69,27 @@ class AppointmentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Appointment $appointment)
+    public function update(Request $request, Appointment $appointment, string $id)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'email' => 'required',
+            'cnie' => 'required',
+            'date_of_birth' => 'required',
+        ]);
+
+        $data = Patient::find($id);
+        $data->name = $request->name;
+        $data->phone = $request->phone;
+        $data->address = $request->address;
+        $data->email = $request->email;
+        $data->cnie = $request->cnie;
+        $data->date_of_birth = $request->date_of_birth;
+        $data->save();
+
+        return redirect()->back()->with('success', 'Patient updated successfully');
     }
 
     /**

@@ -7,7 +7,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Medi-tech</title>
+    <title>SGCD</title>
+    <link rel="icon" href="{{ asset('http://localhost:8000/assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }} "
+        type="image/x-icon" style="max-width: 150px; max-height: 150px;" />
     {{-- @yield("styles") --}}
     @livewireStyles
     <!-- Stylesheets -->

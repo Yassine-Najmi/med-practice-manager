@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Consultation;
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
 class ConsultationController extends Controller
@@ -13,8 +14,9 @@ class ConsultationController extends Controller
      */
     public function index()
     {
+        $items = Patient::all();
         $data = Consultation::latest()->with('patient')->paginate(15);
-        return view('admin.pages.consultation.Index', compact('data'));
+        return view('admin.pages.consultation.Index', compact('data', 'items'));
     }
 
     /**
@@ -30,7 +32,25 @@ class ConsultationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            // 'patient_id' => 'required',
+            // 'antécédents' => 'required',
+            // 'diagnostique' => 'required',
+            // 'traitment' => 'required',
+            'motif' => 'required | numeric',
+        ]);
+
+
+        $data = new Consultation();
+        $data->patient_id =  $request->patient;
+        $data->situation = "En cours";
+        $data->antécédents = $request->antécédents;
+        $data->diagnostique = $request->diagnostique;
+        $data->traitment = $request->traitment;
+        $data->motif = $request->motif;
+        $data->save();
+
+        return redirect()->back()->with('success', 'Consultation added successfully');
     }
 
     /**

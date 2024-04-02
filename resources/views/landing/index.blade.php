@@ -149,7 +149,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-doctor-stethoscope"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Consultations en médecine générale</a></h3>
+                                <h3><a>Consultations en médecine générale</a></h3>
                                 <div class="text">Consultations générales pour tous les besoins médicaux.</div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-operating-room"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Médecine du travail</a></h3>
+                                <h3><a>Médecine du travail</a></h3>
                                 <div class="text">Consultations spécialisées en médecine du travail pour assurer la santé
                                     et la sécurité au travail.</div>
                             </div>
@@ -172,7 +172,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-van"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Certificats médicaux</a></h3>
+                                <h3><a>Certificats médicaux</a></h3>
                                 <div class="text">Émission de certificats médicaux pour diverses fins.</div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-water"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Vaccinations</a></h3>
+                                <h3><a>Vaccinations</a></h3>
                                 <div class="text">Administration de vaccinations pour la prévention des maladies.</div>
                             </div>
                         </div>
@@ -214,7 +214,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-pharmacy"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Examens de santé préventifs</a></h3>
+                                <h3><a>Examens de santé préventifs</a></h3>
                                 <div class="text">Détection précoce des problèmes de santé pour prévenir les
                                     complications.
                                 </div>
@@ -227,7 +227,7 @@
                                 <div class="icon-box">
                                     <span class="icon flaticon-nurse"></span>
                                 </div>
-                                <h3><a href="doctors-detail.html">Gestion des maladies chroniques</a></h3>
+                                <h3><a>Gestion des maladies chroniques</a></h3>
                                 <div class="text">Consultations et suivi pour les maladies telles que le diabète,
                                     l'hypertension, les maladies cardiaques, etc.</div>
                             </div>
@@ -402,7 +402,7 @@
 
                                             <div class="form-group">
                                                 <input type="email" name="email"
-                                                    placeholder="{{ __('index.enter-your-phone-number') }}" required>
+                                                    placeholder="Entrez votre adresse e-mail" required>
                                                 <span class="icon fas fa-envolope"></span>
                                             </div>
 

@@ -14,13 +14,11 @@ class PdfController extends Controller
         // Fetch specific information about the consultation using $id
         $consultation = Consultation::findOrFail($id);
 
-        // Pass the consultation data to the PDF view
-        $data = ['consultation' => $consultation];
+        // $data = ['consultation' => $consultation];
 
-        // Load the PDF view with the data
-        $pdf = PDF::loadView('admin.pdf.consultation', $data);
+        $pdf = PDF::loadView('admin.pdf.consultation', compact('consultation'));
 
         // Return the PDF as a stream
-        return $pdf->stream('consultation.pdf');
+        return $pdf->stream('consultation' . $consultation->id . '.pdf');
     }
 }

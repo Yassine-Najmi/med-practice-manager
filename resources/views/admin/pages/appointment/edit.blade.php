@@ -7,7 +7,7 @@
                         type="button"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('admin.fournisseur.update', $item->id) }}">
+                    <form method="POST" action="{{ route('admin.appointments.update', $item->id) }}">
                         @csrf
                         @method('put')
                         <div class="form-group">

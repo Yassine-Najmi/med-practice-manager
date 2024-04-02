@@ -5,11 +5,11 @@
     <div class="breadcrumb-header justify-content-between">
         <div class="left-content">
             <div>
-                <h2 class="main-content-title tx-24 mg-b-1 mg-b-lg-1">Hi, welcome back!</h2>
-                <p class="mg-b-0">Sales monitoring dashboard template.</p>
+                <h2 class="main-content-title tx-24 mg-b-1 mg-b-lg-1">Salut, bienvenue de retour !</h2>
+                <p class="mg-b-0">Tableau de bord de suivi des rendez-vous pour les nouveaux patients aujourd'hui.</p>
             </div>
         </div>
-        <div class="main-dashboard-header-right">
+        {{-- <div class="main-dashboard-header-right">
             <div>
                 <label class="tx-13">Customer Ratings</label>
                 <div class="main-star">
@@ -26,7 +26,7 @@
                 <label class="tx-13">Offline Sales</label>
                 <h5>783,675</h5>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!-- /breadcrumb -->
 
@@ -123,7 +123,7 @@
     </div>
     <!-- row closed -->
 
-    <!-- row opened -->
+    {{-- <!-- row opened -->
     <div class="row row-sm">
         <div class="col-md-12 col-lg-12 col-xl-7">
             <div class="card">
@@ -464,5 +464,5 @@
             </div>
         </div>
     </div>
-    <!-- /row -->
+    <!-- /row --> --}}
 @endsection

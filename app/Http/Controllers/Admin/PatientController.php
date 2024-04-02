@@ -13,7 +13,7 @@ class PatientController extends Controller
      */
     public function index()
     {
-        $data = Patient::latest()->paginate(5);
+        $data = Patient::latest()->paginate(10);
         return view('admin.pages.patient.index', compact('data'));
     }
 

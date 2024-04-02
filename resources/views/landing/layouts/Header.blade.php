@@ -88,8 +88,8 @@
 
                         <!-- Button Box -->
                         <div class="btn-box">
-                            <a href="" class="theme-btn btn-style-one"><span
-                                    class="txt">{{ __('navbar.appointment') }}</span></a>
+                            <button onclick="scrollToSection('schedule-section')" class="theme-btn btn-style-one"><span
+                                    class="txt">Rendez-vous</span></button>
                         </div>
                     </div>
                 </div>

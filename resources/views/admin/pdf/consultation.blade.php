@@ -7,37 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consultation</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        .page-break {
+            page-break-after: always;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+        .color {
+            background-color: red;
         }
 
-        h1 {
-            font-size: 24px;
+        .center {
             text-align: center;
-            margin-bottom: 20px;
+            margin-top: 100px;
         }
 
-        p {
-            margin-bottom: 10px;
-        }
-
-        strong {
-            font-weight: bold;
+        footer {
+            position: fixed;
+            bottom: -60px;
+            left: 0;
+            right: 0;
+            height: 2.4cm;
+            color: rgb(0, 0, 0);
+            text-align: center;
         }
     </style>
-
 </head>
 
 <body>
-    <div class="container">
-        <!-- Utilisez les données de votre consultation ici -->
-        <h1>Consultation</h1>
+    <table style="width:100%">
+        <tr>
+            <td width="20%" style="text-align:center">
+                <p>DR BERRADA Ali</p>
+                <p>Médecin Généraliste</p>
+            </td>
+            <td width="40%">
+            </td>
+            <td width="30%" style="text-align:center"><br />
+                <p>Médecin Généraliste</p><br />
+                <p>adresse : 332, bd Brahim Roudani, Casablanca</p>
+                <p>الدكتور علي برادة طبيب عام</p>
+            </td>
+        </tr>
+    </table>
+    <h2 style="text-align: center">Ordonnance</h2>
+    <!-- consultation.blade.php -->
+    <p style="text-align: center">Fait à : {{ $consultation->patient_name }} Le :
+        {{ $consultation['created_at']->format('d-m-Y') }}
+    </p>
+
+    <br />
+
+    <div>
         <p><strong>consultation ID:</strong> {{ $consultation['id'] }}</p>
         <p><strong>nom du Patient:</strong> {{ $consultation['patient_name'] }}</p>
         <p><strong>Patient ID:</strong> {{ $consultation['patient_id'] }}</p>
@@ -52,6 +71,9 @@
         <p><strong>Date de création:</strong> {{ $consultation['created_at'] }}</p>
         <p><strong>Date de mise à jour:</strong> {{ $consultation['updated_at'] }}</p>
     </div>
+    <footer>
+        <span> Adresse : 332, bd Brahim Roudani, Casablanca - Tel : 052-225-0907 </span><br></b>
+    </footer>
 </body>
 
 </html>

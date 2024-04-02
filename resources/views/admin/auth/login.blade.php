@@ -12,10 +12,11 @@
         content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4" />
 
     <!-- Title -->
-    <title> Valex - Premium dashboard ui bootstrap rwd admin html5 template </title>
+    <title> SGCD </title>
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/img/brand/favicon.png') }} " type="image/x-icon" />
+    <link rel="icon" href="{{ asset('http://localhost:8000/assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }} "
+        type="image/x-icon" style="max-width: 150px; max-height: 150px;" />
 
     <!-- Icons css -->
     <link href="{{ asset('assets/admin/css/icons.css') }}." rel="stylesheet">
@@ -60,7 +61,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-7 d-none d-md-flex bg-primary-transparent">
                     <div class="row wd-100p mx-auto text-center">
                         <div class="col-md-12 col-lg-12 col-xl-12 my-auto mx-auto wd-100p">
-                            <img src="{{ asset('assets/admin/img/media/login.png') }}"
+                            <img src="{{ asset('assets/admin/img/media/login.jpg') }}"
                                 class="my-auto ht-xl-80p wd-md-100p wd-xl-80p mx-auto" alt="logo">
                         </div>
                     </div>
@@ -74,9 +75,10 @@
                                 <div class="col-md-10 col-lg-10 col-xl-9 mx-auto">
                                     <div class="card-sigin">
                                         <div class="mb-5 d-flex"> <a href="index.html"><img
-                                                    src="{{ asset('assets/admin/img/brand/favicon.png') }}"
-                                                    class="sign-favicon ht-40" alt="logo"></a>
-                                            <h1 class="main-logo1 ml-1 mr-0 my-auto tx-28">Va<span>le</span>x</h1>
+                                                    src="{{ asset('assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }}"
+                                                    alt="" title="" class="img-fluid"
+                                                    style="max-width: 100px; max-height: 100px;"></a>
+                                            <h1 class="main-logo1 ml-0 mr-0 my-auto tx-28">SG<span>C</span>D</h1>
                                         </div>
                                         <div class="card-sigin">
                                             <div class="row mt-4 mb-2">
@@ -85,21 +87,23 @@
                                                 </div>
                                             </div>
                                             <div class="main-signup-header">
-                                                <h2>Welcome back!</h2>
-                                                <h5 class="font-weight-semibold mb-4">Please sign in to continue.</h5>
+                                                <h2>Bienvenue !</h2>
+                                                <h5 class="font-weight-semibold mb-4">Veuillez vous connecter pour
+                                                    continuer.</h5>
                                                 <form method="POST" action="{{ route('admin.login') }}">
                                                     @csrf
                                                     <div class="form-group">
                                                         <label>Email</label> <input class="form-control mb-1"
-                                                            placeholder="Enter your email" type="text"
+                                                            placeholder="Entrez votre adresse e-mail" type="text"
                                                             name="email">
                                                         @error('email')
                                                             <span class="text-danger ">{{ $message }}</span>
                                                         @enderror
                                                     </div>
                                                     <div class="form-group">
-                                                        <label>Password</label> <input class="form-control mb-1"
-                                                            placeholder="Enter your password" type="password"
+
+                                                        <label>Mot de passe</label> <input class="form-control mb-1"
+                                                            placeholder="Entrez votre mot de passe" type="password"
                                                             name="password">
                                                         @error('password')
                                                             <span class="text-danger ">{{ $message }}</span>
@@ -108,7 +112,7 @@
                                                         In</button>
                                                 </form>
                                                 <div class="main-signin-footer mt-2">
-                                                    <p><a href="">Forgot password?</a></p>
+                                                    {{-- <p><a href="">Forgot password?</a></p> --}}
                                                 </div>
                                             </div>
                                         </div>
