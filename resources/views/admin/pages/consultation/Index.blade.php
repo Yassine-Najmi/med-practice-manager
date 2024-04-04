@@ -37,8 +37,8 @@
                             <thead>
                                 <tr>
                                     <th class="wd-15p border-bottom-0">patient Name</th>
-                                    <th class="wd-25p border-bottom-0">antécedents</th>
-                                    <th class="wd-15p border-bottom-0">diagnostique</th>
+                                    <th class="wd-20p border-bottom-0">antécedents</th>
+                                    <th class="wd-20p border-bottom-0">diagnostique</th>
                                     <th class="wd-20p border-bottom-0">traitement</th>
                                     <th class="wd-5p border-bottom-0">Tarif</th>
                                     <th class="wd-25p border-bottom-0 text-center">Action</th>
@@ -50,7 +50,9 @@
                                         <td>{{ $item->patient->name }}</td>
                                         <td>{{ \Illuminate\Support\Str::words($item->antécédents, $words = 10, $end = '...') }}
                                         </td>
-                                        <td>{{ $item->diagnostique }}</td>
+                                        <td>
+                                            {{ \Illuminate\Support\Str::words($item->diagnostique, $words = 10, $end = '...') }}
+                                        </td>
                                         <td>{{ \Illuminate\Support\Str::words($item->traitment, $words = 10, $end = '...') }}
                                         </td>
                                         <td>{{ $item->motif }}</td>
@@ -64,7 +66,8 @@
                                                 <a href="#" class="modal-effect btn btn-md btn-info rounded mr-2"
                                                     data-effect="effect-scale" data-target="#editModal{{ $item->id }}"
                                                     data-toggle="modal">Edit</a>
-                                                <form action="" method="post">
+                                                <form action="{{ route('admin.consultation.destroy', $item->id) }}"
+                                                    method="post">
                                                     @csrf
                                                     @method('delete')
                                                     <button type="submit" class="modal-effect btn btn-md btn-danger"

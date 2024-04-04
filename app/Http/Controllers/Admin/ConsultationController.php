@@ -74,7 +74,22 @@ class ConsultationController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'motif' => 'required | numeric',
+        ]);
+
+        $data = Consultation::find($id);
+
+        $data->patient_id =  $request->patient;
+        $data->situation = "En cours";
+        $data->antécédents = $request->antécédents;
+        $data->diagnostique = $request->diagnostique;
+        $data->traitment = $request->traitment;
+        $data->motif = $request->motif;
+
+        $data->save();
+
+        return redirect()->back()->with('success', 'Consultation updated successfully');
     }
 
     /**
@@ -82,6 +97,8 @@ class ConsultationController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $data = Consultation::find($id);
+        $data->delete();
+        return redirect()->back()->with('success', 'Consultation deleted successfully');
     }
 }
