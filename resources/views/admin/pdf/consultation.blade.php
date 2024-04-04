@@ -38,38 +38,40 @@
             <td width="20%" style="text-align:center">
                 <p>DR BERRADA Ali</p>
                 <p>Médecin Généraliste</p>
+                <p>adresse : 332, bd Brahim Roudani, Casablanca</p>
             </td>
             <td width="40%">
             </td>
-            <td width="30%" style="text-align:center"><br />
-                <p>Médecin Généraliste</p><br />
-                <p>adresse : 332, bd Brahim Roudani, Casablanca</p>
-                <p>الدكتور علي برادة طبيب عام</p>
+            <td width="30%" style="text-align:center">
+                <p>الدكتور علي برادة</p>
+                <p>طبيب عام</p>
+                <p>332، شارع إبراهيم الروداني، الدار البيضاء</p>
             </td>
         </tr>
     </table>
-    <h2 style="text-align: center">Ordonnance</h2>
+    <h2 style="text-align: center;">Ordonnance</h2>
+
     <!-- consultation.blade.php -->
-    <p style="text-align: center">Fait à : {{ $consultation->patient_name }} Le :
-        {{ $consultation['created_at']->format('d-m-Y') }}
+    <p style="text-align: center">Nom : <strong>{{ $consultation->patient_name }}</strong>
     </p>
+    <p style="text-align: center">Casablanca, le : <strong>{{ $consultation['created_at']->format('d/m/Y') }}</strong>
+    </p>
+    <br> <br> <br> <br>
 
-    <br />
-
-    <div>
-        <p><strong>consultation ID:</strong> {{ $consultation['id'] }}</p>
-        <p><strong>nom du Patient:</strong> {{ $consultation['patient_name'] }}</p>
-        <p><strong>Patient ID:</strong> {{ $consultation['patient_id'] }}</p>
+    <div style="text-align: center">
+        {{-- <p><strong>consultation ID:</strong> {{ $consultation['id'] }}</p> --}}
+        {{-- <p><strong>nom du Patient:</strong> {{ $consultation['patient_name'] }}</p>
+        <p><strong>Patient ID:</strong> {{ $consultation['patient_id'] }}</p> --}}
         <p><strong>Situation:</strong> {{ $consultation['situation'] }}</p>
         <p><strong>Antécédents:</strong> {!! nl2br(e($consultation['antécédents'])) !!}</p>
-        <p><strong>Motif:</strong> {{ $consultation['motif'] }}</p>
+        <p><strong>Tarif:</strong> {{ $consultation['motif'] }}</p>
         <p><strong>Examen Clinique:</strong> {!! nl2br(e($consultation['examen_clinick'])) !!}</p>
         <p><strong>Examen Biologique:</strong> {{ $consultation['examen_biologique'] }}</p>
         <p><strong>Examen Radiologique:</strong> {!! nl2br(e($consultation['examen_radiologique'])) !!}</p>
         <p><strong>Diagnostic:</strong> {{ $consultation['diagnostique'] }}</p>
         <p><strong>Traitement:</strong> {{ $consultation['traitment'] }}</p>
-        <p><strong>Date de création:</strong> {{ $consultation['created_at'] }}</p>
-        <p><strong>Date de mise à jour:</strong> {{ $consultation['updated_at'] }}</p>
+        <p><strong>Date de création:</strong> {{ $consultation['created_at']->format('d/m/Y H:i') }}</p>
+        <p><strong>Date de mise à jour:</strong> {{ $consultation['updated_at']->format('d/m/Y H:i') }}</p>
     </div>
     <footer>
         <span> Adresse : 332, bd Brahim Roudani, Casablanca - Tel : 052-225-0907 </span><br></b>
