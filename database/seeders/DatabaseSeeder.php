@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Time::factory(10)->create();
         \App\Models\Appointment::factory(10)->create();
         \App\Models\Consultation::factory(10)->create();
+        $this->call(BusinessHourSeeder::class);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

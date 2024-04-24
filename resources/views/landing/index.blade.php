@@ -392,7 +392,8 @@
 
                                     <!-- Appointment Form -->
                                     <div class="appointment-form">
-                                        <form action="{{ route('AddAppointement') }}" method="POST">
+                                        <form id="appointment-form" action="{{ route('AddAppointement') }}"
+                                            method="POST">
                                             @csrf
                                             <div class="form-group">
                                                 <input type="text" name="name"
@@ -403,14 +404,13 @@
                                             <div class="form-group">
                                                 <input type="email" name="email"
                                                     placeholder="Entrez votre adresse e-mail" required>
-                                                <span class="icon fas fa-envolope"></span>
+                                                <span class="icon fas fa-envelope"></span>
                                             </div>
 
                                             <div class="form-group">
                                                 <input type="date" name="date" class="form-control px-4 text-dark"
                                                     value="{{ now()->format('Y-m-d') }}" required
                                                     min="{{ now()->format('Y-m-d') }}">
-                                                <span class="icon fas fa-calendar"></span>
                                             </div>
 
                                             <div class="form-group">

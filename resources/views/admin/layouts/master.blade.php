@@ -20,6 +20,10 @@
     <link rel="icon" href="{{ asset('http://localhost:8000/assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }} "
         type="image/x-icon" style="max-width: 150px; max-height: 150px;" />
 
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> --}}
+
+
+
     <!-- Add this to the head section of your HTML -->
     <link rel="stylesheet" href="">
 
@@ -476,6 +480,8 @@
     <script src="{{ asset('assets/admin/js/apexcharts.js') }}"></script>
     <script src="{{ asset('assets/admin/js/custom.js') }}"></script>
     <script src="{{ asset('assets/admin/js/jquery.vmap.sampledata.js') }}"></script>
+    {{-- ------------------ --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> --}}
 
 </body>
 

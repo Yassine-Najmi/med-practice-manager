@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AppointmentController;
+use App\Http\Controllers\Admin\BusinessHourController;
 use App\Http\Controllers\Admin\ConsultationController;
 use App\Http\Controllers\Admin\EmployeeController;
 use App\Http\Controllers\Admin\FournisseurController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\Admin\StockController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Models\BusinessHour;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +26,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landing.index');
+    $businessHours = BusinessHour::all();
+    return view('landing.index', compact('businessHours'));
 })->name("home");
 
 Route::get('/about', function () {
@@ -48,6 +51,8 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
         Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');
         // Route::get('/pdf', 'test')->name('test');
     });
+    Route::get('/business-hours', [BusinessHourController::class, 'index'])->name('business-hours.index');
+    Route::post('/business-hours', [BusinessHourController::class, 'update'])->name('business-hours.update');
 });
 // Route::post('appointments.stote', [AppointmentController::class, 'store'])->name("Appointment.store");
 

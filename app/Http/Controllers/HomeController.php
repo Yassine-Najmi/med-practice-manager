@@ -10,8 +10,17 @@ class HomeController extends Controller
 {
     public function AddAppointement(Request $request)
     {
-        $this->validate($request,[
-        ]);
+        $this->validate($request, []);
+
+        $existingAppointment = Appointment::where('date', $request->date)
+            ->where('time', $request->time)
+            ->exists();
+
+        if ($existingAppointment) {
+            return redirect()->back()->withInput()->with([
+                "error" => "The selected date and time are not available. Please choose another time."
+            ]);
+        }
 
         $patient = Patient::firstOrCreate(
             ['name' => request('name')],
@@ -25,8 +34,7 @@ class HomeController extends Controller
         ]);
 
         return redirect()->back()->with([
-            "success" => "appoitement create with success , please check your Email"
+            "success" => "appoitement create with success"
         ]);
-
     }
 }

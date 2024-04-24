@@ -1,0 +1,27 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\BusinessHour;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class BusinessHourSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $days = config('appointment.days');
+        foreach ($days as $key => $value) {
+            BusinessHour::query()->updateOrCreate([
+                'day' => $value
+            ], [
+                'from' => '09:00:00',
+                'to' => '17:00:00',
+                'step' => 30,
+            ]);
+        }
+    }
+}
