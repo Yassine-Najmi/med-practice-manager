@@ -14,9 +14,9 @@ class BusinessHourSeeder extends Seeder
     public function run(): void
     {
         $days = config('appointment.days');
-        foreach ($days as $key => $value) {
+        foreach ($days as $day) {
             BusinessHour::query()->updateOrCreate([
-                'day' => $value
+                'day' => $day
             ], [
                 'from' => '09:00:00',
                 'to' => '17:00:00',

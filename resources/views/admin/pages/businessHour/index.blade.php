@@ -22,56 +22,60 @@
     <div class="container-fluid">
         <div class="breadcrumb-header justify-content-between"></div>
         <div class="container">
-            <h1 class="text-center mt-4 mb-4">
-                Heures d'ouverture
-            </h1>
+            <h1 class="text-center mt-4 mb-4">Heures d'ouverture</h1>
             @include('layouts._message')
-            <form id="appointment-form" action="{{ route('AddAppointement') }}" method="POST">
+            <form action="{{ route('admin.business-hours.update') }}" method="post">
                 @csrf
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="{{ __('index.enter-your-name') }}" required>
-                    <span class="icon fa fa-user"></span>
+                <div class="row">
+                    @foreach ($businessHours as $businessHour)
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
+                                <h4 class="card-header text-center font-weight-bold">
+                                    {{ $businessHour['day'] }}
+                                </h4>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <input type="hidden" id="day-{{ $businessHour['id'] }}"
+                                            name="businessHours[{{ $businessHour['day'] }}][day]"
+                                            value="{{ $businessHour['day'] }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="from-{{ $businessHour['id'] }}">From</label>
+                                        <input type="time" class="form-control" id="from-{{ $businessHour['id'] }}"
+                                            name="businessHours[{{ $businessHour['day'] }}][from]"
+                                            value="{{ $businessHour['from'] }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="to-{{ $businessHour['id'] }}">To</label>
+                                        <input type="time" class="form-control" id="to-{{ $businessHour['id'] }}"
+                                            name="businessHours[{{ $businessHour['day'] }}][to]"
+                                            value="{{ $businessHour['to'] }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="step-{{ $businessHour['id'] }}">Step (minutes)</label>
+                                        <input type="number" class="form-control" id="step-{{ $businessHour['id'] }}"
+                                            name="businessHours[{{ $businessHour['day'] }}][step]"
+                                            value="{{ $businessHour['step'] }}">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="off-{{ $businessHour['id'] }}"
+                                            name="businessHours[{{ $businessHour['day'] }}][off]"
+                                            {{ $businessHour['off'] ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="off-{{ $businessHour['id'] }}">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
-
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Entrez votre adresse e-mail" required>
-                    <span class="icon fas fa-envelope"></span>
-                </div>
-
-                <div class="form-group">
-                    <input type="date" name="date" class="form-control px-4 text-dark"
-                        value="{{ now()->format('Y-m-d') }}" required min="{{ now()->format('Y-m-d') }}">
-                </div>
-
-                <div class="form-group">
-                    <select name="time" class="custom-select-box">
-                        @foreach ($businessHours as $businessHour)
-                            @if (!$businessHour->off)
-                                @php
-                                    $start = Carbon\Carbon::parse($businessHour->from);
-                                    $end = Carbon\Carbon::parse($businessHour->to);
-                                @endphp
-                                @while ($start < $end)
-                                    <option value="{{ $start->format('H:i') }}">{{ $start->format('g:i A') }}</option>
-                                    @php
-                                        $start->addMinutes($businessHour->step);
-                                    @endphp
-                                @endwhile
-                            @endif
-                        @endforeach
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <button class="theme-btn submit-btn" type="submit"
-                        name="submit-form">{{ __('index.request-appointment') }}</button>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
                 </div>
             </form>
-
         </div>
     </div>
 @endsection
-
+{{--
 @section('scripts')
     <script>
         document.getElementById('appointment-date').addEventListener('change', function() {
@@ -115,4 +119,4 @@
             xhr.send();
         });
     </script>
-@endsection
+@endsection --}}
