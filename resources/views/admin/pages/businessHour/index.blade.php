@@ -36,30 +36,32 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <input type="hidden" id="day-{{ $businessHour['id'] }}"
-                                            name="businessHours[{{ $businessHour['day'] }}][day]"
+                                            name="businessHours[{{ $businessHour['id'] }}][day]"
                                             value="{{ $businessHour['day'] }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="from-{{ $businessHour['id'] }}">From</label>
                                         <input type="time" class="form-control" id="from-{{ $businessHour['id'] }}"
-                                            name="businessHours[{{ $businessHour['day'] }}][from]"
+                                            name="businessHours[{{ $businessHour['id'] }}][from]"
                                             value="{{ $businessHour['from'] }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="to-{{ $businessHour['id'] }}">To</label>
                                         <input type="time" class="form-control" id="to-{{ $businessHour['id'] }}"
-                                            name="businessHours[{{ $businessHour['day'] }}][to]"
+                                            name="businessHours[{{ $businessHour['id'] }}][to]"
                                             value="{{ $businessHour['to'] }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="step-{{ $businessHour['id'] }}">Step (minutes)</label>
                                         <input type="number" class="form-control" id="step-{{ $businessHour['id'] }}"
-                                            name="businessHours[{{ $businessHour['day'] }}][step]"
+                                            name="businessHours[{{ $businessHour['id'] }}][step]"
                                             value="{{ $businessHour['step'] }}">
                                     </div>
                                     <div class="form-group form-check">
+                                        <input type="hidden" name="businessHours[{{ $businessHour['id'] }}][off]"
+                                            value="0"> <!-- default value if unchecked -->
                                         <input type="checkbox" class="form-check-input" id="off-{{ $businessHour['id'] }}"
-                                            name="businessHours[{{ $businessHour['day'] }}][off]"
+                                            name="businessHours[{{ $businessHour['id'] }}][off]" value="1"
                                             {{ $businessHour['off'] ? 'checked' : '' }}>
                                         <label class="form-check-label" for="off-{{ $businessHour['id'] }}">Off</label>
                                     </div>
@@ -68,7 +70,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="text-center">
+                <div class="text-center mb-5">
                     <button type="submit" class="btn btn-primary">Save Changes</button>
                 </div>
             </form>

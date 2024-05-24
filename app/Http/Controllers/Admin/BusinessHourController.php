@@ -17,23 +17,8 @@ class BusinessHourController extends Controller
 
     public function update(Request $request)
     {
-        dd($request->all());
-
-
-        // $requestData = $request->all()['data'];
-        // $data = [];
-        // foreach ($requestData as $dayData) {
-        //     // $off = isset($dayData['off']) ? $dayData['off'] : false;
-        //     $off = $request->has("data.{$dayData['day']}.off") ? true : false;
-        //     $data[] = [
-        //         'day' => $dayData['day'],
-        //         'from' => $dayData['from'],
-        //         'to' => $dayData['to'],
-        //         'step' => $dayData['step'],
-        //         'off' => $off
-        //     ];
-        // }
-        // BusinessHour::query()->upsert($data, ['day']);
-        // return redirect()->back()->with('success', 'Business hours updated successfully');
+        $data = array_values($request->all()['businessHours']);
+        BusinessHour::query()->upsert($data, ['day']);
+        return redirect()->back()->with('success', 'Business hours updated successfully');
     }
 }
