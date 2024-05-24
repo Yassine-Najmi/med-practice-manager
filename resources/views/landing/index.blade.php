@@ -327,48 +327,55 @@
                                 <li colspan="2" style="text-align: center;">Heures d'ouverture</li>
                                 <li style="text-align: center;">Heure de fermeture</li>
                             </ul>
+                            @foreach ($businessHours as $businessHour)
+                                <ul class="content-box clearfix">
+                                    <li>{{ $businessHour->day }}</li>
+                                    <li style="text-align: center;">{{ date('H:i', strtotime($businessHour->from)) }}</li>
+                                    <li style="text-align: center;">{{ date('H:i', strtotime($businessHour->to)) }}</li>
+                                </ul>
+                            @endforeach
 
                             <!-- Content Box - Monday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Lundi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">18:00</li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Content Box - Tuesday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Mardi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">18:00</li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Content Box - Wednesday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Mercredi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">18:00</li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Content Box - Thursday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Jeudi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">18:00</li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Content Box - Friday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Vendredi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">18:00</li>
-                            </ul>
+                            </ul> --}}
 
                             <!-- Content Box - Saturday -->
-                            <ul class="content-box clearfix">
+                            {{-- <ul class="content-box clearfix">
                                 <li>Samedi</li>
                                 <li style="text-align: center;">09:00</li>
                                 <li style="text-align: center;">14:00</li>
-                            </ul>
+                            </ul> --}}
 
                         </div>
                     </div>
