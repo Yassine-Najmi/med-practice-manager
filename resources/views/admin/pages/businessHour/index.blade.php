@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <div class="breadcrumb-header justify-content-between"></div>
         <div class="container">
-            <h1 class="text-center mt-4 mb-4">Heures d'ouverture</h1>
+            <h1 class="text-center mt-4 mb-4">Heures du travail</h1>
             @include('layouts._message')
             <form action="{{ route('admin.business-hours.update') }}" method="post">
                 @csrf

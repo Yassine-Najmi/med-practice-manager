@@ -30,6 +30,9 @@ Route::get('/', function () {
     return view('landing.index', compact('businessHours'));
 })->name("home");
 
+Route::get('/home-appointment', function () {
+    return view('landing.home-appointment');
+})->name("home-appointment");
 Route::get('/about', function () {
     return view('landing.about');
 })->name("about");
