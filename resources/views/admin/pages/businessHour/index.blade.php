@@ -40,19 +40,19 @@
                                             value="{{ $businessHour['day'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="from-{{ $businessHour['id'] }}">From</label>
+                                        <label for="from-{{ $businessHour['id'] }}">de</label>
                                         <input type="time" class="form-control" id="from-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][from]"
                                             value="{{ $businessHour['from'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="to-{{ $businessHour['id'] }}">To</label>
+                                        <label for="to-{{ $businessHour['id'] }}">à</label>
                                         <input type="time" class="form-control" id="to-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][to]"
                                             value="{{ $businessHour['to'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="step-{{ $businessHour['id'] }}">Step (minutes)</label>
+                                        <label for="step-{{ $businessHour['id'] }}">étape (minutes)</label>
                                         <input type="number" class="form-control" id="step-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][step]"
                                             value="{{ $businessHour['step'] }}">
