@@ -59,6 +59,9 @@
                                 <li class="@if (empty(Request::segment(2))) current @endif"><a
                                         href="{{ route('home') }}">{{ __('navbar.home') }}</a>
                                 </li>
+                                <li class="@if (Request::segment(2) == 'home-appointment') current @endif"><a
+                                        href="{{ route('home-appointment') }}">Rendez-vous</a>
+                                </li>
                                 <li class="@if (Request::segment(2) == 'about') current @endif"><a
                                         href="{{ route('about') }}">{{ __('navbar.about_us') }}</a>
 
@@ -88,8 +91,8 @@
 
                         <!-- Button Box -->
                         <div class="btn-box">
-                            <button onclick="scrollToSection('schedule-section')" class="theme-btn btn-style-one"><span
-                                    class="txt">Rendez-vous</span></button>
+                            <a href="home-appointment" class="theme-btn btn-style-one"><span
+                                    class="txt">Rendez-vous</span></a>
                         </div>
                     </div>
                 </div>

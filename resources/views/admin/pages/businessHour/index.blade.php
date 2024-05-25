@@ -22,7 +22,7 @@
     <div class="container-fluid">
         <div class="breadcrumb-header justify-content-between"></div>
         <div class="container">
-            <h1 class="text-center mt-4 mb-4">Heures d'ouverture</h1>
+            <h1 class="text-center mt-4 mb-4">Heures du travail</h1>
             @include('layouts._message')
             <form action="{{ route('admin.business-hours.update') }}" method="post">
                 @csrf
@@ -40,19 +40,19 @@
                                             value="{{ $businessHour['day'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="from-{{ $businessHour['id'] }}">From</label>
+                                        <label for="from-{{ $businessHour['id'] }}">de</label>
                                         <input type="time" class="form-control" id="from-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][from]"
                                             value="{{ $businessHour['from'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="to-{{ $businessHour['id'] }}">To</label>
+                                        <label for="to-{{ $businessHour['id'] }}">à</label>
                                         <input type="time" class="form-control" id="to-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][to]"
                                             value="{{ $businessHour['to'] }}">
                                     </div>
                                     <div class="form-group">
-                                        <label for="step-{{ $businessHour['id'] }}">Step (minutes)</label>
+                                        <label for="step-{{ $businessHour['id'] }}">étape (minutes)</label>
                                         <input type="number" class="form-control" id="step-{{ $businessHour['id'] }}"
                                             name="businessHours[{{ $businessHour['id'] }}][step]"
                                             value="{{ $businessHour['step'] }}">
