@@ -480,6 +480,8 @@
     <script src="{{ asset('assets/admin/js/apexcharts.js') }}"></script>
     <script src="{{ asset('assets/admin/js/custom.js') }}"></script>
     <script src="{{ asset('assets/admin/js/jquery.vmap.sampledata.js') }}"></script>
+
+
     {{-- ------------------ --}}
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> --}}
 

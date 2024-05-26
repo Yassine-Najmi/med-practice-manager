@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
         \App\Models\Stock::factory(10)->create();
         $this->call(WeekSeeder::class);
         \App\Models\Time::factory(10)->create();
-        \App\Models\Appointment::factory(10)->create();
         \App\Models\Consultation::factory(10)->create();
         $this->call(BusinessHourSeeder::class);
+        \App\Models\Appointment::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

@@ -38,7 +38,7 @@
         @include('landing.layouts.Header')
         @yield('content')
         @include('landing.layouts.Footer')
-        @yield('scripts')
+
     </div>
     <!--End pagewrapper-->
 
@@ -46,7 +46,7 @@
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
 
-    @livewireScripts
+    @yield('scripts')
     <!--Scroll to top-->
     <script src="{{ asset('assets/mediatech/' . $mode . '/js/jquery.js') }}"></script>
     <script src="{{ asset('assets/mediatech/' . $mode . '/js/popper.min.js') }}"></script>

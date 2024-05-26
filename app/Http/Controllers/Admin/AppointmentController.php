@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Appointment;
+use App\Models\BusinessHour;
 use App\Models\Patient;
+use Carbon\Carbon;
+use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
 
 class AppointmentController extends Controller
@@ -21,10 +24,40 @@ class AppointmentController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create_appointment()
     {
-        //
+        Carbon::setLocale('fr');
+        $datePeriod = CarbonPeriod::create(now(), now()->addDays(6));
+        $appointments = [];
+
+        foreach ($datePeriod as $date) {
+            $dayName = $date->isoFormat('dddd');
+            $businessHour = BusinessHour::where('day', $dayName)->first();
+
+            if ($businessHour) {
+                $businessHours = $businessHour->TimesPeriod;
+                $currentAppointments = Appointment::where('date', $date->toDateString())->pluck('time')->map(function ($time) {
+                    return Carbon::parse($time)->format('H:i');
+                })->toArray();
+                $availableHours = array_diff($businessHours, $currentAppointments);
+                $appointments[] = [
+                    'day_name' => $dayName,
+                    'date' => $date->isoFormat('DD MMM'),
+                    'available_hours' => $availableHours
+                ];
+            } else {
+                // Handle the case where no business hours are found for the given day
+                $appointments[] = [
+                    'day_name' => $dayName,
+                    'date' => $date->isoFormat('DD MMM'),
+                    'available_hours' => [] // or some default value for sunday
+                ];
+            }
+        }
+
+        return view('landing.home-appointment', compact('appointments'));
     }
+
 
     /**
      * Store a newly created resource in storage.

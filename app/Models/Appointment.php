@@ -16,6 +16,10 @@ class Appointment extends Model
         'time'
     ];
 
+    protected $casts = [
+        'time' => 'datetime:H:i'
+    ];
+
 
     public function patient()
     {
