@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\BusinessHour;
 use App\Models\Patient;
 use App\Models\Time;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -18,11 +19,11 @@ class AppointmentFactory extends Factory
      */
     public function definition(): array
     {
-        $futureDate = $this->faker->dateTimeBetween('now', '+30 days');
+        $futureDate = $this->faker->dateTimeBetween('now', '1 days');
         return [
             'patient_id' => Patient::factory()->create()->id,
-            'date' => $this->faker->dateTimeBetween('now', '+30 days')->format('Y-m-d'),
-            'time' => Time::inRandomOrder()->first()->time,
+            'date' => $futureDate->format('Y-m-d'),
+            'time' =>  $this->faker->randomElement(BusinessHour::inRandomOrder()->first()->TimesPeriod)
         ];
     }
 }
