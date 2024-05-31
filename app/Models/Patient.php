@@ -11,9 +11,12 @@ class Patient extends Model
     protected $table = 'patients';
 
     protected $fillable = [
-        "phone",
         "name",
+        "phone",
         "email",
+        "address",
+        "cnie",
+        "date_of_birth",
     ];
 
     public function appointments()

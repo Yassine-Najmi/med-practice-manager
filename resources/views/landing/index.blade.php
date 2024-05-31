@@ -431,9 +431,6 @@
     <!-- End map Section -->
 @endsection
 
-@section('styles')
-    @livewireStyles
-@endsection
 @section('scripts')
     <script>
         function scrollToSection(sectionId) {

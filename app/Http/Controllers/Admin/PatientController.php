@@ -34,9 +34,7 @@ class PatientController extends Controller
             'name' => 'required',
             'phone' => 'required',
             'address' => 'required',
-            'email' => 'required',
             'cnie' => 'required',
-            'date_of_birth' => 'required',
         ]);
 
         $data = new Patient();
@@ -78,7 +76,6 @@ class PatientController extends Controller
             'address' => 'required',
             'email' => 'required',
             'cnie' => 'required',
-            'date_of_birth' => 'required',
         ]);
 
         $data = Patient::find($id);

@@ -14,102 +14,48 @@
     </section>
 
 
-    <!--End Page Title-->
-
-    <!-- Contact Page Section -->
     <section class="contact-page-section">
         <div class="auto-container">
             <div class="sec-title centered">
+                <div class="text mb-4 h3"> @include('layouts._message')</div>
                 <h2>Prendre un rendez-vous</h2>
                 <div class="separator"></div>
             </div>
-
-            <!-- Formulaire de contact -->
             <div class="row">
-                @foreach ($appointments as $item)
+                @foreach ($appointments as $cardIndex => $item)
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <div class="card-header text-center">
                                 <h5>{{ $item['date'] }} - {{ $item['day_name'] }}</h5>
                             </div>
                             <div class="card-body text-center">
-                                @if (count($item['available_hours']) > 0)
-                                    @foreach ($item['available_hours'] as $index => $hour)
-                                        <button class="btn btn-primary m-1" data-toggle="modal"
-                                            data-target="#appointmentModal{{ $index }}">
-                                            {{ $hour }}
-                                        </button>
 
-                                        <!-- Unique Modal for Each Time Slot -->
-                                        <div class="modal fade" id="appointmentModal{{ $index }}" tabindex="-1"
-                                            aria-labelledby="appointmentModalLabel{{ $index }}" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title"
-                                                            id="appointmentModalLabel{{ $index }}">
-                                                            Prendre Rendez-vous
-                                                        </h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form action="" method="POST">
-                                                            @csrf
-                                                            <div class="form-group">
-                                                                <label for="appointmentDate{{ $index }}">Date</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="appointmentDate{{ $index }}" name="date"
-                                                                    value="{{ $item['date'] }}" readonly>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label
-                                                                    for="appointmentTime{{ $index }}">Heure</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="appointmentTime{{ $index }}" name="time"
-                                                                    value="{{ $hour }}" readonly>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="patientName{{ $index }}">Nom</label>
-                                                                <input type="text" class="form-control"
-                                                                    id="patientName{{ $index }}" name="name"
-                                                                    required>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="patientPhone{{ $index }}">Numéro de
-                                                                    Téléphone</label>
-                                                                <input type="tel" class="form-control"
-                                                                    id="patientPhone{{ $index }}" name="phone"
-                                                                    required>
-                                                            </div>
-                                                            <button type="submit" class="btn btn-primary">Confirmer le
-                                                                Rendez-vous</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                @if (count($item['available_hours']) > 0 && !$item['off'])
+                                    @foreach ($item['available_hours'] as $hourIndex => $hour)
+                                        <form action="{{ route('confirm-appointment') }}" method="POST"
+                                            class="d-inline-block">
+                                            @csrf
+                                            <input type="hidden" name="full_date" value="{{ $item['full_date'] }}">
+                                            <input type="hidden" name="day_name" value="{{ $item['day_name'] }}">
+                                            <input type="hidden" name="time" value="{{ $hour }}">
+                                            <button type="submit" name="time" value="{{ $hour }}"
+                                                class="btn btn-primary m-1">{{ $hour }}</button>
+                                        </form>
                                     @endforeach
                                 @else
                                     <p>Pas d'heures disponibles</p>
                                 @endif
                             </div>
-
-
                         </div>
                     </div>
                 @endforeach
             </div>
 
 
-
         </div>
         </div>
     </section>
 
-    <!-- End Contact Page Section -->
 
     <!-- Contact Map Section -->
     <section class="contact-map-section">
@@ -146,11 +92,4 @@
         </div>
     </section>
     <!-- End Map Section -->
-@endsection
-@section('scripts')
-    <!-- Bootstrap JS -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 @endsection
