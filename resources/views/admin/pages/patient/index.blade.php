@@ -53,7 +53,7 @@
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->address }}</td>
                                         <td>{{ $item->cnie }}</td>
-                                        <td>{{ date('d/m/Y', strtotime($item->date_of_birth)) }}</td>
+                                        <td>{{ $item->date_of_birth }}</td>
 
 
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}

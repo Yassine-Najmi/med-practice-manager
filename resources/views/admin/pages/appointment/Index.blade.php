@@ -51,7 +51,7 @@
                                         <td>{{ $item->patient->phone }}</td>
                                         <td>{{ $item->patient->email }}</td>
                                         <td>{{ $item->date }}</td>
-                                        <td>{{ $item->time }}</td>
+                                        <td>{{ $item->time->format('H:i') }}</td>
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}
                                         <td>
                                             {{-- <div class="btn-group">

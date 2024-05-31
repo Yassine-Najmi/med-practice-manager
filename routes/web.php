@@ -31,7 +31,8 @@ Route::get('/', function () {
 })->name("home");
 
 Route::get('/home-appointment', [AppointmentController::class, 'create_appointment'])->name("home-appointment");
-
+Route::post('/home-appointment', [AppointmentController::class, 'confirm_appointment'])->name("confirm-appointment");
+Route::post('/submit-appointment', [AppointmentController::class, 'store'])->name("store-appointment");
 Route::get('/about', function () {
     return view('landing.about');
 })->name("about");

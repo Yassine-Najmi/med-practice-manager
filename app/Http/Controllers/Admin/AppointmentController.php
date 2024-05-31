@@ -9,6 +9,7 @@ use App\Models\Patient;
 use Carbon\Carbon;
 use Carbon\CarbonPeriod;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class AppointmentController extends Controller
 {
@@ -34,6 +35,8 @@ class AppointmentController extends Controller
             $dayName = $date->isoFormat('dddd');
             $businessHour = BusinessHour::where('day', $dayName)->first();
 
+            // $hours = $businessHour;
+
             if ($businessHour) {
                 $businessHours = $businessHour->TimesPeriod;
                 $currentAppointments = Appointment::where('date', $date->toDateString())->pluck('time')->map(function ($time) {
@@ -43,7 +46,9 @@ class AppointmentController extends Controller
                 $appointments[] = [
                     'day_name' => $dayName,
                     'date' => $date->isoFormat('DD MMM'),
-                    'available_hours' => $availableHours
+                    'full_date' => $date->isoFormat('DD MMM YYYY'),
+                    'available_hours' => $availableHours,
+                    'off' => $businessHour->off
                 ];
             } else {
                 // Handle the case where no business hours are found for the given day
@@ -59,11 +64,38 @@ class AppointmentController extends Controller
     }
 
 
+    public function confirm_appointment(Request $request)
+    {
+        $request->validate([
+            'full_date' => 'required',
+            'day_name' => 'required',
+            'time' => 'required',
+        ]);
+
+        $appointments = [
+            'full_date' => $request->full_date,
+            'day_name' => $request->day_name,
+            'time' => $request->time
+
+        ];
+
+        return view('landing.confirm-appointment', $appointments);
+    }
+
+
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'full_date' => 'required',
+            'time' => 'required',
+        ]);
+
         if (!$request->has('patient_id')) {
             $patient = new Patient();
             $patient->name = $request->name;
@@ -74,12 +106,14 @@ class AppointmentController extends Controller
 
         $appointment = new Appointment();
         $appointment->patient_id = $patient->id;
-        $appointment->date = $request->date;
-        $appointment->time = $request->patient_id ? $request->patient_id : $patient->id;
+        $dateString = $request->full_date;
+        $dateParts = explode(' ', $dateString);
+        $appointment->date = $dateParts[2] . '-' . date('m', strtotime($dateString)) . '-' . $dateParts[0];
+        $appointment->time = $request->time;
         $appointment->save();
 
         return redirect()->back()->with([
-            "success" => "appoitement create with success , please check your Email"
+            "success" => "Rendez-vous créé avec succès, veuillez vérifier votre e-mail."
         ]);
     }
 
@@ -107,10 +141,6 @@ class AppointmentController extends Controller
         $request->validate([
             'name' => 'required',
             'phone' => 'required',
-            'address' => 'required',
-            'email' => 'required',
-            'cnie' => 'required',
-            'date_of_birth' => 'required',
         ]);
 
         $data = Patient::find($id);
