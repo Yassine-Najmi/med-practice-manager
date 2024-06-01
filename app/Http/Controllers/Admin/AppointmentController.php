@@ -38,9 +38,10 @@ class AppointmentController extends Controller
             // $hours = $businessHour;
 
             if ($businessHour) {
-                $businessHours = $businessHour->TimesPeriod;
-                $currentAppointments = Appointment::where('date', $date->toDateString())->pluck('time')->map(function ($time) {
-                    return Carbon::parse($time)->format('H:i');
+                $businessHours = array_filter($businessHour->TimesPeriod);
+                $currentAppointments = Appointment::where('date', $date->format('Y-m-d'))->pluck('time')->map(function ($time) {
+
+                    return $time->isoFormat('HH:mm');
                 })->toArray();
                 $availableHours = array_diff($businessHours, $currentAppointments);
                 $appointments[] = [
@@ -48,6 +49,8 @@ class AppointmentController extends Controller
                     'date' => $date->isoFormat('DD MMM'),
                     'full_date' => $date->isoFormat('DD MMM YYYY'),
                     'available_hours' => $availableHours,
+                    'booked_hours' => $currentAppointments,
+                    'business_hours' => $businessHours,
                     'off' => $businessHour->off
                 ];
             } else {
@@ -108,7 +111,7 @@ class AppointmentController extends Controller
         $appointment->patient_id = $patient->id;
         $dateString = $request->full_date;
         $dateParts = explode(' ', $dateString);
-        $appointment->date = $dateParts[2] . '-' . date('m', strtotime($dateString)) . '-' . $dateParts[0];
+        $appointment->date = $dateParts[2] . '-' . date('m', strtotime($dateParts[2])) . '-' . $dateParts[0];
         $appointment->time = $request->time;
         $appointment->save();
 
