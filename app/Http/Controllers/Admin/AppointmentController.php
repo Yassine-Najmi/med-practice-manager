@@ -97,7 +97,7 @@ class AppointmentController extends Controller
             'phone' => 'required',
             'email' => 'required',
             'full_date' => 'required',
-            'time' => 'required',
+            'time' => 'required|date_format:H:i',
         ]);
 
         if (!$request->has('patient_id')) {
