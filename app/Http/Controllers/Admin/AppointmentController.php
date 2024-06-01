@@ -59,6 +59,7 @@ class AppointmentController extends Controller
                     'day_name' => $dayName,
                     'date' => $date->isoFormat('DD MMM'),
                     'available_hours' => [] // or some default value for sunday
+
                 ];
             }
         }

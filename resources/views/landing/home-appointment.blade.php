@@ -31,16 +31,20 @@
                             <div class="card-body text-center">
 
                                 @if (count($item['available_hours']) > 0 && !$item['off'])
-                                    @foreach ($item['available_hours'] as $hourIndex => $hour)
-                                        <form action="{{ route('confirm-appointment') }}" method="POST"
-                                            class="d-inline-block">
-                                            @csrf
-                                            <input type="hidden" name="full_date" value="{{ $item['full_date'] }}">
-                                            <input type="hidden" name="day_name" value="{{ $item['day_name'] }}">
-                                            <input type="hidden" name="time" value="{{ $hour }}">
-                                            <button type="submit" name="time" value="{{ $hour }}"
-                                                class="btn btn-primary m-1">{{ $hour }}</button>
-                                        </form>
+                                    @foreach ($item['business_hours'] as $hourIndex => $hour)
+                                        @if (in_array($hour, $item['available_hours']))
+                                            <form action="{{ route('confirm-appointment') }}" method="POST"
+                                                class="d-inline-block">
+                                                @csrf
+                                                <input type="hidden" name="full_date" value="{{ $item['full_date'] }}">
+                                                <input type="hidden" name="day_name" value="{{ $item['day_name'] }}">
+                                                <input type="hidden" name="time" value="{{ $hour }}">
+                                                <button type="submit" name="time" value="{{ $hour }}"
+                                                    class="btn btn-primary m-1">{{ $hour }}</button>
+                                            </form>
+                                        @else
+                                            <p class="btn btn-secondary disabled m-1">{{ $hour }}</p>
+                                        @endif
                                     @endforeach
                                 @else
                                     <p>Pas d'heures disponibles</p>
