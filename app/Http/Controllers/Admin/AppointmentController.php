@@ -117,7 +117,8 @@ class AppointmentController extends Controller
         $appointment->save();
 
         return redirect()->back()->with([
-            "success" => "Rendez-vous créé avec succès, veuillez vérifier votre e-mail."
+            "success" => "Rendez-vous créé avec succès."
+            // , veuillez vérifier votre e-mail
         ]);
     }
 
