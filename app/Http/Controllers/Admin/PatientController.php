@@ -32,9 +32,9 @@ class PatientController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'phone' => 'required',
-            'address' => 'required',
-            'cnie' => 'required',
+            // 'phone' => 'required',
+            // 'address' => 'required',
+            // 'cnie' => 'required',
         ]);
 
         $data = new Patient();
@@ -72,10 +72,10 @@ class PatientController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'phone' => 'required',
-            'address' => 'required',
-            'email' => 'required',
-            'cnie' => 'required',
+            // 'phone' => 'required',
+            // 'address' => 'required',
+            // 'email' => 'required',
+            // 'cnie' => 'required',
         ]);
 
         $data = Patient::find($id);
