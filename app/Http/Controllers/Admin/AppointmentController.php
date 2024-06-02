@@ -95,7 +95,7 @@ class AppointmentController extends Controller
         $request->validate([
             'name' => 'required',
             'phone' => 'required',
-            'email' => 'required',
+            // 'email' => 'required',
             'full_date' => 'required',
             'time' => 'required|date_format:H:i',
         ]);
