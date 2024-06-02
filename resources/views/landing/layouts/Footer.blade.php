@@ -66,14 +66,13 @@
                                      <h2>Horaires d'ouverture</h2>
                                      <div class="separator"></div>
                                  </div>
-                                 <ul class="footer-list text-light">
-                                     <li>Lundi : 09:00 - 18:00</li>
-                                     <li>Mardi : 09:00 - 18:00</li>
-                                     <li>Mercredi : 09:00 - 18:00</li>
-                                     <li>Jeudi : 09:00 - 18:00</li>
-                                     <li>Vendredi : 09:00 - 18:00</li>
-                                     <li>Samedi : 09:00 - 14:00</li>
-                                 </ul>
+                                 @foreach ($businessHours as $businessHour)
+                                     <ul class="footer-list text-light">
+                                         <li>{{ $businessHour->day }} :
+                                             {{ date('H:i', strtotime($businessHour->from)) }} -
+                                             {{ date('H:i', strtotime($businessHour->to)) }}</li>
+                                     </ul>
+                                 @endforeach
                              </div>
                          </div>
 
