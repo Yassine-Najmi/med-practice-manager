@@ -27,10 +27,12 @@
             <div class="contact-form">
 
                 <!-- Formulaire de contact -->
-                <form>
+                @include('layouts._message')
+                <form action="{{ route('contact-mail') }}" method="post">
+                    @csrf
                     <div class="row clearfix">
                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                            <input type="text" name="username" placeholder="Nom" required>
+                            <input type="text" name="name" placeholder="Nom" required>
                         </div>
 
                         <div class="col-lg-6 col-md-6 col-sm-12 form-group">
