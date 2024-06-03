@@ -52,7 +52,7 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
     Route::resource('employee', EmployeeController::class);
     Route::resource('fournisseur', FournisseurController::class);
     Route::resource('stock', StockController::class);
-    Route::resource('appointments', AppointmentController::class)->except("store");
+    Route::resource('appointments', AppointmentController::class);
     Route::resource('consultation', ConsultationController::class);
     Route::controller(PdfController::class)->name("pdf.")->group(function () {
         Route::get('generate-pdf/{id}', [PdfController::class, 'generatePdf'])->name('generatePdf');

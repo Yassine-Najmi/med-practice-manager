@@ -54,18 +54,18 @@
                                         <td>{{ $item->time->format('H:i') }}</td>
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}
                                         <td>
-                                            {{-- <div class="btn-group">
+                                            <div class="btn-group">
                                                 <a href="#" class="modal-effect btn btn-md btn-info rounded mr-2"
                                                     data-effect="effect-scale" data-target="#editModal{{ $item->id }}"
                                                     data-toggle="modal">Edit</a>
-                                                <form action="{{ route('admin.fournisseur.destroy', $item->id) }}"
+                                                <form action="{{ route('admin.appointments.destroy', $item->id) }}"
                                                     method="post">
                                                     @csrf
                                                     @method('delete')
                                                     <button type="submit" class="modal-effect btn btn-md btn-danger"
                                                         onclick="return confirm('Are you sure you want to delete this item?');">Delete</button>
                                                 </form>
-                                            </div> --}}
+                                            </div>
                                         </td>
 
                                     </tr>

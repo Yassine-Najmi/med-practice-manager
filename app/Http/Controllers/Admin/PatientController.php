@@ -54,7 +54,14 @@ class PatientController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // $appointments = Patient::findOrFail($id)->appointments;
+        // $consultations = Patient::findOrFail($id)->consultations;
+        // dd($consultations);
+
+        $patient = Patient::with(["appointments", "consultations"])
+            ->withCount(["appointments", "consultations"])
+            ->findOrFail($id);
+        return view('admin.pages.patient.show', compact('patient'));
     }
 
     /**
