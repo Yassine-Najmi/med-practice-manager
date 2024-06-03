@@ -89,7 +89,7 @@
                             <li class="active">
                                 <a href="#home" data-toggle="tab" aria-expanded="true"> <span class="visible-xs"><i
                                             class="las la-user-circle tx-16 mr-1"></i></span> <span
-                                        class="hidden-xs">Appointement</span> </a>
+                                        class="hidden-xs">Rendez-vous</span> </a>
                             </li>
                             <li class="">
                                 <a href="#consultation" data-toggle="tab" aria-expanded="false"> <span class="visible-xs"><i
@@ -110,7 +110,7 @@
                     </div>
                     <div class="tab-content border-left border-bottom border-right border-top-0 p-4">
                         <div class="tab-pane active" id="home">
-                            <h4 class="tx-15 text-uppercase mb-3">Appointement</h4>
+                            <h4 class="tx-15 text-uppercase mb-3">Rendez-vous</h4>
                             <div class="table-responsive">
                                 <table class="table text-md-nowrap" id="example1">
                                     <thead>
