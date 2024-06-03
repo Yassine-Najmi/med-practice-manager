@@ -13,7 +13,7 @@ class FournisseurController extends Controller
      */
     public function index()
     {
-        $data = Fournisseur::latest()->paginate(5);
+        $data = Fournisseur::latest()->paginate(10);
         return view('admin.pages.fournisseur.Index', compact('data'));
     }
 

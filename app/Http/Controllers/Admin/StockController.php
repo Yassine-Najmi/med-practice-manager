@@ -16,7 +16,7 @@ class StockController extends Controller
     public function index()
     {
         $items = Fournisseur::all();
-        $data = Stock::latest()->paginate(5);
+        $data = Stock::latest()->paginate(10);
 
         return view('admin.pages.stock.index', compact('data', 'items'));
     }
@@ -35,13 +35,12 @@ class StockController extends Controller
     public function store(Request $request)
     {
 
-
         $request->validate([
             'name' => 'required',
-            'quantity' => 'required',
-            'price' => 'required',
+            // 'quantity' => 'required',
+            // 'price' => 'required',
             // 'category' => 'required',
-            'fornisseur_id' => 'required',
+            'fournisseur_id' => 'required',
         ]);
 
 
@@ -50,7 +49,7 @@ class StockController extends Controller
         $data->quantity = $request->quantity;
         $data->price = $request->price;
         $data->category = $request->category;
-        $data->fornisseur_id = $request->fornisseur_id;
+        $data->fournisseur_id = $request->fournisseur_id;
         $data->save();
 
         return redirect()->back()->with('success', 'Stock added successfully');

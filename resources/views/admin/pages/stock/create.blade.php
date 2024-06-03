@@ -43,7 +43,7 @@
 
                      <div class="form-group">
                          <label for="fournisseur">Fournisseur</label>
-                         <select class="form-control" name="fournisseur" id="">
+                         <select class="form-control" name="fournisseur_id" id="">
                              <option selected disabled>Select Fournisseur</option>
                              @foreach ($items as $fournisseur)
                                  <option value="{{ $fournisseur->id }}">{{ $fournisseur->name }}</option>

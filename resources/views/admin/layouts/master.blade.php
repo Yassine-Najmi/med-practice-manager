@@ -82,7 +82,7 @@
                     <div class="dropdown user-pro-body">
                         <div class="">
                             <img alt="user-img" class="avatar avatar-xl brround"
-                                src="{{ asset('assets/admin/img/faces/6.jpg') }}"><span
+                                src="{{ asset('assets/admin/img/faces/admin.jpg') }}"><span
                                 class="avatar-status profile-status bg-green"></span>
                         </div>
                         <div class="user-info">
@@ -135,12 +135,13 @@
                             </div>
                             <div class="dropdown main-profile-menu nav nav-item nav-link">
                                 <a class="profile-user d-flex" href=""><img alt=""
-                                        src="{{ asset('assets/admin/img/faces/6.jpg') }}"></a>
+                                        src="{{ asset('assets/admin/img/faces/admin.jpg') }}"></a>
                                 <div class="dropdown-menu">
                                     <div class="main-header-profile bg-primary p-3">
                                         <div class="d-flex wd-100p">
                                             <div class="main-img-user"><img alt=""
-                                                    src="{{ asset('assets/admin/img/faces/6.jpg') }}" class="">
+                                                    src="{{ asset('assets/admin/img/faces/admin.jpg') }}"
+                                                    class="">
                                             </div>
                                             <div class="ml-3 my-auto">
                                                 <h6>{{ Auth::user()->name }}</h6>
