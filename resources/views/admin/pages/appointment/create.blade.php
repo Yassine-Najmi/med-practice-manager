@@ -7,10 +7,10 @@
                         data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">
-                    <form method="POST" action="{{ route('admin.fournisseur.store') }}" autocomplete="off">
+                    <form method="POST" action="{{ route('admin.appointments.store') }}" autocomplete="off">
                         @csrf
                         <div class="form-group">
-                            <label for="name">Name</label>
+                            <label for="name">Nom Complet</label>
                             <input type="text" name="name" placeholder="Section Name" class="form-control"
                                 id="name" aplaceholder="Section Name">
                             @error('name')
@@ -26,7 +26,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
+                            <label for="phone">Numéro de Telephone</label>
                             <input type="text" name="phone" class="form-control" id="phone"
                                 placeholder="Section Phone Number">
                             @error('phone')
@@ -34,13 +34,37 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="adresse">Adress</label>
+                            <label for="adresse">Adresse</label>
                             <input type="text" name="address" class="form-control" id="adresse"
                                 placeholder="Section Adress">
                             @error('address')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
+                        <div class="form-group">
+                            <label for="cnie">CNIE</label>
+                            <input type="text" name="cnie" class="form-control" id="cnie"
+                                placeholder="Section CNIE">
+                            @error('cnie')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <label for="cnie">La Date de Naissance</label>
+                            <input type="date" name="date_of_birth" class="form-control" id="date_of_birth"
+                                placeholder="Section Date of Birth">
+                            @error('date_of_birth')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        {{-- <div class="form-group">
+                            <label for="cnie">La Date de Naissance</label>
+                            <input type="date" name="date_of_birth" class="form-control" id="date_of_birth"
+                                placeholder="Section Date of Birth">
+                            @error('date_of_birth')
+                                <span class="text-danger">{{ $message }}</span>
+                            @enderror
+                        </div> --}}
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
