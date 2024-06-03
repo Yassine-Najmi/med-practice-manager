@@ -59,7 +59,9 @@
                                         {{-- <td>{{ $item->created_at->diffForHumans() }}</td> --}}
                                         <td>
                                             <div class="btn-group">
-                                                <a href="#" class="modal-effect btn btn-md btn-info rounded mr-2"
+                                                <a href="{{ route('admin.patient.show', $item->id) }}"
+                                                    class="modal-effect btn btn-md btn-info rounded mr-2">Show</a>
+                                                <a href="#" class="modal-effect btn btn-primary rounded mr-2"
                                                     data-effect="effect-scale" data-target="#editModal{{ $item->id }}"
                                                     data-toggle="modal">Edit</a>
                                                 <form action="{{ route('admin.patient.destroy', $item->id) }}"
