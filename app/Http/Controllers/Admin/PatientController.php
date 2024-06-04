@@ -13,8 +13,7 @@ class PatientController extends Controller
      */
     public function index()
     {
-        $data = Patient::latest()->paginate(10);
-        return view('admin.pages.patient.index', compact('data'));
+        return $this->search(new Request());
     }
 
     /**
@@ -54,9 +53,6 @@ class PatientController extends Controller
      */
     public function show(string $id)
     {
-        // $appointments = Patient::findOrFail($id)->appointments;
-        // $consultations = Patient::findOrFail($id)->consultations;
-        // dd($consultations);
 
         $patient = Patient::with(["appointments", "consultations"])
             ->withCount(["appointments", "consultations"])
@@ -65,14 +61,9 @@ class PatientController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
-     */
-    // public function edit(string $id)
-    // {
-    //     //
-    // }
 
-    /**
+
+
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
@@ -105,5 +96,20 @@ class PatientController extends Controller
         $data = Patient::find($id);
         $data->delete();
         return redirect()->back()->with('success', 'Patient deleted successfully');
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('query');
+        $query = Patient::query();
+        if ($search) {
+            $query->where('name', 'like', '%' . $search . '%')
+                ->orWhere('email', 'like', '%' . $search . '%')
+                ->orWhere('phone', 'like', '%' . $search . '%')
+                ->orWhere('address', 'like', '%' . $search . '%')
+                ->orWhere('cnie', 'like', '%' . $search . '%');
+        }
+        $data = $query->latest()->paginate(10);
+        return view('admin.pages.patient.index', compact('data'));
     }
 }

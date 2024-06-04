@@ -15,10 +15,10 @@ class StockController extends Controller
      */
     public function index()
     {
-        $items = Fournisseur::all();
-        $data = Stock::latest()->paginate(10);
-
-        return view('admin.pages.stock.index', compact('data', 'items'));
+        return $this->search(new Request());
+        // $items = Fournisseur::all();
+        // $data = Stock::latest()->paginate(10);
+        // return view('admin.pages.stock.index', compact('data', 'items'));
     }
 
     /**
@@ -106,5 +106,20 @@ class StockController extends Controller
         $data = Stock::find($id);
         $data->delete();
         return redirect()->back()->with('success', 'Stock deleted successfully');
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('query');
+        $query = Stock::query();
+        $items = Fournisseur::all();
+        if ($search) {
+            $query->where('name', 'like', '%' . $search . '%')
+                ->orWhere('quantity', 'like', '%' . $search . '%')
+                ->orWhere('price', 'like', '%' . $search . '%')
+                ->orWhere('category', 'like', '%' . $search . '%');
+        }
+        $data = $query->latest()->paginate(10);
+        return view('admin.pages.stock.index', compact('data', 'items'));
     }
 }

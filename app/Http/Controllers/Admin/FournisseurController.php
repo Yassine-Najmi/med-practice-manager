@@ -13,8 +13,10 @@ class FournisseurController extends Controller
      */
     public function index()
     {
-        $data = Fournisseur::latest()->paginate(10);
-        return view('admin.pages.fournisseur.Index', compact('data'));
+
+        return $this->search(new Request());
+        // $data = Fournisseur::latest()->paginate(10);
+        // return view('admin.pages.fournisseur.Index', compact('data'));
     }
 
     /**
@@ -93,5 +95,19 @@ class FournisseurController extends Controller
         $data = Fournisseur::find($id);
         $data->delete();
         return redirect()->back()->with('success', 'Fournisseur deleted successfully');
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('query');
+        $query = Fournisseur::query();
+        if ($search) {
+            $query->where('name', 'like', '%' . $search . '%')
+                ->orWhere('email', 'like', '%' . $search . '%')
+                ->orWhere('phone', 'like', '%' . $search . '%')
+                ->orWhere('adresse', 'like', '%' . $search . '%');
+        }
+        $data = $query->latest()->paginate(10);
+        return view('admin.pages.fournisseur.Index', compact('data'));
     }
 }

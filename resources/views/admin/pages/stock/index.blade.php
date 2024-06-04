@@ -16,6 +16,23 @@
             </div>
         </div>
     </div>
+
+    {{-- Search  --}}
+    <div class="card-body pb-0  ">
+        <div class="input-group mb-3">
+            <form action="{{ route('stock.search') }}" method="GET">
+                <div class="input-group input-group-md ">
+                    <input type="text" name="query" value="{{ request()->query('query') }}"
+                        class="form-control input-search" placeholder="Chercher dans le Stock..." />
+                    <span class="input-group-append">
+                        <button class="btn ripple btn-primary" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- breadcrumb -->
 
     <!-- row opened -->
@@ -70,7 +87,9 @@
                                     </tr>
                                     @include('admin.pages.stock.edit')
                                 @empty
-                                    no data found
+                                    <tr>
+                                        <td colspan="7" class="text-center mt-5 text-danger">Pas de Stock</td>
+                                    </tr>
                                 @endforelse
                             </tbody>
                         </table>
