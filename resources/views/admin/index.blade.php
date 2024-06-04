@@ -127,7 +127,7 @@
     <!-- row closed -->
 
     <!-- row opened -->
-    <div class="row row-sm row-deck">
+    <div class="row row-sm">
         <div class="col-md-12 col-lg-4 col-xl-4">
             <div class="card card-dashboard-eight pb-2">
                 <h6 class="card-title">Les rendez-vous d'aujourd'hui </h6><span
@@ -142,9 +142,9 @@
                     @empty
                         <p class="tx-12 text-muted">Aucun rendez-vous pour aujourd'hui</p>
                     @endforelse
-                    <div class="list-group-item border-bottom-0 mb-0">
-                        {{-- <p></p><span></span> --}}
-                    </div>
+                    {{-- <div class="list-group-item border-bottom-0 mb-0">
+                        <p></p><span></span>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
                 <span class="tx-12 tx-muted mb-3 ">{{ Carbon\Carbon::parse($startOfWeek)->translatedFormat('d F Y') }} à
                     {{ Carbon\Carbon::parse($endOfWeek)->translatedFormat('d F Y') }}</span>
                 <div class="table-responsive country-table">
-                    <table class="table table-striped table-bordered mb-0 text-sm-nowrap text-lg-nowrap text-xl-nowrap">
+                    <table class="table table-striped table-bordered mb-4 text-sm-nowrap text-lg-nowrap text-xl-nowrap">
                         <thead>
                             <tr>
                                 <th class="wd-lg-25p">Nom du patient</th>
@@ -181,6 +181,9 @@
                             @endforelse
                         </tbody>
                     </table>
+                    <div>
+                        <span>{{ $appointmentsWeek->links() }}</span>
+                    </div>
                 </div>
             </div>
         </div>

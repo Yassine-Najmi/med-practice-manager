@@ -27,7 +27,8 @@ class DashboardController extends Controller
             ->get();
         $appointmentsWeek = Appointment::whereBetween('date', [$startOfWeek, $endOfWeek])
             ->orderBy('date', 'asc')
-            ->get();
+            ->orderBy('time', 'asc')
+            ->paginate(10);
 
         // dd($appointmentsToday);
 
