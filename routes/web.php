@@ -66,7 +66,13 @@ Route::middleware("admin")->prefix("admin")->name("admin.")->group(function () {
 Route::controller(HomeController::class)->group(function () {
     Route::post('AddAppointement', 'AddAppointement')->name("AddAppointement");
 });
-
-
 Route::get('/admin/login', [AuthController::class, 'login'])->name('admin.login');
 Route::post('/admin/login', [AuthController::class, 'authenticate'])->name('admin.authenticate');
+
+// Search routes
+Route::get('patient/search', [PatientController::class, 'search'])->name('patient.search');
+Route::get('appointment/search', [AppointmentController::class, 'search'])->name('appointment.search');
+Route::get('consultation/search', [ConsultationController::class, 'search'])->name('consultation.search');
+Route::get('employee/search', [EmployeeController::class, 'search'])->name('employee.search');
+Route::get('fournisseur/search', [FournisseurController::class, 'search'])->name('fournisseur.search');
+Route::get('stock/search', [StockController::class, 'search'])->name('stock.search');

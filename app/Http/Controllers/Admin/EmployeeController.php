@@ -13,8 +13,9 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $data = Employee::latest()->paginate(10);
-        return view('admin.pages.employee.index', compact('data'));
+        return $this->search(new Request());
+        // $data = Employee::latest()->paginate(10);
+        // return view('admin.pages.employee.index', compact('data'));
     }
 
     /**
@@ -117,5 +118,24 @@ class EmployeeController extends Controller
         $data = Employee::find($id);
         $data->delete();
         return redirect()->back()->with('success', 'Employee deleted successfully');
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('query');
+        $query = Employee::query();
+        if ($search) {
+            $query->where('name', 'like', '%' . $search . '%')
+                ->orWhere('email', 'like', '%' . $search . '%')
+                ->orWhere('phone', 'like', '%' . $search . '%')
+                ->orWhere('address', 'like', '%' . $search . '%')
+                ->orWhere('job', 'like', '%' . $search . '%')
+                ->orWhere('work_time', 'like', '%' . $search . '%')
+                ->orWhere('salary', 'like', '%' . $search . '%')
+                ->orWhere('hiring_date', 'like', '%' . $search . '%')
+                ->orWhere('status', 'like', '%' . $search . '%');
+        }
+        $data = $query->latest()->paginate(10);
+        return view('admin.pages.employee.index', compact('data'));
     }
 }

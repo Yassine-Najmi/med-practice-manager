@@ -18,8 +18,9 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $data = Appointment::latest()->with('patient')->paginate(10);
-        return view('admin.pages.appointment.Index', compact('data'));
+        // $data = Appointment::latest()->with('patient')->paginate(10);
+        // return view('admin.pages.appointment.Index', compact('data'));
+        return $this->search(new Request());
     }
 
     /**
@@ -167,5 +168,21 @@ class AppointmentController extends Controller
     {
         $appointment->delete();
         return redirect()->back()->with('success', 'Appointment deleted successfully');
+    }
+
+    public function search(Request $request)
+    {
+
+        $search = $request->input('query');
+        $query = Appointment::query();
+
+
+        if ($search) {
+            $query->where('patient_id', 'like', '%' . $search . '%')
+                ->orWhere('date', 'like', '%' . $search . '%')
+                ->orWhere('time', 'like', '%' . $search . '%');
+        }
+        $data = $query->latest()->with('patient')->paginate(10);
+        return view('admin.pages.appointment.Index', compact('data'));
     }
 }
