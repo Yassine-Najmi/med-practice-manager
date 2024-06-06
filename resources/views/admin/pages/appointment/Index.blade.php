@@ -11,7 +11,9 @@
         </div>
         <div class="d-flex my-xl-auto right-content">
             <div class="pr-1 mb-3 mb-xl-0">
-                <a class="btn ripple btn-primary" data-target="#modaldemo1" data-toggle="modal" href="">Ajouter un
+                {{-- <a class="btn ripple btn-primary" data-target="#modaldemo1" data-toggle="modal" href="">Ajouter un
+                    Nouveau Rendez-vous</a> --}}
+                <a class="btn ripple btn-primary" href="{{ route('home-appointment') }}">Ajouter un
                     Nouveau Rendez-vous</a>
             </div>
         </div>
