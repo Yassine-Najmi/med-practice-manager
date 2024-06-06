@@ -113,18 +113,17 @@ The admin dashboard is accessible only after authentication and contains the fol
 
 -   Access the user-facing section at [http://127.0.0.1:8000/fr](http://127.0.0.1:8000/fr)
 -   Access the admin dashboard at [http://127.0.0.1:8000/fr/admin](http://127.0.0.1:8000/fr/admin) (authentication required).
--
 
 ## Features
 
-## User-Facing Section
+### User-Facing Section
 
 -   Home Page: General information about the medical cabinet.
 -   Appointment Page: Book appointments by selecting available slots.
 -   About Us: Information about the doctor.
 -   Contact Page: Send emails to the doctor.
 
-## Admin Dashboard
+### Admin Dashboard
 
 -   Dashboard: Statistics on appointments.
 -   Patients: Manage patients with a CRUD system.
