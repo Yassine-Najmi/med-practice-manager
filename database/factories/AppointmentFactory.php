@@ -23,7 +23,7 @@ class AppointmentFactory extends Factory
         return [
             'patient_id' => Patient::factory()->create()->id,
             'date' => $futureDate->format('Y-m-d'),
-            'time' =>  $this->faker->randomElement(BusinessHour::inRandomOrder()->first()->TimesPeriod) ?? Time::factory()->create()->time,
+            'time' =>  $this->faker->randomElement(BusinessHour::inRandomOrder()->first()->TimesPeriod) ?? '10:00:00',
         ];
     }
 }
