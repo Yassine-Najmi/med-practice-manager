@@ -15,14 +15,12 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         $this->call(AdminSeeder::class);
         \App\Models\Fournisseur::factory(10)->create();
-        \App\Models\Patient::factory(10)->create();
+        \App\Models\Patient::factory(20)->create();
         \App\Models\Employee::factory(10)->create();
         \App\Models\Stock::factory(10)->create();
-        $this->call(WeekSeeder::class);
-        \App\Models\Time::factory(10)->create();
-        \App\Models\Consultation::factory(10)->create();
+        \App\Models\Consultation::factory(20)->create();
         $this->call(BusinessHourSeeder::class);
-        \App\Models\Appointment::factory(10)->create();
+        \App\Models\Appointment::factory(20)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
