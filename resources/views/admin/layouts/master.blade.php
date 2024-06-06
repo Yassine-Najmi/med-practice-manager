@@ -16,7 +16,7 @@
         content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4" />
 
     <!-- Title -->
-    <title> SGCD </title>
+    <title> SGCG </title>
     <link rel="icon" href="{{ asset('http://localhost:8000/assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }} "
         type="image/x-icon" style="max-width: 150px; max-height: 150px;" />
 
@@ -65,7 +65,7 @@
         <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
         <aside class="app-sidebar sidebar-scroll">
             <div class="main-sidebar-header active">
-                <h2 class="desktop-logo logo-light active text-center text-4xl font-bold text-primary">SGCD</h2>
+                <h2 class="desktop-logo logo-light active text-center text-4xl font-bold text-primary">SGCG</h2>
 
                 {{-- <a class="desktop-logo logo-dark active" href="#">
                     <img src="{{ asset('assets/mediatech/rtl/images/logo_V1_page-0001.jpg') }}" alt=""
