@@ -80,7 +80,7 @@
                 <div class="content-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <h2>Yassine Najmi, Médecin généraliste</h2>
+                            <h2>Dr. BERRADA Ali, Médecin généraliste</h2>
                             <div class="separator"></div>
                         </div>
                         <div class="text">
