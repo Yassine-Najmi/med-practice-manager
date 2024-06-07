@@ -69,7 +69,7 @@ The admin dashboard is accessible only after authentication and contains the fol
 2. Navigate to the project directory:
 
     ```bash
-    cd cabinet-dantaire
+    cd med-practice-manager
     ```
 
 3. Install dependencies:
