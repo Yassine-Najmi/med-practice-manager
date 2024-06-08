@@ -15,7 +15,7 @@
                                  <div class="logo">
                                      <a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
                                  </div>
-                                 <div class="text">Le Dr. Berrada Ali, fort d'une expérience de 37 ans, est un
+                                 <div class="text">Le Dr. EL MANSOURI Amine, fort d'une expérience de 37 ans, est un
                                      médecin spécialiste en médecine de travail. Il préside l’AMCC (Association
                                      des Médecins généralistes de Casablanca Centre) et est le fondateur de
                                      l’Association Marocaine de Médecine de Catastrophe. À son actif, il a assuré
@@ -26,8 +26,7 @@
                                     <li><a href="#"><span class="fab fa-google"></span></a></li>
                                     <li><a href="#"><span class="fab fa-twitter"></span></a></li>
                                     <li><a href="#"><span class="fab fa-skype"></span></a></li> --}}
-                                     <li><a
-                                             href="{{ url('https://www.linkedin.com/in/dr-ali-berrada-99658045/?originalSubdomain=ma') }}"><span
+                                     <li><a href="{{ url('https://www.linkedin.com/in/yassinenajmi/') }}"><span
                                                  class="fab fa-linkedin"></span></a></li>
                                  </ul>
                              </div>
@@ -86,15 +85,17 @@
                                  </div>
 
                                  <ul class="contact-list">
-                                     <li><span class="icon flaticon-placeholder"></span>332, bd Brahim Roudani,
+                                     <li><span class="icon flaticon-placeholder"></span>116, bd Brahim Roudani,
                                          Casablanca</li>
                                      <li>
                                          <span class="icon flaticon-call"></span>Appelez-nous au : <br>
-                                         <a href="tel:0522250907">052-225-0907</a>
+                                         <a href="tel:0522250907">052-225-6789</a>
                                      </li>
 
                                      <li><span class="icon flaticon-message"></span>Souhaitez-vous poser une
-                                         question ?<a href="mailto:berrada.ali@gmail.com">berrada.ali@gmail.com</a></li>
+                                         question ?<a
+                                             href="mailto:mansouri.amine@gmail.com">mansouri.amine@gmail.com</a>
+                                     </li>
                                  </ul>
 
                              </div>

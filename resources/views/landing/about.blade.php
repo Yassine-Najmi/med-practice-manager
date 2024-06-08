@@ -4,7 +4,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image: url({{ asset('assets/mediatech/rtl/images/background/5.jpg') }})">
         <div class="auto-container">
-            <h1>Dr. BERRADA Ali</h1>
+            <h1>Dr. EL MANSOURI Amine</h1>
             <div class="text">Médecin généraliste à Casablanca</div>
             <ul class="bread-crumb clearfix">
                 <li>
@@ -26,7 +26,7 @@
                         <div class="inner-box">
                             <div class="info-header">
                                 <p>Fournir des soins de qualité complets</p>
-                                <h3>Dr Berrada Ali</h3>
+                                <h3>Dr. EL MANSOURI Amine</h3>
                                 <span class="designation">Médecin généraliste</span>
                             </div>
                             <ul class="info-list">

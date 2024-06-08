@@ -11,49 +11,52 @@
                     style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
                     <div class="auto-container">
                         <div class="content clearfix">
-                            <div class="title">{{ __('header.small_text_1') }}</div>
-                            <h2>{{ __('header.big_text') }}</h2>
-                            <div class="text">{{ __('header.small_text_2') }}</div>
+                            <div class="title">Bienvenue dans le cabinet du Dr. Amine El Mansouri, médecin généraliste</div>
+                            <h2>Prenez soin de votre santé</h2>
+                            <div class="text">Avec une expérience de 37 ans, Dr. Amine El Mansouri est spécialisé en
+                                médecine de travail et est impliqué dans des associations médicales importantes.</div>
                             <div class="btn-box clearfix">
                                 <a href="home-appointment" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('navbar.appointment') }}</span></a>
+                                        class="txt">Rendez-vous</span></a>
                                 <a href="#" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>052-225-0907</a>
+                                        class="icon flaticon-call"></span>052-225-6789</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide"
+                    style="background-image:url(assets/mediatech/rtl/images/background/slide02.jpg)">
+                    <div class="auto-container">
+                        <div class="content">
+                            <div class="title">Dr. Amine El Mansouri - Votre santé, notre priorité</div>
+                            <h2>Expertise et engagement</h2>
+                            <div class="text">Contactez-nous pour toute urgence médicale via le numéro de téléphone
+                                ci-dessous :</div>
+                            <div class="btn-box clearfix">
+                                <a href="home-appointment" class="theme-btn btn-style-two"><span
+                                        class="txt">Rendez-vous</span></a>
+                                <a href="#" class="theme-btn phone-btn"><span
+                                        class="icon flaticon-call"></span>052-225-6789</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide"
-                    style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
+                    style="background-image:url(assets/mediatech/rtl/images/background/slide03.jpg)">
                     <div class="auto-container">
                         <div class="content">
-                            <div class="title">{{ __('header.small_text_1') }}</div>
-                            <h2>{{ __('header.big_text') }}</h2>
-                            <div class="text">{{ __('header.small_text_2') }}</div>
-                            <div class="btn-box">
-                                <a href="#" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('navbar.appointment') }}</span></a>
-                                <a href="contact.html" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>052-225-0907</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide"
-                    style="background-image:url(https://themewagon.github.io/medicalcenter/assets/img/hero/h1_hero.png)">
-                    <div class="auto-container">
-                        <div class="content">
-                            <div class="title">{{ __('header.small_text_1') }}</div>
-                            <h2>{{ __('header.big_text') }}</h2>
-                            <div class="text">
-                                {{ __('header.small_text_2') }}</div>
-                            <div class="btn-box">
-                                <a href="#" class="theme-btn btn-style-two"><span
-                                        class="txt">{{ __('navbar.appointment') }}</span></a>
-                                <a href="contact.html" class="theme-btn phone-btn"><span
-                                        class="icon flaticon-call"></span>052-225-0907</a>
+                            <div class="title">Prenez rendez-vous avec Dr. Amine El Mansouri</div>
+                            <h2>Facilité et rapidité</h2>
+                            <div class="text">Pour un suivi médical personnalisé, prenez rendez-vous en ligne ou
+                                contactez-nous directement.</div>
+                            <div class="btn-box clearfix">
+                                <a href="home-appointment" class="theme-btn btn-style-two"><span
+                                        class="txt">Rendez-vous</span></a>
+                                <a href="#" class="theme-btn phone-btn"><span
+                                        class="icon flaticon-call"></span>052-225-6789</a>
                             </div>
                         </div>
                     </div>
@@ -80,11 +83,12 @@
                 <div class="content-column col-lg-7 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <h2>Dr. BERRADA Ali, Médecin généraliste</h2>
+                            <h2>Dr. EL MANSOURI Amine, Médecin généraliste</h2>
                             <div class="separator"></div>
                         </div>
                         <div class="text">
-                            <p>Avec une expérience de 37 ans, le Dr. Berrada Ali est un médecin spécialiste en médecine de
+                            <p>Avec une expérience de 37 ans, le Dr. EL MANSOURI Amine est un médecin spécialiste en
+                                médecine de
                                 travail, président de l’AMCC (Association des Médecins généralistes de Casablanca Centre) et
                                 fondateur de l’Association Marocaine de Médecine de Catastrophe. Il a assuré des formations
                                 de secourisme pour le compte de plus de 50 entreprises à travers tout le Maroc.</p>
@@ -94,15 +98,16 @@
                                         Rabat</span></li>
                                 <li>&#8226; <span class="ml-2">Certificat Universitaire de santé au Travail et de
                                         Prévention des Risques
-                                        Professionnels
-                                        de l'Université Hassan II à Casablanca</span></li>
+                                        Professionnels de l'Université Hassan II à Casablanca</span></li>
                                 <li>&#8226; <span class="ml-2">Médecin Expert Assermenté près des Tribunaux au
                                         Maroc</span></li>
                                 <li>&#8226; <span class="ml-2">Diplôme Universitaire de Diabétologie de l'Université de
-                                        Montpellier I</span></li>
+                                        Montpellier I</span>
+                                </li>
                                 <li>&#8226; <span class="ml-2">Diplôme de Médecine de Catastrophe</span></li>
                             </ul>
                         </div>
+
                         <a href="https://www.youtube.com/watch?v=dMcoJMcM0UI&ab_channel=IntegratedCareNorthamptonshire"
                             class="lightbox-image play-btn"><span class="icon flaticon-stethoscope"
                                 style="font-size: 30px"></span>Plus d'informations</a>
@@ -114,14 +119,13 @@
                 <div class="image-column col-lg-5 col-md-12 col-sm-12">
                     <div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image">
-                            <img src="{{ asset('assets/mediatech/rtl/images/background/9171.png ') }}" alt="" />
+                            <img src="{{ asset('assets/mediatech/rtl/images/background/doctor.jpg') }}" alt="" />
                             <div class="icon-outer">
                                 <span class="icon-inner"><span class="icon flaticon-doctor"></span></span>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

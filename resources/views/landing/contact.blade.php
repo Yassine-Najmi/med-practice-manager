@@ -75,9 +75,9 @@
                     <div class="title">Besoin d'aide ?</div>
                     <h2>Coordonnées</h2>
                     <ul class="info-list">
-                        <li><span class="icon fas fa-map-marker-alt"></span>332, bd Brahim Roudani, Casablanca</li>
-                        <li><span class="icon fas fa-phone-volume"></span>052-225-0907</li>
-                        <li><span class="icon fas fa-envelope"></span>berrada.ali@gmail.com</li>
+                        <li><span class="icon fas fa-map-marker-alt"></span>116, bd Brahim Roudani, Casablanca</li>
+                        <li><span class="icon fas fa-phone-volume"></span>052-225-6789</li>
+                        <li><span class="icon fas fa-envelope"></span>mansouri.amine@gmail.com</li>
                         {{-- <li><span class="icon far fa-clock"></span>Lundi - Vendredi: 09:00 - 18:00<br>Samedi: 09:00 - 14:00
                         </li> --}}
                     </ul>

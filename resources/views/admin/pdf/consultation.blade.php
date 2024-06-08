@@ -36,16 +36,16 @@
     <table style="width:100%">
         <tr>
             <td width="20%" style="text-align:center">
-                <p>DR BERRADA Ali</p>
+               Dr. EL MANSOURI Amine
                 <p>Médecin Généraliste</p>
-                <p>adresse : 332, bd Brahim Roudani, Casablanca</p>
+                <p>adresse : 116, bd Brahim Roudani, Casablanca</p>
             </td>
             <td width="40%">
             </td>
             <td width="30%" style="text-align:center">
-                <p>الدكتور علي برادة</p>
+                <p>الدكتورة</p>
                 <p>طبيب عام</p>
-                <p>332، شارع إبراهيم الروداني، الدار البيضاء</p>
+                <p>116، شارع إبراهيم الروداني، الدار البيضاء</p>
             </td>
         </tr>
     </table>
@@ -74,7 +74,7 @@
         <p><strong>Date de mise à jour:</strong> {{ $consultation['updated_at']->format('d/m/Y H:i') }}</p>
     </div>
     <footer>
-        <span> Adresse : 332, bd Brahim Roudani, Casablanca - Tel : 052-225-0907 </span><br></b>
+        <span> Adresse : 116, bd Brahim Roudani, Casablanca - Tel : 052-225-6789 </span><br></b>
     </footer>
 </body>
 
@@ -147,16 +147,16 @@
     <table style="width:100%">
         <tr>
             <td width="30%" style="text-align:center">
-                <p class="dr-name">DR. BERRADA Ali</p>
+                <p class="dr-name">Dr. EL MANSOURI Amine</p>
                 <p>Médecin Généraliste</p>
-                <p>adresse : 332, bd Brahim Roudani, Casablanca</p>
+                <p>adresse : 116, bd Brahim Roudani, Casablanca</p>
             </td>
             <td width="40%">
             </td>
             <td width="30%" style="text-align:center">
-                <p class="dr-name">الدكتور علي برادة</p>
+                <p class="dr-name">الدكتور أمين المنصوري</p>
                 <p>طبيب عام</p>
-                <p>332، شارع إبراهيم الروداني، الدار البيضاء</p>
+                <p>116, شارع إبراهيم الروداني، الدار البيضاء</p>
             </td>
         </tr>
     </table>
@@ -184,8 +184,8 @@
     </div> --}}
     <footer>
         <hr>
-        <span> شارع إبراهيم الروداني رقم 332 ، الدار البيضاء - الهاتف : 052-225-0907</span><br></b>
-        <span> Adresse : 332, bd Brahim Roudani, Casablanca - Tel : 052-225-0907 </span><br></b>
+        <span> شارع إبراهيم الروداني رقم 116 ، الدار البيضاء - الهاتف : 6789-225-052</span><br></b>
+        <span> Adresse : 116, bd Brahim Roudani, Casablanca - Tel : 052-225-6789 </span><br></b>
     </footer>
 
 </body>

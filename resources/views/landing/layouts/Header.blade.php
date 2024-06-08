@@ -7,17 +7,16 @@
         <div class="auto-container clearfix">
             <div class="top-left clearfix">
                 <ul class="list">
-                    <li><i class="icon fas fa-map-marker-alt" style='font-size:14px'></i>332, bd Brahim Roudani,
+                    <li><i class="icon fas fa-map-marker-alt" style='font-size:14px'></i>116, bd Brahim Roudani,
                         Casablanca</li>
-                    <li><i class="icon fas fa-solid fa-phone"></i><a href="tel:0522250907">052-225-0907</a>
+                    <li><i class="icon fas fa-solid fa-phone"></i><a href="tel:0522250907">052-225-6789</a>
                     </li>
                 </ul>
             </div>
             <div class="top-right clearfix">
                 <ul class="social-icons">
-                    <li><a
-                            href="{{ url('https://www.linkedin.com/in/dr-ali-berrada-99658045/?originalSubdomain=ma') }}"><span
-                                class="fab fa-linkedin" style='font-size:24px'></span></a></li>
+                    <li><a href="{{ url('https://www.linkedin.com/in/yassinenajmi/') }}"><span class="fab fa-linkedin"
+                                style='font-size:24px'></span></a></li>
                 </ul>
             </div>
         </div>
