@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Appointment;
 use App\Models\Patient;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -18,7 +19,7 @@ class ConsultationFactory extends Factory
     public function definition(): array
     {
         return [
-            'patient_id' => Patient::inRandomOrder()->first()->id,
+            'patient_id' => Appointment::inRandomOrder()->first()->patient_id,
             'situation' => $this->faker->sentence(),
             'antécédents' => $this->faker->paragraph(),
             'motif' => $this->faker->randomFloat(2, 0, 1000),

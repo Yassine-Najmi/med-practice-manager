@@ -19,9 +19,10 @@ class AppointmentFactory extends Factory
      */
     public function definition(): array
     {
-        $futureDate = $this->faker->dateTimeBetween('2 days', '3 days', 'Africa/Morocco');
+        $futureDate = $this->faker->dateTimeBetween('now', '5 days');
         return [
-            'patient_id' => Patient::factory()->create()->id,
+            // 'patient_id' => Patient::factory()->create()->id,
+            'patient_id' => Patient::inRandomOrder()->first()->id,
             'date' => $futureDate->format('Y-m-d'),
             'time' =>  $this->faker->randomElement(BusinessHour::inRandomOrder()->first()->TimesPeriod) ?? '10:00:00',
         ];

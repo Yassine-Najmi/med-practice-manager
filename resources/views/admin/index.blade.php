@@ -130,8 +130,13 @@
     <div class="row row-sm">
         <div class="col-md-12 col-lg-4 col-xl-4">
             <div class="card card-dashboard-eight pb-2">
-                <h6 class="card-title">Les rendez-vous d'aujourd'hui </h6><span
-                    class="d-block mg-b-10 text-muted tx-14">{{ Carbon\Carbon::parse($appointmentsToday[0]->date)->translatedFormat('d F Y') }}</span>
+                <h6 class="card-title">Les rendez-vous d'aujourd'hui </h6><span class="d-block mg-b-10 tx-12">
+                    @if (!empty($appointmentsToday) && isset($appointmentsToday[0]))
+                        {{ Carbon\Carbon::parse($appointmentsToday[0]->date)->translatedFormat('d F Y') }}
+                    @else
+                        {{ Carbon\Carbon::now()->translatedFormat('d F Y') }}
+                    @endif
+                </span>
                 <div class="list-group">
                     @forelse ($appointmentsToday as $item)
                         <div class="list-group-item border-top-0">
@@ -140,7 +145,7 @@
                             <span>{{ Carbon\Carbon::parse($item->time)->translatedFormat('H:i') }}</span>
                         </div>
                     @empty
-                        <p class="tx-12 text-muted">Aucun rendez-vous pour aujourd'hui</p>
+                        <p class="tx-12 text-danger">Aucun rendez-vous pour aujourd'hui</p>
                     @endforelse
                     {{-- <div class="list-group-item border-bottom-0 mb-0">
                         <p></p><span></span>
@@ -154,7 +159,7 @@
                     <h4 class="card-title mb-1">Les rendez-vous de cette semaine</h4>
                     <i class="mdi mdi-dots-horizontal text-gray"></i>
                 </div>
-                <span class="tx-12 tx-muted mb-3 ">{{ Carbon\Carbon::parse($startOfWeek)->translatedFormat('d F Y') }} à
+                <span class="tx-12 tx-muted mb-3 ">{{ Carbon\Carbon::parse($startOfWeek)->translatedFormat('d F') }} à
                     {{ Carbon\Carbon::parse($endOfWeek)->translatedFormat('d F Y') }}</span>
                 <div class="table-responsive country-table">
                     <table class="table table-striped table-bordered mb-4 text-sm-nowrap text-lg-nowrap text-xl-nowrap">
@@ -177,7 +182,11 @@
                                     {{-- <td class="tx-right tx-medium tx-danger">-$45.10</td> --}}
                                 </tr>
                             @empty
-                                <p class="tx-12 text-muted">Aucun rendez-vous pour cette semaine</p>
+                                <tr>
+                                    <td colspan="7" class="text-center mt-5 text-danger">Aucun rendez-vous pour cette
+                                        semaine
+                                    </td>
+                                </tr>
                             @endforelse
                         </tbody>
                     </table>
