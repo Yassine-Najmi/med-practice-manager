@@ -19,7 +19,7 @@ class AppointmentFactory extends Factory
      */
     public function definition(): array
     {
-        $futureDate = $this->faker->dateTimeBetween('now', '1 days');
+        $futureDate = $this->faker->dateTimeBetween('2 days', '3 days', 'Africa/Morocco');
         return [
             'patient_id' => Patient::factory()->create()->id,
             'date' => $futureDate->format('Y-m-d'),
