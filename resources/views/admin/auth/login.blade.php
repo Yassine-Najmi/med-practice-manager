@@ -95,7 +95,7 @@
                                                     <div class="form-group">
                                                         <label>Email</label> <input class="form-control mb-1"
                                                             placeholder="Entrez votre adresse e-mail" type="text"
-                                                            name="email">
+                                                            value="admin@admin.com" name="email">
                                                         @error('email')
                                                             <span class="text-danger ">{{ $message }}</span>
                                                         @enderror
@@ -103,8 +103,8 @@
                                                     <div class="form-group">
 
                                                         <label>Mot de passe</label> <input class="form-control mb-1"
-                                                            placeholder="Entrez votre mot de passe" type="password"
-                                                            name="password">
+                                                            placeholder="Entrez votre mot de passe" value="password"
+                                                            type="password" name="password">
                                                         @error('password')
                                                             <span class="text-danger ">{{ $message }}</span>
                                                         @enderror
