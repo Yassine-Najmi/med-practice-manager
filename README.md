@@ -63,7 +63,7 @@ The admin dashboard is accessible only after authentication and contains the fol
 1. Clone the repository:
 
     ```bash
-    git clone [https://github.com/Yassine-Najmi/med-practice-manager.git](https://github.com/Yassine-Najmi/med-practice-manager.git)
+    git clone https://github.com/Yassine-Najmi/med-practice-manager.git
     ```
 
 2. Navigate to the project directory:
